@@ -1,0 +1,1532 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>"Mirror Network Itech" Join with us the world most favorite Web Development platforms.</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+   <link rel="stylesheet" href="CSS4code-editors.css">
+<style>
+    @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+*{
+  
+  margin:0;
+  outline:none;
+  text-decoration:none;
+  list-style:none;
+  font-family: 'Mulish', sans-serif;
+  
+}
+
+body{
+  display:flex;
+  padding-top: 0;
+  justify-content:center;
+  background:#ecf1f5;
+  transform:scale(0.8) translateY(-50px);
+    width: 100vw;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+}
+
+.notification {
+  position: fixed;
+  width: 125%;
+  height: 50px;
+  background: #007bff;
+  padding: 0;
+  margin-top: 11px;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: top 0.3s ease;
+  z-index: 999; /* Ensure the notification appears above other content */
+  backdrop-filter: blur(15px);
+  border-radius: 10px 00px 200px 200px;
+  box-shadow: 5px 5px 10px rgba(202, 100, 25, 0.5);
+}
+.mirror{
+  width: 16%;
+  margin-right: 55%;
+  border-radius: 20px;
+  padding: 0;
+}
+#profile {
+ display: flex;
+ align-items: center;
+ margin-left: auto;
+ flex-shrink: 0;
+ }
+
+ .logoname {  
+   margin-top: 26px;
+   position: absolute;  
+   top: 0;
+   right: 28%;
+   line-height: 10px;
+   transform: translate(50%,-50%);  
+   text-transform: uppercase;  
+   font-family: verdana;  
+   font-size:128%;  
+   font-weight: bolder;  
+   color:#f5e4f5;  
+   text-shadow: 1px 1px 1px white,  
+     1px 2px 1px white,  
+     1px 3px 1px #919191, 
+     1px 4px 1px #919191,  
+     1px 5px 1px white,  
+     1px 6px 1px white,  
+   1px 7px 2px rgba(16,16,16,0.4),  
+   1px 8px 5px rgba(16,16,16,0.2),  
+   1px 9px 9px rgba(16,16,16,0.2),  
+   1px 10px 10px rgba(16,16,16,0.4); 
+   animation: blinking 1s infinite;
+   
+ }
+ @keyframes blinking {
+  0% {
+    color: #00ffff;
+  }
+  50% {
+    color: #ff00ff;
+  }
+  100% {
+    color: #ffff00;
+  }
+}
+/* Make each area overflow horizontally and*/
+/*have the ability to have other items*/
+/*scrolled into view*/
+.scrollerr {
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar; }
+/* container*/
+.containerrr{
+  position: relative;
+  top: 60px;
+  
+  padding: 0;
+  margin: 0;
+  z-index: 999;
+}
+/* Example two required styles --------------- */
+.example-two-header {
+  .logo {
+    width: 22%; 
+  height:20px;
+}
+  nav {
+    width: 75%;
+    
+    } }
+
+/* Shared styles --------------- */
+header {
+  background: #152637;
+}
+
+/*Examples*/
+.example-two-header {
+  border-radius: 3px; 
+  
+}
+/*Logo*/
+.logo {
+  text-align: center; /*only effective in example 2/3*/
+  font-weight: 700;
+  color: #727c87;
+  border-right: 1px solid rgba(#727c87, .4);
+  padding: 3px 24px 13px; }
+
+/*Nav items*/
+.navv-item {
+  padding: 2px 5px 6px;
+
+  &:not(:last-child) {
+    border-right: 1px solid rgba(#727c87, .2); } }
+
+/*Setup/misc styles --------------- */
+* { 
+  box-sizing: border-box; }
+
+/*Remove the inline-block extra space*/
+header,
+nav { 
+  font-size: 0; }
+
+/*Requires font size to be reset for these elements*/
+.logo,
+.navv-item {
+  font-size: 15px; 
+  font-weight: bolder;
+  color: white;
+}
+
+.logo,
+.navv-item,
+.vertical-align-middle {
+  display: inline-block;
+  vertical-align: middle;
+  
+}
+
+/* Demo purposes only, proceed with caution on Windows*/
+.scroll::-webkit-scrollbar {
+  display: none; }
+ 
+/* drop-down navigation bar*/
+   .dd {
+      position: relative;
+      display: inline-block;
+      z-index: 99999;
+      
+    }
+    .dd-btn {
+      padding:0;
+      margin-left: 30px;
+      text-align: center;
+      border: none;
+      width: 5px;
+      color: #f8f9f9;
+      text-decoration: none;
+    }
+    .dd-content {
+      position: absolute;
+      width: 300px;
+      margin-top: 50px;
+      margin-left: 5px;
+      box-shadow: 0 18px 36px rgba(0,0,0,0.30), 0 14px 11px rgba(0,0,0,0.22);
+      height: 0px;
+      transition: height 1s;
+      overflow: hidden;
+      border-radius: 25px;
+    }
+    .dd:hover > .dd-content {
+      height: 400px;
+    }
+    .dd-content > a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: white;
+      font-weight: bolder;
+      font-size: 108%;
+    }
+    h4{
+      font-size: 103%;
+      font-weight: bolder;
+      color: firebrick;
+      text-decoration: underline;
+      margin-top:2px;
+    }
+    b{
+      font-size: 100%;
+      font-weight: bold;
+      
+    }
+    .mainhead{
+      font-size: 108%; 
+      color: red; 
+      font-weight:bolder; 
+      padding: 0;
+    }
+    p{
+      font-size: 101%;
+      text-indent: 25px;
+    }
+    li{
+      font-size: 101%;
+    }
+    .eg{
+      font-size: 102%;
+      color: mediumblue;
+    }
+   
+       .cool{
+      background: darkgray;
+      font-size: 120%;
+      border-radius: 5px;
+      
+    }
+      .code{
+     font-size: 106%;
+     font-weight: bolder;
+     color: royalblue;
+     
+   }
+   .variable{
+     color: royalblue;
+     font-weight: bold;
+     font-size: 104%;
+   }
+   .keyword{
+     font-size: 104%;
+     font-weight: bolder;
+     color: sandybrown;
+   }
+   .assigned{
+     font-size: 106%;
+     font-weight: bolder;
+     color: lightblue;
+   }
+   .userinfo{
+     font-size: 104%;
+     font-weight: bold;
+     color: yellow;
+   }
+   .property,.attributes{
+     color: lightskyblue;
+     font-size: 105%;
+   }
+   .values{
+     color: yellow;
+     font-size: 105%;
+   }
+   .CSSvalue{
+     color: lightgoldenrodyellow;
+   }
+   .comment {
+     color:gray;
+     font-size: 75%;
+   }
+   .selector{
+     color: green;
+     font-weight: bolder;
+     font-size: 110%;
+   }
+   .output {
+     width: 100%;
+     border-radius: 45px;
+     background: cadetblue;
+     border: 10px solid blanchedalmond;
+   }
+   .angle,.tags{
+     font-size: 105%;
+     font-weight: bold;
+     color: mediumvioletred;
+   }
+   fieldset{
+     width: 95%;
+     display: block;
+      background: white;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: 10px;
+  padding-top: .4em;
+  padding-bottom: 0.25em;
+  padding-left: 0.1em;
+  padding-right: 0.1em;
+  border-radius: 5px 30px 80px 5px;
+  border: 1px groove (internal value);
+}
+  .bas{
+  width: 99%;
+  box-shadow: 2px 5px 2px 0 rgba(105, 120, 139, 0.6), 02px 6px 18px 0 rgba(100, 23, 20, 0.5);
+  justify-content: center;
+  justify-items: center;
+  padding-left: 0.5px;
+  border-radius: 20px 70px 60px 20px;
+  z-index: 10;
+  animation: zindex 5s infinite;
+}
+.codebase{
+  background-image: linear-gradient(rgba(000, 000, 000, 0.8), rgba(000, 000, 000, 0.8));
+  color: white;
+  border-radius: 34px;
+  font-weight: bold;
+  width: 98%;
+  padding-left: 20px;
+padding-top: 10px;
+padding-bottom: 20px;
+} 
+/*style for table*/
+table,tr,td{
+  border: 1px solid darkgray;
+}
+.head{
+  background-color: lightseagreen;
+  font-weight: bolder;
+}
+.col-1{
+  background: lightskyblue;
+} 
+/*Style for Live code editor*/
+.code-container {
+      width: 98.5%;
+      
+      margin: auto;
+      margin-left: 0;
+      box-shadow: 0 4px 10px rgba(080, 240, 130, 0.1);
+      background: #eff;
+      padding: 5px;
+      border-radius: 50px;
+    }
+
+    .Editor, .outPut {
+      border: 3px solid blue;
+      padding: 5px;
+      box-shadow: 5px 2px 4px  gold;
+      height: 300px;
+      overflow: auto;
+      display: none; /* Initially hide both editor and output */
+    }
+
+    .Editor {
+      width: 100%;
+      border-radius: 20px;
+      display: block; /* Show editor initially */
+    }
+
+    .outPut {
+       width: 100%;
+      height:420px;
+      border-radius: 20px;
+      z-index: 99;
+      
+    }
+
+    .run-btn, .editor-btn {
+      padding: 10px 20px;
+      border-radius: 100px 20px;
+      box-shadow: 2px 4px 8px black;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+ 
+    h3 {
+      margin-top: 5px;
+      margin-left: 20px;
+    }
+    
+    #codeArea2 {
+      width: 100%;
+      height: 100%;
+      font-family: monospace;
+      resize: none; /* Prevent resizing */
+    }
+    
+    iframe {
+      box-shadow: 2px 4px 5px solid blue;
+      border-radius: 15px;
+      border: none; /* Remove default iframe border */
+    }
+    
+   /*Note container */
+  .bubble {
+  display: inline-block;
+  background: green;
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: white;
+  font-family: var(--font-1);
+  max-width: 100%;
+  position: relative;
+  margin: 0px 15px;
+}
+
+.chat .me .bubble {
+  background: blue;
+  text-align: left;
+}
+
+.chat .other .bubble:before {
+  content: "";
+  top: 0px;
+  left: -25px;
+  position: absolute;
+  background: transparent;
+  height: 0px;
+  width: 0px;
+  border-left: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 20px solid green;
+}
+
+.chat .me .bubble:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: -25px;
+  background: transparent;
+  height: 0px;
+  width: 0px;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 20px solid green;
+}
+ 
+       /*style for cover contents*/
+           #services {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 200px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #30257D;
+}
+
+.title {
+  text-transform: uppercase;
+  color: #1f67db;
+  letter-spacing: 1px;
+  font-size: 45px;
+  margin-top: 100px;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+  gap: 30px;
+}
+.card {
+  position: relative;
+  display: flex;
+  margin: 2px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #c7adab;
+  box-shadow: 5px 5px 10px #3D474B;
+  border-radius: 10px;
+  padding: 5px;
+  overflow-y: hidden;
+  height: 350px;
+}
+.bgcard {
+  height: 100%;
+  background-color: lightgray;
+  z-index: 5;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: .7;
+  position: absolute;
+  transition: 0.5s;
+}
+.card:hover {
+  transform: scale(1.0);
+  height: 450px;
+  border: 1px solid black;
+  z-index: 9999;
+  overflow-y: auto;
+}
+.html{
+  color: #ED6915;
+}
+.html{
+  transition-duration: 3s;
+    z-index: 10000000;
+    width:70%;
+    margin-top: 10px;
+}
+.card:hover .html {
+  position: static;
+  transform: scale(.75);
+  z-index: 999;
+}
+.card:hover .bgcard {
+  opacity: 0;
+} 
+    
+    /* style for the unordered list elements*/
+    .ulstyle{
+      padding-top: 5px;
+      padding-left: 12px;
+    }
+    li::before{
+      content: "€->";
+      color: dodgerblue;
+      font-size: 110%;
+      font-weight: bolder;
+      padding-right: 3px;
+    }
+    
+    /* vertical line*/
+    .reply-container {
+	position: relative;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	margin-top: 5px;
+	
+}
+
+.vertical-line {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 4px;
+	height: 100%;
+	background-color: blue;
+}
+
+.reply-text {
+  font-size: 103%;
+  font-weight: bold;
+	margin-left: 10px;
+	padding-top: 10px;
+	background: linear-gradient(to bottom right, rgba(25, 255, 255, 0.3), rgba(155, 105, 255, 0.3));
+  backdrop-filter: blur(0.5);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(225, 105, 25, 0.5);
+}
+
+.reply-text::before {
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: -10px;
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+}
+/* next and previous button*/
+.button-container {
+	position: relative;
+	display: flex;
+	width:60%;
+	margin-right: auto;
+	margin-left: auto;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 4;
+	background: linear-gradient(to bottom right, rgba(25, 255, 255, 0.3), rgba(155, 105, 255, 0.3));
+  backdrop-filter: blur(0.5);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(225, 105, 25, 0.5);
+}
+
+.prev-button, .next-button {
+	position: relative;
+	display: inline-block;
+	padding: 5px 5px;
+	background-color: #333;
+	color: #fff;
+	font-weight: bolder;
+	font-size: 110%;
+	border-radius: 30px  120px;
+	box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+}
+
+.prev-button::before, .next-button::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to bottom, #333, #555);
+	transform: scaleY(0);
+	transform-origin: center;
+	transition: transform 0.3s ease-in-out;
+}
+
+.prev-button:hover::before, .next-button:hover::before {
+	transform: scaleY(1);
+}
+
+.prev-button::after, .next-button::after {
+	content: "";
+	position: absolute;
+	font-weight: bolder;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.prev-button::after {
+	content: "‹";
+}
+
+.next-button::after {
+	content: "›";
+}
+
+.prev-button {
+	margin-right: 50px;
+}
+
+.next-button {
+	margin-left: 20px;
+}
+.cardTop{
+  width:100%;
+  height:280px;
+  background: #FAC24F;
+  border-radius: 50px;
+  display:flex;
+  overflow:hidden;
+  align-items:flex-end;
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+.timeline{
+  width:122%;
+  height:100vh;
+  background: #ECF1F524;
+  mix-blend-mode: normal;
+backdrop-filter: blur(15px);
+overflow:hidden;
+margin-left: 2px;
+position:absolute;
+  top:90px;
+ box-shadow: 0px 20px 10px 3px rgba(95, 102, 173, 0.566816);
+border-radius: 10px;
+  padding: 0;
+  
+  .box{
+    height:87.5%;
+    background:#fbfcfd;
+    width: 95%; /* Adjust as needed */
+  margin: 10px auto; /* Center the box horizontally */
+  margin-top:5px;
+  margin-bottom:4px;
+    overflow-y: auto;
+    box-shadow:0 2px 4px 2px;
+    z-index:20;
+    
+    .container{
+       width:95%;
+     
+      }
+    }
+  }
+}
+</style>
+</head>
+
+<body>
+<div class="main" style="width: 125%;">
+         <div class="notification" id="profile" >
+             <div class="dd">
+   <a href="javascript:void(0);" class="dd-btn"  style="color: white; font-weight: bolder; font-size: 150%">&#9776;</a>
+    <div class="dd-content" style="z-index:99">
+      <a href="JS.html" style="z-index: 80; background: linear-gradient(to bottom right, rgba(21, 55, 55, 1), rgba(21, 54, 55, 0.4)); border-radius: 8px; "> Overview</a>
+      
+      <a href="JS1.html" style="z-index: 90; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;">Introduction To Internet</a>
+      
+      <a href="JS2.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> Introduction To WWW</a>
+      <a href="JS3.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px; font-size: 85%"> Introduction To Why HTML And CSS Matters The Most When Programming In JavaScript</a>
+       <a href="JS4.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> Introduction To Javascript</a>
+       <a href="JSmis.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> Introduction To JavaScript Fundamentals</a>
+    </div>
+  </div>
+       	<h1 class="logoname" id="logoname">M <sup> irro</sup><sub>R</sub>  <br>   N<sup>etwor</sup><sub>K</sub></h1><br>
+        	<sup><img src="logo.jpg" alt="mirror.jpg" class="mirror"></sup>
+</div> 
+
+<div class="containerrr example-two" >
+  <header class="example-two-header">
+    <span class="logo">Logo</span>
+    <nav class="vertical-align-middle scrollerr" style="
+  background: linear-gradient(to bottom right, rgba(25, 255, 255, 0.3), rgba(155, 105, 255, 0.3));
+  backdrop-filter: blur(0.5);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(225, 105, 25, 0.5);">
+<span class="navv-item"><a href="JS.html" style="color: white; font-weight: bolder">Overview</a></span>
+     
+      <span class="navv-item"><a href="JS1.html" style="color: white; font-weight: bolder">Prerequisite Fundamentals Of Programming</a></span>
+      <span class="navv-item"><a href="" style="color: white; font-weight: bolder">JavaScript Programming Language</a></span>
+       <span class="navv-item"><a href="admin.html" style="color: white; font-weight: bolder">About The Admin/("CEO")</a></span>
+         </a></span>
+    </nav>
+  </header>
+</div>
+  <div class="cardTop">
+    <svg width="480px" height="219" viewBox="0 0 480px 219" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M-38.5 196C-38.5 196 34 91 133.5 91C233 91 427 159 532.5 30C638 -99 518 236 518 236L-49 246.5L-38.5 196Z" fill="#FF768E"/>
+</svg>
+ </div>
+  <div class="timeline">
+     <h1 style="font-size: 105%; font-weight: bolder; padding: 0; margin-bottom: 0; margin-top: 0px; margin-left: 88px; margin-right: 0; ">Introduction To JavaScript Fundamentals</h1>
+      
+      <div class="box">
+        <div class="container" style="margin-left: 10px">
+          <br>
+
+  <h3 class="mainhead">Overview ::::</h3>
+  <p class="p">
+    JavaScript is one of the most popular modern web technologies! As your JavaScript skills grow, your websites will enter a new dimension of power and creativity.
+<br>
+However, getting comfortable with JavaScript is more challenging than getting comfortable with HTML and CSS. You may have to start small, and progress gradually. <br>
+To begin, let's examine how to add JavaScript to your page for creating a Hello world! example. 
+<br>
+<b class="eg">Note ::::</b> <br>
+<div class="reply-container">
+
+	<div class="reply-text"> 	<div class="vertical-line"></div> The reason why we will always be placing or putting our <b class="tags">&lt;</b><b class="code">script</b><b class="tags">&gt;</b>..... <b class="tags">&lt;</b><b class="code">/script</b><b class="tags">&gt;</b> element near the closing tag of the  <b class="tags">&lt;</b><b class="code"><b class="tags">/</b>body</b><b class="tags">&gt;</b> element is that the browser reads code in the order it appears in the HTML document file. <br>
+	If the JavaScript loads first and it is supposed to affect the HTML that hasn't loaded yet, there could be problems. 
+	Placing JavaScript near the bottom of an HTML page is one way to accommodate this dependency.  <br>
+	And this is the best practice.
+	</div>
+</div>
+  </p>
+  <p class="p">
+    <b>This part of the tutorial is about core JavaScript, the language itself.</b>
+  </p>
+  <h3 class="mainhead">A "Hello world!" Example ::::</h3>
+  <div class="card">
+        <div class="bgcard"></div>
+    <img src="pro7.gif" alt="pro7.gif" class="html" >
+    <div class="bas" >
+       <fieldset>
+         <iframe src="JSmis-Iframe.html" frameborder="0" style="height:380px; width: 92%; border-radius: 20px; border-color: greenyellow; border: 25px; z-index: 10; box-shadow: 3px 5px 4px blue; margin-left: 10px; padding: 0;"  ></iframe> <br>
+         Let's say you design the above webpage and you want to apply some more features to it to make it responsive and interactive and you thought of it that those features you wanted to apply to the page cannot be achieved with only CSS so you will need JavaScript.
+         <b>So what are these features you wanted to apply to the website? Can you think of anything fancy?</b> <br>
+         <p class="p">
+          So let's say wanted to display a Welcome message to the viewer. " Hello you're welcome to Mirror Network Itech Platform." as soon as the user visited the web page it should be the first thing to Pop up.
+          <br>
+          Alright so let's see how we can achieve this using JavaScript, someone will be like can't we achieve this will CSS? and i will answer the person "No", this is because this feature is not a style but rather a function so here we may need JavaScript.
+         </p> 
+         <b class="eg">So Let's Check It Out Below ::::</b> <br>
+<div class="codebase"><b class="tags">&lt;</b><b class="code">script</b><b class="tags">&gt;</b> <br>
+  <b class="comment">//let's 1st of all store the information in a memory.</b> <br>
+  <b class="variable">let</b> <b class="keyword">welcomeMesg</b> <b>&equals;</b> <b class="assigned">"Hello you're welcome 
+  to Mirror Network Itech Platform."</b>;
+  <br>
+  <b class="comment">//let's display the information.</b> <br>
+  <b class="variable">alert</b><b>&lpar;</b> <b class="keyword">welcomeMesg</b> <b>&rpar;</b>; <br>
+<b class="tags">&lt;</b><b class="tags">/</b><b class="code">script</b><b class="tags">&gt;</b>
+</div>
+<b>Click the below link to access the out put of the update example website</b> <br>
+<a href="JSmisExpl.html" style="font-weight: bold; text-decoration: underline; background: rgba(21, 155, 55, .5); border-radius: 30px; font-size: 110%">/Output Of The Updated Example\</a>
+<br>
+<p class="p">
+  Alright so as you visited click on the link to take you see the updated examples page what happened, what did you observe?
+  <br>
+  Alright so, when you clicked on the link to take you to the destinated page a Pop up menu appears say Welcome to you and after reading the contents on that Pop up when you click the "OK" button on the same Pop up menu the main destinated page will now be display to you.
+  <br>
+  Alright this may be somehow fancy and odd ("<b>Instead of the previous page should disappear as soon as we click the link and take us to the destinated page it was not done like that.</b>") at the same time to prevent the oddness part of the story try running the source code that i will drop below in you own browser and you will see the result.
+  <br>
+  </p>
+  <p class="p">
+ The reason for the odd issue we're experiencing is due to the default behavior of JavaScript's `<b class="variable">alert</b>()` function. <br>
+ <b>Here's what's happening ::::</b> <br>
+ You click the link to navigate to the welcome message page. <br>
+ The browser loads the new page and executes the JavaScript code. <br>
+ The `<b class="variable">alert</b>()` function is called, displaying the welcome message. <br>
+ The `<b class="variable">alert</b>()` function blocks further execution of JavaScript code and page rendering until it's dismissed (i.e., until you click "OK"). <br>
+ After dismissing the alert, the page rendering continues, and the linked page is displayed. <br>
+ Through we can resolve this but we don't want to deviat here to let's leave it instead copy and paste the below codes into you text editor and run it. 
+</p>
+<br>
+
+<pre class="codebase" style="font-size: 85%">
+  <b class="angle">&lt;</b><b class="code">!DOCTYPE html</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">html</b> <b class="attributes">lang</b><b>&equals;</b><b class="values">"en"</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">head</b><b class="angle">&gt;</b> 
+      <b class="angle">&lt;</b><b class="code">title</b><b class="angle">&gt;</b> 
+      My First Practical 
+      <b class="angle">&lt;</b><b class="code"><b class="tags">/</b>title</b><b class="angle">&gt;</b>
+      <b class="angle">&lt;</b><b class="code">style</b><b class="angle">&gt;</b> 
+        <b class="selector">html</b>{
+            <b class="property">font-size</b>: <b class="CSSvalue">10px</b>;
+            <b class="property">font-family</b>: <b class="CSSvalue">'Open Sans', sans-serif</b>;
+            <b class="property">background-color</b>: <b class="CSSvalue"> #00539F</b>;
+          }
+          
+        <b class="selector">body</b>{
+            <b class="property">width</b>: <b class="CSSvalue">300px</b>;
+            <b class="property">margin</b>: <b class="CSSvalue">0 auto</b>;
+            <b class="property">background-color</b>: <b class="CSSvalue">#FF9500</b>;
+            <b class="property">padding</b>: <b class="CSSvalue">5px</b>;
+            <b class="property">border</b>: <b class="CSSvalue">5px solid black</b>;
+        }
+        
+        <b class="selector">h1</b>{
+            <b class="property">margin</b>: <b class="CSSvalue">0</b>;
+            <b class="property">padding</b>: <b class="CSSvalue">0</b>;
+            <b class="property">color</b>: <b class="CSSvalue">#00539F</b>;
+            <b class="property">text-shadow</b>: <b class="CSSvalue">3px 1.5px 1px black</b>;qq
+            <b class="property">font-size</b>: <b class="CSSvalue">30px</b>;
+            <b class="property">text-align</b>: <b class="CSSvalue">center</b>;
+        }
+        <b class="selector">ul</b>{
+            <b class="property">list-style-type</b>: <b class="CSSvalue">lower-greek</b>; 
+        }
+        
+        <b class="selector">p</b>,<b class="selector">li</b>{
+            <b class="property">font-size</b>: <b class="CSSvalue">16px</b>;
+            <b class="property">line-height</b>: <b class="CSSvalue">1</b>;
+            <b class="property">letter-spacing</b>: <b class="CSSvalue">1px</b>;
+        }
+        
+        <b class="selector">img</b>{
+            <b class="property">width</b>: <b class="CSSvalue">80%</b>;
+            <b class="property">display</b>: <b class="CSSvalue">block</b>;
+            <b class="property">margin</b>: <b class="CSSvalue">0 auto</b>;
+            <b class="property">border-radius</b>: <b class="CSSvalue">30px</b>;
+            <b class="property">box-shadow</b>: <b class="CSSvalue">6px 2px 4px blue</b>; 
+        }
+      <b class="angle">&lt;</b><b class="code"><b class="tags">/</b>style</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code"><b class="tags">/</b>head</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">body</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">h1</b><b class="angle">&gt;</b> Mirror Network Is Cool Place <b class="angle">&lt;</b><b class="code"><b class="tags">/</b>h1</b><b class="angle">&gt;</b>
+    <b class="tags">&lt;</b><b class="code">img</b> <b class="attributes">src</b>=<b class="values">"your img name"</b> <b class="attributes">alt</b>=<b class="values">"#"</b><b class="tags">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">h3</b> <b class="attributes">style</b>=<b class="values">"font-size: 18px"</b><b class="angle">&gt;</b> 
+     At Mirror Network, we’re a global community of :::: 
+    <b class="angle">&lt;</b><b class="code"><b class="tags">/</b>h3</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">ul</b><b class="angle">&gt;</b> 
+       <b class="angle">&lt;</b><b class="code">li</b><b class="angle">&gt;</b> Technologists. <b class="angle">&lt;</b><b class="code"><b class="tags">/</b>li</b><b class="angle">&gt;</b>
+       <b class="angle">&lt;</b><b class="code">li</b><b class="angle">&gt;</b> Thinkers. <b class="angle">&lt;</b><b class="code"><b class="tags">/</b>li</b><b class="angle">&gt;</b>
+       <b class="angle">&lt;</b><b class="code">li</b><b class="angle">&gt;</b> Builders. <b class="angle">&lt;</b><b class="code"><b class="tags">/</b>li</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code"><b class="tags">/</b>ul</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">p</b><b class="angle">&gt;</b> 
+       Working together to keep the
+       Internet alive and accessible, 
+       so people worldwide can be
+       informed contributors and 
+       creators of the Web. 
+       We believe this act of human
+       collaboration across an open
+       platform is essential to
+       individual growth and our
+       collective future. 
+    <b class="angle">&lt;</b><b class="code"><b class="tags">/</b>p</b><b class="angle">&gt;</b>
+    <b class="tags">&lt;</b><b class="code">script</b><b class="tags">&gt;</b> <br>
+  <b class="comment">//let's 1st of all store the information in a memory.</b> <br>
+  <b class="variable">let</b> <b class="keyword">welcomeMesg</b> <b>&equals;</b> <b class="assigned">"Hello you're welcome 
+  to Mirror Network Itech Platform."</b>;
+  <br>
+  <b class="comment">//let's display the information.</b> <br>
+  <b class="variable">alert</b><b>&lpar;</b> <b class="keyword">welcomeMesg</b> <b>&rpar;</b>; <br>
+<b class="tags">&lt;</b><b class="tags">/</b><b class="code">script</b><b class="tags">&gt;</b>
+    <b class="angle">&lt;</b><b class="code"><b class="tags">/</b>body</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code"><b class="tags">/</b>html</b><b class="angle">&gt;</b>
+</pre>
+
+
+
+       <br>
+       <br>
+
+        </fieldset>
+      
+    </div>
+       </div>
+       <br>
+       <h3 class="mainhead">JavaScript Language Basics Crash Course ::::</h3>
+          <div class="card">
+        <div class="bgcard"></div>
+    <img src="pro7.gif" alt="pro7.gif" class="html" >
+    <div class="bas">
+      <p class="p">
+        To give you a better understanding of how JavaScript works, let's explain some of the core features of the language. <br>
+        It's worth noting that these features are common to all programming languages. <br>
+        If you master these fundamentals, you have a head start on coding in other languages too!
+      </p>
+      <b class="eg">Note ::::</b> <br>
+      <div class="reply-container">
+
+	<div class="reply-text"> 	<div class="vertical-line"></div> Try entering the example code lines into your JavaScript text editor and run it to see what happens.</div>
+</div>
+       <fieldset>
+        <legend><h3 style="font-size: 105%; color: red;">Variables ::::</h3>
+        </legend>  
+       Variables are containers that store values. You start by declaring a variable with the <b class="variable">let</b> keyword, followed by the name you give to the variable. <br>
+       <div class="codebase">
+         <b class="variable">let</b> <b class="keyword">myVariable</b>;
+       </div>
+       <p class="p">
+       A semicolon at the end of a line indicates where a statement ends. It is only required when you need to separate statements on a single line. <br>
+       However, some people believe it's good practice to have semicolons at the end of each statement. There are other rules for when you should and shouldn't use semicolons. <br>
+       You can name a variable nearly anything, but there are some restrictions. <br>
+       JavaScript is case sensitive. This means myVariable is not the same as myvariable. If you have problems in your code, check the case!
+<br>
+After declaring a variable, you can give it a value:
+<div class="codebase">
+  <b class="keyword">myVariable</b> <b>&equals;</b> <b class="assigned">"Ice cream"</b>
+</div>
+
+       </p>
+       <p class="p">
+         So why do we need variables? <br>
+         Variables are necessary to do anything interesting in programming.  <br>
+         If values couldn't change, then you couldn't do anything dynamic, like personalize a greeting message or change an image displayed in an image gallery.
+       </p>
+        </fieldset>
+    </div>
+    <div class="bas">
+      <fieldset>
+        <legend><h3 style="font-size: 105%; color: red;">Comments ::::</h3>
+        </legend>  
+        <p class="p">
+          Comments are snippets of text that can be added along with code. The browser ignores text marked as comments. You can write comments in JavaScript just as you can in CSS. <br>
+          <b class="eg">Example :::</b> <br>
+          <pre class="codebase">     <b class="comment">/*
+            Everything in between is a comment.
+            You can also add another line of comments.
+       */
+            </b> </pre>
+            If your comment contains no line breaks, it's an option to put it behind two slashes like this:
+            <div class="codebase">
+              <b class="comment">//This is a single line comments.</b>
+            </div>
+        </p>
+      </fieldset>
+    </div>
+    <div class="bas">
+      <fieldset>
+    <legend><h3 style="font-size: 105%; color: red;">Operators ::::</h3>
+        </legend>
+        <p class="p">
+          An operator is a mathematical symbol that produces a result based on two values (or variables). In the following table, you can see some of the simplest operators, along with some examples to try in the JavaScript console.
+          <ul>
+            <li><b style="font-size: 110%; font-weight: bolder">&plus;</b> (Addition)</li>
+            <li><b style="font-size: 110%; font-weight: bolder">&dash;</b> (Substraction)</li>
+            <li><b style="font-size: 110%; font-weight: bolder">*</b> (Multiplication)</li>
+            <li><b style="font-size: 110%; font-weight: bolder">/</b> (Division Operator)</li>
+            <li><b style="font-size: 110%; font-weight: bolder">&equals;</b> (Assignment Operator)</li>
+            <li><b style="font-size: 110%; font-weight: bolder">&equals;&equals;&equals;</b> (Strict equality Operator)</li>
+            <li><b style="font-size: 110%; font-weight: bolder">&dash;</b> (Substraction)</li>
+            <li><b style="font-size: 110%; font-weight: bolder">&dash;</b> (Substraction)</li>
+           <li><b style="font-size: 110%; font-weight: bolder">&dash;</b> (Substraction)</li>
+          </ul>
+          There are a lot more operators to explore, but this is enough for now.
+          <b class="eg">Let's Check Out An Example On Using One Of these Operators In Calculations ::::</b>
+          <br>
+          <div class="codebase">
+            <b class="variable">let</b> <b class="keyword">addition</b> <b>&equals;</b> <b class="assigned">24 &plus; 50</b>;
+            <b style="color: lawngreen">document</b><b>.</b><b style="color: lightyellow">write</b>(<b class="keyword">addition</b>);
+          </div>
+        
+        </p>
+      </fieldset>
+    </div>
+    <div class="bas">
+      <fieldset>
+        <legend><h3 style="font-size: 105%; color: red;">Conditionals ::::</h3>
+        
+        </legend>
+        <p class="p">
+          Conditionals are code structures used to test if an expression returns true or not. A very common form of conditionals is the <b class="cool">if...else</b> statement. <br>
+          <b class="eg">For Example ::::</b> <br>
+          <pre class="codebase" style="font-size: 90%; background: rgba(0,0,0,0.7)">
+<b class="variable">let</b> <b class="keyword">iceCream</b> <b>&equals;</b> <b class="assigned">"chocolate"</b>; 
+  <b style="color: darkviolet">if</b> <b>&lpar;</b><b class="keyword">iceCream</b> <b>&equals;&equals;&equals;</b> <b class="userinfo">"chocolate"</b><b>&rpar;</b> <b>&lcub;</b>
+<b class="variable">alert</b><b>&lpar;</b><b class="userinfo">"Yay, I love chocolate ice cream!"</b><b>&rpar;</b>;
+<b>&rcub;</b> <b style="color: darkviolet">else</b> <b>&lcub;</b>
+<b class="variable">alert</b><b>&lpar;</b><b class="userinfo" >"Awwww, but chocolate is my favorite…"</b><b>&rpar;</b>;
+<b>&rcub;</b>
+          </pre>
+          
+        </p>
+        <p class="p">
+          The expression inside the <b class="cool">if ()</b> is the test. 
+          This uses the strict equality operator (as described above) to compare the variable <b class="cool">iceCream</b> with the string <b class="cool">chocolate</b> to see if the two are equal. <br>
+          If this comparison returns <b class="cool">true</b>, the first block of code runs. If the comparison is not true, the second block of code—after the <b class="cool">else</b> keyword—runs instead.
+        </p>
+      </fieldset>
+    </div>
+    <div class="bas">
+      <fieldset>
+        <legend><h3 style="font-size: 105%; color: red;">Function ::::</h3>
+        </legend>
+        <p class="p">
+          Functions are a way of packaging functionality that you wish to reuse. 
+          It's possible to define a body of code as a function that executes when you call the function name in your code.
+          <br>
+          This is a good alternative to repeatedly writing the same code. You have already seen some uses of functions. 
+        </p>
+        <b class="eg">Let's Take A Look At Some Examples ::::</b> <br />
+        let myVariable = document.querySelector("h1");
+        <div class="codebase">
+          <b class="comment">/*Run each line of the codes below one after the other and see the effects*/</b> <br>
+          <b class="comment">//line one</b> <br>
+          <b class="variable">let</b> <b class="keyword">myVariable</b> <b>&equals;</b> <br>
+          <b style="color: lawngreen">document</b><b>.</b><b style="color: lightyellow">querySelector</b><b>&lpar;</b><b class="userinfo">"h1"</b><b>&rpar;</b>;
+          <br>
+          <b class="comment">//line two</b> <br>
+          <b class="variable">alert</b><b >&lpar;</b><b class="userinfo">"Hello!"</b><b>&rpar;</b>;
+        </div>
+        <p class="p">
+          These functions, <b class="cool">document.querySelector</b> and <b class="cool">alert</b>, are built into the browser. <br>
+          If you see something which looks like a variable name, but it's followed by parentheses <b class="cool"><b>&lpar; </b>&rpar;</b> it is likely a function. Functions often take arguments ( <b>bits of data</b> ) they need to do their job. Arguments go inside the parentheses, separated by commas if there is more than one argument.
+        </p>
+        <b class="eg">For Example ::::</b> <br>
+        <p class="p">
+          The <b class="cool">alert()</b> function makes a pop-up box appear inside the browser window, but we need to give it a string as an argument to tell the function what message to display. <br>
+
+You can also define your own functions. In the next example, we create a simple function which takes two numbers as arguments and multiplies them. 
+<br>
+<div class="codebase">
+  <b class="variable">function</b> <b style="color: lightyellow">multiply</b><b>&lpar;</b><b class="assigned">num1</b>, <b class="assigned">num2</b> <b>&rpar;</b> <b>&lcub;</b><br>
+  <b class="variable">let</b> <b class="keyword">resize</b> <b>&equals;</b> <b class="assigned">num1</b> <b>*</b> <b class="assigned">num2</b>;<br>
+  <b style="color: darkorchid">return</b> <b class="keyword">result</b>;
+  <b>&rcub;</b> 
+</div>
+
+  Try running this in your text editor; then test with several arguments. 
+
+        </p>
+        <b class="eg">Note ::::</b> <br>
+        <div class="reply-container">
+
+	<div class="reply-text"> 	<div class="vertical-line"></div> 
+	The <b class="cool">return</b> statement tells the browser to return the <b class="cool">result</b> variable out of the function so it is available to use. This is necessary because variables defined inside functions are only available inside those functions. This is called variable scoping.
+	</div>
+</div>
+      </fieldset>
+    </div>
+    <div class="bas">
+      <fieldset>
+         <legend><h3 style="font-size: 105%; color: red;">Events ::::</h3>
+        </legend>
+        <p class="p">Real interactivity on a website requires event handlers. These are code structures that listen for activity in the browser, and run code in response. <br>
+        The most obvious example is handling the click event, which is fired by the browser when you click on something with your mouse or tap on something.</p> 
+        <b class="eg">To demonstrate this, enter the following into your text editor, then click on the current webpage ::::</b> <br>
+        <div class="codebase">
+         <b style="color: lawngreen">document</b><b>.</b><b style="color: lightyellow">querySelector</b><b>&lpar;</b><b class="userinfo">"html"</b>
+         <b>&rpar;</b> <b>.</b><b style="color: lightyellow">addEventListener</b><b>&lpar;</b><b class="userinfo">"click"</b><b>,</b> <b class="variable">function</b> <b>&lpar; &rpar;</b> <b>&lcub;</b> <br>
+         <b class="variable">alert</b><b>&lpar;</b><b class="userinfo">"Hey! Stop Poking me!"</b><b>&rpar;</b>; <br>
+         <b>&rcub;</b><b>&rpar;</b>;
+        </div>
+        <p class="p">
+There are a number of ways to attach an event handler to an element. Here we select the <b class="tags">&lt;</b><b class="code">html</b><b class="tags">&gt;</b> element. <br> 
+We then call its <b class="cool">addEventListener()</b> function, passing in the name of the event to listen to <b class="cool">('click')</b> and a function to run when the event happens.
+        </p>
+        <p class="p">
+          The function we just passed to <b class="cool">addEventListener()</b> here is called an anonymous function, because it doesn't have a name. There's an alternative way of writing anonymous functions, which we call an arrow function. An arrow function uses <b class="cool">() =></b> instead of <b class="cool">function ()</b>. <br>
+          <b class="eg">Let's check it out :::</b> <br>
+                  <div class="codebase">
+         <b style="color: lawngreen">document</b><b>.</b><b style="color: lightyellow">querySelector</b><b>&lpar;</b><b class="userinfo">"html"</b>
+         <b>&rpar;</b> <b>.</b><b style="color: lightyellow">addEventListener</b><b>&lpar;</b><b class="userinfo">"click"</b><b>,</b> <b>&lpar; &rpar;</b>  <b class="variable">&equals;&gt;</b> <b>&lcub;</b> <br>
+         <b class="variable">alert</b><b>&lpar;</b><b class="userinfo">"Hey! Stop Poking me!"</b><b>&rpar;</b>; <br>
+         <b>&rcub;</b><b>&rpar;</b>;
+        </div>
+        </p>
+        
+      </fieldset>
+    </div>
+       </div>
+       <br>
+       <h3 class="mainhead">Supercharging Our Example Website ::::</h3>
+                 <div class="card">
+        <div class="bgcard"></div>
+    <img src="pro7.gif" alt="pro7.gif" class="html" >
+    <div class="bas">
+       <fieldset>
+        <legend><h3 style="font-size: 105%; color: red;">With this review of JavaScript basics we just covered, let's add some new features to our example site ::::</h3>
+        </legend>
+        <h4>Adding An Image Changer To Our Example Website ::::</h4>
+        <p class="p">
+          In this section, you will learn how to use JavaScript and DOM API features to alternate the display of one of two images. This change will happen as a user clicks the displayed image. <br />
+          <b>Copy the below codes into your script in your example HTML document.</b>
+          <br>
+          <div class="codebase">
+            <b class="variable">const</b> <b class="keyword">myImage</b> <b>&equals;</b> <b style="color: lawngreen">document</b><b>.</b><b style="color: lightyellow">querySelector</b><b>&lpar;</b><b class="userinfo">"img"</b><b>&rpar;</b>;
+            <br>
+            <b class="keyword">myImage</b><b>.</b><b class="keyword">onclick</b> <b>&equals;</b> <b>&lpar; &rpar;</b> <b>&equals;&gt;</b> <b>&lcub;</b> <br>
+            <b class="variable">const</b> <b class="keyword">mySrc</b> <b>&equals;</b> <b class="keyword">myImage</b><b>.</b><b style="color: lightyellow">getAttribute</b><b>&lpar;</b><b class="userinfo">"src"</b><b>&rpar;</b>; <br>
+            <b style="color: darkviolet">if</b> <b>&lpar;</b><b class="keyword">mySrc</b> <b>&equals;&equals;&equals;</b> <b class="userinfo">"insert your first image name here"</b><b>&rpar;</b> <b>&lcub;</b> <br>
+            <b class="keyword">myImage</b><b>.</b><b style="color: lightyellow">setAttribute</b><b>&lpar;</b> <b class="userinfo">"src", "insert your second image name here"</b><b>&rpar;</b>; 
+            <br>
+            <b>&rcub;</b> <b style="color: darkviolet">else</b> <b>&lcub;</b> <br>
+            <b class="keyword">myImage</b><b>.</b><b style="color: lightyellow">setAttribute</b><b>&lpar;</b> <b class="userinfo">"src", "insert your first image name here"</b><b>&rpar;</b>; <br />
+            <b>&rcub;</b>
+            <br>
+            <b>&rcub;</b>;
+            
+          </div>
+          After that run your Html document in the browser. Now when you click the image, it should change to the other one.
+        </p>
+        <p class="p">
+          This is what happened. You stored a reference to your <b class="tags">&lt;</b><b class="code"></b><b class="tags">&gt;</b> element in myImage. Next, you made its onclick event handler property equal to a function with no name (an "anonymous" function). So every time this element is clicked:
+        </p>
+        <ul class="ulstyle">
+         <li>The code retrieves the value of the image's <b class="cool">scr</b> attribute.</li>
+         <li>The code uses a conditional to check if the <b class="cool">src</b> value is equal to the path of the original image.</li>
+         <li>If it is, the code changes the <b class="cool">src</b> value to the path of the second image, forcing the other image to be loaded inside the <b class="tags">&lt;</b><b class="code"></b><b class="tags">&gt;</b> element.</li>
+         <li>If it isn't (meaning it must already have changed), the <b class="cool">src</b> value swaps back to the original image path, to the original state.</li>
+        </ul>
+        </fieldset>
+    </div>
+    <br>
+
+    <div class="bas">
+      <fieldset>
+                <legend><h3 style="font-size: 105%; color: red;">Let's Add A Personalized Welcome Message To The Example Website ::::</h3>
+                </legend>
+        <p class="p">
+          Next, let's change the page title to a personalized welcome message when the user first visits the site. This welcome message will persist. <br>
+          Should the user leave the site and return later, we will save the message using the Web Storage API. <br>
+          We will also include an option to change the user, and therefore, the welcome message.
+        </p>
+        <b>Let's begin and also copy the codes into your text editor and see the effects.</b>
+        <ul class="ulstyle">
+          <li>Let's first of all create a button. <br>
+          <div class="codebase">
+            <b class="angle">&lt;</b><b class="code">button</b><b class="angle">&gt;</b> Change User<b class="angle">&lt;</b><b class="code"><b class="tags">/</b>button</b><b class="angle">&gt;</b>
+          </div>
+          </li>
+          <li>In your script, place the following code at the bottom of the file, exactly as it is written. This takes references to the new button and the heading, storing each inside variables. <br>
+          <div class="codebase">
+            <b class="variable">let</b> <b class="keyword">myButton</b> <b>&equals;</b> <b style="color: lawngreen">document</b><b>.</b><b style="color: lightyellow">querySelector</b><b>&lpar;</b><b class="userinfo">"button"</b><b>&rpar;</b>; <br>
+            <b class="keyword">myHeading</b> <b>&equals;</b> <b style="color: lawngreen">document</b><b>.</b><b style="color: lightyellow">querySelector</b><b>&lpar;</b><b class="userinfo">"h1"</b><b>&rpar;</b>; 
+          </div>
+          </li>
+          <li>Add the following function to set the personalized greeting. This won't do anything yet, but this will change soon. <br>
+          <div class="codebase">
+            <b class="variable">function</b> <b style="color: lightyellow">setUserName</b><b>&lpar;</b><b>&rpar;</b> <b>&lcub;</b> <br>
+            <b class="variable">const</b> <b class="keyword">myName</b> <b>&equals;</b> <b style="color: lightyellow">prompt</b><b>&lpar;</b><b class="userinfo">"Please enter your name."</b><b>&rpar;</b>; <br>
+            <b class="keyword">localStorage</b><b>.</b><b style="color: lightyellow">setItem</b><b>&lpar;</b><b class="userinfo">"name"</b>, <b class="keyword">myName</b><b>&rpar;</b>; <br>
+            <b class="keyword">myHeading</b><b>.</b><b class="keyword">textContent</b> <b>&equals;</b> <b class="userinfo">`Mirror Network Is Cool Place</b>, <b>&dollar;<b>&lcub;</b><b class="keyword">myName</b><b>&rcub;</b><b class="userinfo">`</b></b>;
+          </div>
+          <p class="p">
+            The <b class="cool">setUserName()</b> function contains a <b class="cool">prompt()</b> function, which displays a dialog box, similar to <b class="cool">alert()</b>.  <br>
+            This <b class="cool">prompt()</b> function does more than <b class="cool">alert()</b>, asking the user to enter data, and storing it in a variable after the user clicks OK. In this case, we are asking the user to enter a name.
+          </p>
+          <p class="p">
+            Next, the code calls on an API <b class="cool">localStorage</b>, which allows us to store data in the browser and retrieve it later.  <br />
+            We use localStorage's <b class="cool">setItem()</b> function to create and store a data item called <b class="cool">'name'</b>, setting its value to the <b class="cool">myName</b> variable which contains the user's entry for the name. <br>
+            Finally, we set the <b class="cool">textContent</b> of the heading to a string, plus the user's newly stored name.
+          </p>
+          
+          </li>
+          <li>
+            Add the following condition block after the function declaration. We could call this initialization code, as it structures the page when it first loads. 
+            <div class="codebase">
+              <b style="color: darkviolet">if</b> <b>&lpar;</b><b>!</b><b class="keyword">localStorage</b><b>.</b><b style="color: lightyellow">getItem
+              </b><b>&lpar;</b><b class="userinfo">"name"</b><b>&rpar;&rpar;</b> <b>&lcub;</b> <br>
+              <b style="color: lightyellow">setUserName</b><b>&lpar;&rpar;</b>; <br>
+              <b>&rcub;</b> <b style="color: darkviolet">else</b> <b>&lcub;</b> <br>
+              <b class="variable">const</b> <b class="keyword">storedName</b> <b>&equals;</b> 
+              <b class="keyword">localStorage</b><b>.</b><b style="color: lightyellow">getItem</b><b>&lpar;</b><b class="userinfo">"name"</b><b>&rpar;</b>; <br>
+              <b class="keyword">myHeading</b><b>.</b><b class="keyword">textContent</b> <b>&equals;</b> 
+              <b class="userinfo">`Mirror Network Is Cool Place</b>, <b>&dollar;</b><b>&lcub;</b><b class="keyword">storedName</b><b>&rcub;</b><b class="userinfo">`</b>; <br>
+              <b>&rcub;</b>
+            </div>
+            <p class="p">
+              This first line of this block uses the negation operator (logical NOT, represented by the <b class="cool">!</b> ) to check whether the <b class="cool">name</b> data exists. <br>
+              If not, the <b class="cool">setUserName()</b> function runs to create it. If it exists (that is, the user set a user name during a previous visit), we retrieve the stored name using <b class="cool">getItem()</b> and set the textContent of the heading to a string, plus the user's name, as we did inside <b class="cool">setUserName()</b>.
+            </p>
+          </li>
+          <li>Put this <b class="cool">onclick</b> event handler (below) on the button. When clicked, <b class="cool">setUserName()</b> runs. This allows the user to enter a different name by pressing the button. <br>
+          <div class="codebase">
+            <b class="keyword">myButton</b><b>.</b><b class="keyword">onclick</b> <b>&equals;</b> <b>&lpar; &rpar;</b> <b>&equals;&gt;</b> <b>&lcub;</b> <br>
+            <b style="color: lightyellow">setUserName</b><b>&lpar;&rpar;</b>; <br>
+            <b>&rcub;</b>;
+          </div>
+          </li>
+        </ul>
+      </fieldset>
+    </div>
+    <div class="bas">
+     <fieldset>
+    <legend><h3 style="font-size: 105%; color: red;">Let's Add A User Name Of Null (empty)? ::::</h3>
+               </legend>
+      <p class="p">
+      When you run the example and get the dialog box that prompts you to enter your user name, try pressing the Cancel button. You should end up with a title that reads Mirror Network is cool place, null.  <br>
+      This happens because when you cancel the prompt the value is set as <b class="cool">null</b>. Null is a special value in JavaScript that refers to the absence of a value. <br>
+      
+    </p>
+    <p class="p">
+      
+      Also, try clicking OK without entering a name. You should end up with a title that reads Mirror Network is cool place, for fairly obvious reasons. <br>
+    To avoid these problems, you could check that the user hasn't entered a blank name. Update your <b class="cool">setUserName()</b> function to this. 
+    </p>
+    <div class="codebase">
+      <b class="variable">function</b> <b style="color: lightyellow">setUserName</b><b>&lpar;&rpar;</b> <b>&lcub;</b> <br>
+      <b class="variables">const</b> <b class="keyword">myName</b> <b>&equals;</b> <b style="color: lightyellow">prompt</b><b>&lpar;</b><b class="userinfo">"Please enter your name."</b><b>&rpar;</b>; <br>
+      <b style="color: darkviolet">if</b> <b>&lpar;!</b><b class="keyword">myName</b><b>&rpar;</b> <b>&lcub;</b> <br>
+      <b style="color: lightyellow">setUserName</b><b>&lpar;&rpar;</b>;<br>
+      <b>&rcub;</b> <b style="color: darkviolet">else</b> <b>&lcub;</b> <br>
+      <b class="keyword">localStorage</b><b>.</b><b style="color: lightyellow">setItem</b><b>&lpar;</b><b class="userinfo">"name"</b>, <b class="keyword">myName</b><b>&rpar;</b>;<br>
+      <b class="keyword">myHeading</b><b>.</b><b class="keyword">textContent</b> <b>&equals;</b> <b class="userinfo">`Mirror Network As Cool Place.</b>, <b>&dollar;&lcub;</b><b class="keyword">myName</b><b>&rcub;</b><b class="userinfo">`</b>; <br>
+      <b>&rcub;</b><br>
+      <b>&rcub;</b>
+    </div>
+    <b class="eg">In human language, this means ::::</b> <br>
+    <p> If <b class="cool">myName</b> has no value, run <b class="cool">setUserName()</b> again from the start. <br>
+    If it does have a value (if the above statement is not true), then store the value in <b class="cool">localStorage</b> and set it as the heading's text.</p> <br>
+    <div>
+
+    </div>
+     </fieldset> 
+    </div>
+       </div>
+<br>
+      <div class="bas">
+        <fieldset>
+              <legend><h3 style="font-size: 105%; color: red;">
+         Let's Have A Full View Of The Example Page We Have Super Charged   
+                ::::</h3>
+               </legend>
+                
+      <div class="code-container">
+<button class="run-btn" onclick="runCode(this)" id="runCode2">Run Code</button>
+  <button class="editor-btn" onclick="showEditor(this)" id="textEditor2" style="display:none;">Text Editor</button>
+  <div class="Editor">
+    <h3>Code</h3>
+    <textarea id="codeArea2" placeholder="Enter your HTML, CSS, and JavaScript code here...">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Document</title>
+      <style>
+        html {
+  font-size: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+h1 {
+  font-size: 30px;
+  text-align: center;
+}
+
+p, li {
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 1px;
+}
+
+
+html {
+  background-color: #00539F;
+  height: 100vh;
+}
+
+body {
+  width: 300px;
+  
+  margin: 0;
+  background-color: #FF9500;
+  padding: 5px;
+  border: 5px solid black;
+}
+ul{
+  list-style-type: lower-greek;
+  
+}
+h1 {
+  margin: 0;
+  padding: 0;
+  color: #00539F;
+  text-shadow: 3px 1.5px 1px black;
+}
+
+img {
+  width:80%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 30px;
+  box-shadow: 6px 2px 4px blue;
+}
+      </style>
+    </head>
+    <body>
+      <h1>Mirror Network Is Cool Place</h1>
+<img src="gallery3.gif" alt=""> 
+<h3 style="font-size: 18px">
+  At Mirror Network, we’re a global community of :::: </h3>
+  <ul>
+    <li>Technologists.</li>
+    <li>Thinkers.</li>
+    <li>Builders.</li>
+  </ul>
+  <p>
+    Working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web.  <br>
+    We believe this act of human collaboration across an open platform is essential to individual growth and our collective future.
+  </p>
+  <button>Change user</button>
+      <script>
+  //let's 1st of all store the information in a memory.
+  
+  const myImage = document.querySelector("img");
+myImage.onclick = ( ) => {
+const mySrc = myImage.getAttribute("src");
+if (mySrc === "gallery3.gif") {
+myImage.setAttribute( "src", "gallery2.gif");
+} else {
+myImage.setAttribute( "src", "gallery3.gif");
+}
+};
+let myButton = document.querySelector("button");
+let myHeading = document.querySelector("h1");
+function setUserName() {
+  const myName = prompt("Please enter your name.");
+  localStorage.setItem("name", myName);
+  myHeading.textContent = `Mirror Network Is Cool Place, ${myName}`;
+}
+if (!localStorage.getItem("name")) {
+  setUserName();
+} else {
+  const storedName = localStorage.getItem("name");
+  myHeading.textContent = `Mirror Network Is Cool Place, ${storedName}`;
+}
+myButton.onclick = () => {
+  setUserName();
+};
+function setUserName() {
+  const myName = prompt("Please enter your name.");
+  if (!myName) {
+    setUserName();
+  } else {
+    localStorage.setItem("name", myName);
+    myHeading.textContent = `Mirror Network Is Cool Place, ${myName}`;
+  }
+}
+
+          </script>
+    </body>
+    </html>
+    
+    </textarea>
+  </div>
+  <div class="outPut">
+    <h3>Output</h3>
+    <iframe id="outputFrame2" width="100%" height="100%"></iframe>
+  </div>
+</div>
+
+        </fieldset>
+      </div>
+      <br>
+            <div class="chat">
+<div class="ment other ">
+  
+	<div class=" bubble" > <b>So you can now compare with the ones you have copied and pasted into your text editor and make the necessary changes.</b> <br>
+<b>	We have just scratched the surface of JavaScript. If you enjoyed playing, and wish to go further, take advantage of the constant practicing .</b>
+	</div>
+	</div>
+</div>
+      
+      
+
+       <!-- 
+      <div class="chat">
+<div class="ment other ">
+  
+	<div class=" bubble" > 	 Let's look at the difference between Low-level and High-level programming languages</div>
+	</div>
+</div>
+ --> 
+ <!--<div class="reply-container">
+
+	<div class="reply-text"> 	<div class="vertical-line"></div> Let's look at the difference between Low-level and High-level programming languages</div>
+</div>
+                <!--
+          <div class="card">
+        <div class="bgcard"></div>
+    <img src="pro7.gif" alt="pro7.gif" class="html" >
+    <div class="bas">
+       <fieldset>
+        <legend><h3 style="font-size: 105%; color: red;"></h3>
+        </legend>  
+        <ul class="ulstyle">
+         
+        </ul>
+        </fieldset>
+    </div>
+       </div>-->
+        <!--<div class="reply-container">
+<div class="reply-text"> 	<div class="vertical-line"></div> Let's look at the difference between Low-level and High-level programming languages</div>
+</div>-->
+<!--
+<div class="code-container">
+<button class="run-btn" onclick="runCode(this)" id="runCode2">Run Code</button>
+  <button class="editor-btn" onclick="showEditor(this)" id="textEditor2" style="display:none;">Text Editor</button>
+  <div class="Editor">
+    <h3>Code</h3>
+    <textarea id="codeArea2" placeholder="Enter your HTML, CSS, and JavaScript code here...">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Document</title>
+    </head>
+    <body>
+      
+      <script>
+            // Example JavaScript code
+            let message = 'Hello!';
+                message ='World!';
+            alert (message);
+          </script>
+    </body>
+    </html>
+    
+    </textarea>
+  </div>
+  <div class="outPut">
+    <h3>Output</h3>
+    <iframe id="outputFrame2" width="100%" height="100%"></iframe>
+  </div>
+</div>
+
+-->
+<br>
+<br>
+<br>
+  </div>
+          </div>
+       
+            <div class="button-container">
+	<a href="JS4.html" class="prev-button">Previous</a>
+	<a href="JSwait.html" class="next-button">Next</a>
+</div>
+          </div>
+          </div>
+<!-- Script for code live editor-->
+<script >
+let generatedCode = '';
+function runCode(button) {
+  const codeContainer = button.closest('.code-container');
+  const code = codeContainer.querySelector('textarea').value;
+  generatedCode = code;
+  const outputFrame = codeContainer.querySelector('iframe');
+  const editor = codeContainer.querySelector('.Editor');
+  const output = codeContainer.querySelector('.outPut');
+  editor.style.display = 'none';
+  output.style.display = 'block';
+  outputFrame.srcdoc = generatedCode;
+  button.style.display = 'none';
+  codeContainer.querySelector('.editor-btn').style.display = 'block';
+}
+function showEditor(button) {
+  const codeContainer = button.closest('.code-container');
+  const editor = codeContainer.querySelector('.Editor');
+  const output = codeContainer.querySelector('.outPut');
+  const runButton = codeContainer.querySelector('.run-btn');
+  const textEditorButton = button;
+  editor.style.display = 'block';
+  output.style.display = 'none';
+  const textarea = editor.querySelector('textarea');
+  textarea.value = generatedCode;
+  runButton.style.display = 'block';
+  textEditorButton.style.display = 'none';
+}
+document.querySelectorAll('.run-btn').forEach(button => {
+  button.addEventListener('click', runCode);
+});
+document.querySelectorAll('.editor-btn').forEach(button => {
+  button.addEventListener('click', showEditor);
+});
+</script>
+</body>
+</html>
