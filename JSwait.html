@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>page not available ( 404 Error)</title>
+  <style>
+  body{
+    align-items: center;
+  }
+    video{
+      position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  
+    }
+    /* next and previous button*/
+.button-container {
+	position: relative;
+	display: flex;
+	width:25%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top:30%;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 4;
+	background: linear-gradient(to bottom right, rgba(25, 255, 255, 0.3), rgba(155, 105, 255, 0.3));
+  backdrop-filter: blur(0.5);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(225, 105, 25, 0.5);
+}
+
+.prev-button{
+  
+	position: relative;
+	display: inline-block;
+	padding: 5px 7px;
+	background-color: #333;
+	color: #fff;
+	font-weight: bolder;
+	font-size: 120%;
+	border-radius: 30px  120px;
+	box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	animation: pre 5s infinite;
+}
+
+.prev-button::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to bottom, #333, #555);
+	transform: scaleY(0);
+	transform-origin: center;
+	transition: transform 0.3s ease-in-out;
+}
+
+.prev-button:hover::before {
+	transform: scaleY(1);
+}
+
+.prev-button::after {
+	content: "";
+	position: absolute;
+	font-weight: bolder;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.prev-button::after {
+	content: "‹";
+}
+
+.prev-button {
+	margin-right: 50px;
+}
+@keyframes pre{
+  0%{
+    color: white;
+    z-index: 1;
+    
+  }
+  50%{
+    color: blue;
+    z-index: 999;
+  }
+  100%{
+    color: white;
+    z-index: 99999;
+  }
+}
+    div{
+      animation: change 25s infinite;
+    }
+    @keyframes change{
+      0%{
+        color: black;
+        font-weight: bolder;
+      }
+      15%{
+        color: white;
+        font-weight: bolder;
+      }
+      25%{
+        color: blue;
+        font-weight: bolder;
+      }
+     50%{
+       color: black;
+       font-weight: bolder;
+     } 
+     80%{
+       color: white;
+       font-weight: bolder;
+     }
+     100%{
+       font-weight: bolder;
+       color:blue;
+     }
+    }
+  </style>
+</head>
+<body style="align-content: center;
+">
+  <video src="errorbg.mp4" autoplay muted controls >errorbg.mp4</video>
+  <div>
+    
+    <h1>This page can't be found</h1>
+    <h2>Go back to the Previous lessons and make sure you're well versed with the lessons over there</h2>
+    <h3>Come back for the next lesson when you get an alert from CEO and whiles waiting make sure you go through the previous lessons from time to time this can help you become a Pro on this field.</h3>
+  </div>
+  <div>
+      <div class="button-container">
+	<a href="JSmis1.html" class="prev-button">Previous</a>
+</div>
+  </div>
+  <script>
+     // Get the video element
+     const video = document.getElementById('myVideo');
+
+     // Unmute the video after it loads
+     video.addEventListener('loadeddata', () => {
+       video.muted = false;
+     });
+
+     // Remove the video controls
+     video.controls = false;
+   
+  </script>
+</body>
+</html>

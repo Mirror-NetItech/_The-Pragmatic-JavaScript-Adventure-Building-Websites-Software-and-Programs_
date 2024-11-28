@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>"Mirror Network Itech" Join with us the world most favorite Web Development platforms.</title>
+  
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+
+*{
+  
+  margin:0;
+  outline:none;
+  text-decoration:none;
+  list-style:none;
+  font-family: 'Mulish', sans-serif;
+  
+}
+
+body{
+  display:flex;
+  padding-top: 0;
+  justify-content:center;
+  background:#ecf1f5;
+  transform:scale(0.8) translateY(-50px);
+    width: 100vw;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+}
+
+.notification {
+  position: fixed;
+  width: 125%;
+  height: 55px;
+  background: #007bff;
+  padding: 0;
+  margin-top: 11px;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: top 0.3s ease;
+  z-index: 999; /* Ensure the notification appears above other content */
+  backdrop-filter: blur(15px);
+  border-radius: 10px 00px 200px 200px;
+  box-shadow: 5px 5px 10px rgba(202, 100, 25, 0.5);
+}
+.mirror{
+  width: 16%;
+  margin-right: 55%;
+  border-radius: 20px;
+  padding: 0;
+}
+#profile {
+ display: flex;
+ align-items: center;
+ margin-left: auto;
+ flex-shrink: 0;
+ }
+
+ .logoname {  
+   margin-top: 28px;
+   position: absolute;  
+   top: 0;
+   right: 28%;
+   line-height: 20px;
+   transform: translate(50%,-50%);  
+   text-transform: uppercase;  
+   font-family: verdana;  
+   font-size:128%;  
+   font-weight: bolder;  
+   color:#f5e4f5;  
+   text-shadow: 1px 1px 1px white,  
+     1px 2px 1px white,  
+     1px 3px 1px #919191, 
+     1px 4px 1px #919191,  
+     1px 5px 1px white,  
+     1px 6px 1px white,  
+   1px 7px 2px rgba(16,16,16,0.4),  
+   1px 8px 5px rgba(16,16,16,0.2),  
+   1px 9px 9px rgba(16,16,16,0.2),  
+   1px 10px 10px rgba(16,16,16,0.4); 
+   animation: blinking 1s infinite;
+   
+ }
+ @keyframes blinking {
+  0% {
+    color: #00ffff;
+  }
+  50% {
+    color: #ff00ff;
+  }
+  100% {
+    color: #ffff00;
+  }
+}
+/* Make each area overflow horizontally and*/
+/*have the ability to have other items*/
+/*scrolled into view*/
+.scrollerr {
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar; }
+/* container*/
+.containerrr{
+  position: relative;
+  top: 66px;
+  padding: 0;
+  margin: 0;
+  z-index: 999;
+}
+/* Example two required styles --------------- */
+.example-two-header {
+  .logo {
+    width: 22%; }
+  nav {
+    width: 75%;
+    
+    } }
+
+
+/* Shared styles --------------- */
+header {
+  background: #152637;
+}
+
+/*Examples*/
+.example-two-header {
+  border-radius: 3px; }
+
+
+
+/*Logo*/
+.logo {
+  text-align: center; /*only effective in example 2/3*/
+  font-weight: 700;
+  color: #727c87;
+  border-right: 1px solid rgba(#727c87, .4);
+  padding: 12px 24px 13px; }
+
+/*Nav items*/
+.navv-item {
+  padding: 12px 16px 13px;
+
+  &:not(:last-child) {
+    border-right: 1px solid rgba(#727c87, .2); } }
+
+/*Setup/misc styles --------------- */
+* { 
+  box-sizing: border-box; }
+
+
+/*Remove the inline-block extra space*/
+header,
+nav { 
+  font-size: 0; }
+
+/*Requires font size to be reset for these elements*/
+.logo,
+.navv-item {
+  font-size: 15px; 
+  font-weight: bolder;
+  color: white;
+}
+
+.logo,
+.navv-item,
+.vertical-align-middle {
+  display: inline-block;
+  vertical-align: middle;
+  
+}
+
+
+/* Demo purposes only, proceed with caution on Windows*/
+.scroll::-webkit-scrollbar {
+  display: none; }
+ 
+/* drop-down navigation bar*/
+   .dd {
+      position: relative;
+      display: inline-block;
+      z-index: 99999;
+      
+    }
+    .dd-btn {
+      padding:0;
+      margin-left: 30px;
+      text-align: center;
+      border: none;
+      width: 5px;
+      color: #f8f9f9;
+      text-decoration: none;
+    }
+    .dd-content {
+      position: absolute;
+      width: 300px;
+      margin-top: 50px;
+      margin-left: 5px;
+      box-shadow: 0 18px 36px rgba(0,0,0,0.30), 0 14px 11px rgba(0,0,0,0.22);
+      height: 0px;
+      transition: height 1s;
+      overflow: hidden;
+      border-radius: 25px;
+    }
+    .dd:hover > .dd-content {
+      height: 400px;
+    }
+    .dd-content > a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: white;
+      font-weight: bolder;
+      font-size: 108%;
+    }
+    h4{
+      font-size: 103%;
+      font-weight: bolder;
+      color: firebrick;
+      text-decoration: underline;
+      margin-top:2px;
+    }
+    b{
+      font-size: 100%;
+      font-weight: bold;
+      
+    }
+    .mainhead{
+      font-size: 108%; 
+      color: red; 
+      font-weight:bolder; 
+      padding: 0;
+    }
+    p{
+      font-size: 101%;
+      text-indent: 20px;
+    }
+    li{
+      font-size: 101%;
+    }
+    .eg{
+      font-size: 102%;
+      color: mediumblue;
+    }
+    .pp{
+      
+    }
+    .cool{
+      background: darkgray;
+    }
+      .code{
+     font-size: 106%;
+     font-weight: bolder;
+     color: midnightblue;
+     
+   }
+   .variable{
+     color: royalblue;
+     font-weight: bold;
+     font-size: 104%;
+   }
+   .keyword{
+     font-size: 104%;
+     font-weight: bolder;
+     color: sandybrown;
+   }
+   .userinfo{
+     font-size: 104%;
+     font-weight: bold;
+     color: springgreen;
+   }
+   .selector{
+     color: green;
+     font-weight: bolder;
+     font-size: 110%;
+   }
+   .output {
+     width: 100%;
+     border-radius: 45px;
+     background: cadetblue;
+     border: 10px solid blanchedalmond;
+   }
+   .angle{
+     font-size: 105%;
+     font-weight: bold;
+     color: mediumvioletred;
+   }
+    .js{
+     font-size: 105%;
+     font-weight: bold;
+     color: green;
+    }
+    fieldset{
+     display: block;
+      background: white;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: 10px;
+  padding-top: .4em;
+  padding-bottom: 0.25em;
+  padding-left: 0.1em;
+  padding-right: 0.1em;
+  border-radius: 5px 30px 80px 5px;
+  border: 1px groove (internal value);
+  
+}
+  .bas{
+  width: 108%;
+  
+  box-shadow: 2px 5px 2px 0 rgba(105, 120, 139, 0.6), 02px 6px 18px 0 rgba(100, 23, 20, 0.5);
+  justify-content: center;
+  justify-items: center;
+  padding-left: 3.5px;
+  border-radius: 20px 70px 60px 20px;
+  z-index: 10;
+  animation: zindex 5s infinite;
+}
+
+
+   /*Note container */
+  .bubble {
+  display: inline-block;
+  background: green;
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: white;
+  font-family: var(--font-1);
+  max-width: 100%;
+  position: relative;
+  margin: 0px 15px;
+}
+
+.chat .me .bubble {
+  background: blue;
+  text-align: left;
+}
+
+.chat .other .bubble:before {
+  content: "";
+  top: 0px;
+  left: -25px;
+  position: absolute;
+  background: transparent;
+  height: 0px;
+  width: 0px;
+  border-left: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 20px solid green;
+}
+
+.chat .me .bubble:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: -25px;
+  background: transparent;
+  height: 0px;
+  width: 0px;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 20px solid green;
+}
+ 
+       /*style for cover contents*/
+           #services {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 200px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #30257D;
+}
+
+.title {
+  text-transform: uppercase;
+  color: #1f67db;
+  letter-spacing: 1px;
+  font-size: 45px;
+  margin-top: 100px;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+  gap: 30px;
+}
+.card {
+  position: relative;
+  display: flex;
+  margin: 2px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #c7adab;
+  box-shadow: 5px 5px 10px #3D474B;
+  border-radius: 10px;
+  padding: 20px;
+  overflow-y: hidden;
+  height: 200px;
+}
+
+
+
+.bgcard {
+  height: 100%;
+  background-color: lightgray;
+  z-index: 100000;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: .7;
+  position: absolute;
+  transition: 0.5s;
+}
+
+.card:hover {
+  transform: scale(1.0);
+  height: 450px;
+  border: 1px solid black;
+  z-index: 9999;
+  overflow-y: auto;
+}
+.html{
+  color: #ED6915;
+}
+.html{
+  transition-duration: 3s;
+    z-index: 10000000;
+}
+.card:hover .html {
+  position: static;
+  transform: scale(.75);
+  z-index: 999;
+}
+.card:hover .bgcard {
+  opacity: 0;
+} 
+    
+    /* style for the unordered list elements*/
+    .ulstyle{
+      padding-top: 5px;
+      padding-left: 12px;
+    }
+    li::before{
+      content: "€->";
+      color: dodgerblue;
+      font-size: 110%;
+      font-weight: bolder;
+      padding-right: 3px;
+    }
+    
+    /* vertical line*/
+    .reply-container {
+	position: relative;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	margin-top: 5px;
+	
+}
+
+.vertical-line {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 4px;
+	height: 100%;
+	background-color: blue;
+}
+
+.reply-text {
+  font-size: 103%;
+  font-weight: bold;
+	margin-left: 10px;
+	padding-top: 10px;
+	background: linear-gradient(to bottom right, rgba(25, 255, 255, 0.3), rgba(155, 105, 255, 0.3));
+  backdrop-filter: blur(0.5);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(225, 105, 25, 0.5);
+}
+
+.reply-text::before {
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: -10px;
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	
+}
+/* next and previous button*/
+.button-container {
+	position: relative;
+	display: flex;
+	width:58%;
+	margin-right: auto;
+	margin-left: auto;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 4;
+	background: linear-gradient(to bottom right, rgba(25, 255, 255, 0.3), rgba(155, 105, 255, 0.3));
+  backdrop-filter: blur(0.5);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(225, 105, 25, 0.5);
+}
+
+.prev-button, .next-button {
+  
+	position: relative;
+	display: inline-block;
+	padding: 5px 7px;
+	background-color: #333;
+	color: #fff;
+	font-weight: bolder;
+	font-size: 110%;
+	border-radius: 30px  120px;
+	box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+}
+
+.prev-button::before, .next-button::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to bottom, #333, #555);
+	transform: scaleY(0);
+	transform-origin: center;
+	transition: transform 0.3s ease-in-out;
+}
+
+.prev-button:hover::before, .next-button:hover::before {
+	transform: scaleY(1);
+}
+
+.prev-button::after, .next-button::after {
+	content: "";
+	position: absolute;
+	font-weight: bolder;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.prev-button::after {
+	content: "‹";
+}
+
+.next-button::after {
+	content: "›";
+}
+
+.prev-button {
+	margin-right: 50px;
+}
+
+.next-button {
+	margin-left: 20px;
+}
+.cardTop{
+  
+  width:100%;
+  height:284px;
+  background: #FAC24F;
+  border-radius: 20px;
+  display:flex;
+  overflow:hidden;
+  align-items:flex-end;
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+.timeline{
+  
+  width:122%;
+  height:100vh;
+  background: #ECF1F524;
+  mix-blend-mode: normal;
+backdrop-filter: blur(15px);
+  
+  overflow:hidden;
+margin-left: 2px;
+
+position:absolute;
+  top:102px;
+ 
+box-shadow: 0px 20px 10px 3px rgba(95, 102, 173, 0.566816);
+border-radius: 10px;
+  padding: 0;
+  
+  .box{
+    
+    height:87.5%;
+    background:#fbfcfd;
+    width: 95%; /* Adjust as needed */
+  margin: 20px auto; /* Center the box horizontally */
+  margin-top:5px;
+  margin-bottom:4px;
+    overflow-y: auto;
+    box-shadow:0 2px 4px 2px;
+    z-index:20;
+    
+    .container{
+      
+      width:93%;
+     
+      
+      }
+
+    }
+  }
+}
+
+
+  </style>
+</head>
+
+<body>
+<div class="main" style="width: 125%">
+         <div class="notification" id="profile" >
+             <div class="dd">
+   <a href="javascript:void(0);" class="dd-btn"  style="color: white; font-weight: bolder; font-size: 150%">&#9776;</a>
+    <div class="dd-content" style="z-index:99">
+      <a href="JS.html" style="z-index: 80; background: linear-gradient(to bottom right, rgba(21, 55, 55, 1), rgba(21, 54, 55, 0.4)); border-radius: 8px; "> Overview</a>
+      
+      <a href="JS1.html" style="z-index: 90; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;">Introduction To Internet</a>
+      
+      <a href="JS2.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> Introduction To WWW</a>
+      <a href="JS3.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px; font-size: 85%"> Introduction To Why HTML And CSS Matters The Most When Programming In JavaScript</a>
+       <a href="JS4.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> Introduction To JavaScript</a>
+<a href="JSmis.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> Introduction To JavaScript Fundamentals</a>
+<a href="JSmis1.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> How To Display Output In JavaScript </a>
+    </div>
+  </div>
+       	<h1 class="logoname" id="logoname">M <sup> irro</sup><sub>R</sub>  <br>   N<sup>etwor</sup><sub>K</sub></h1><br>
+        	<sup><img src="logo.jpg" alt="mirror.jpg" class="mirror"></sup>
+</div> 
+
+<div class="containerrr example-two" >
+  <header class="example-two-header">
+    <span class="logo">Logo</span>
+    <nav class="vertical-align-middle scrollerr" style="
+  background: linear-gradient(to bottom right, rgba(25, 255, 255, 0.3), rgba(155, 105, 255, 0.3));
+  backdrop-filter: blur(0.5);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(225, 105, 25, 0.5);">
+    <span class="navv-item"><a href="JS.html" style="color: white; font-weight: bolder">Overview</a></span>
+     
+      <span class="navv-item"><a href="JS1.html" style="color: white; font-weight: bolder">Prerequisite Fundamentals Of Programming</a></span>
+      <span class="navv-item"><a href="JS4.html" style="color: white; font-weight: bolder">JavaScript Programming Language</a></span>
+       <span class="navv-item"><a href="admin.html" style="color: white; font-weight: bolder">About The Admin/("CEO")</a></span>
+        
+      </a></span>
+    </nav>
+  </header>
+</div>
+
+
+  <div class="cardTop">
+    
+    <svg width="480px" height="219" viewBox="0 0 480px 219" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M-38.5 196C-38.5 196 34 91 133.5 91C233 91 427 159 532.5 30C638 -99 518 236 518 236L-49 246.5L-38.5 196Z" fill="#FF768E"/>
+</svg>
+    
+
+  </div>
+  
+  
+    <div class="timeline">
+      
+   <h1 style="font-size: 110%; font-weight: bolder; padding: 0; margin-bottom: 0; margin-top: 5px; margin-left: 80px; margin-right: 0; ">Introduction To JavaScript</h1>
+      
+      <div class="box">
+        
+        <div class="container" style="margin-left: 10px">
+  <br>
+  <h3 class="mainhead">What Is JavaScript :::::</h3>
+  <p class="p">
+    JavaScript, which is often abbreviated to <b>JS</b>, is a high-level, dynamic, and interpreted programming language that is primarily used for creating interactive and dynamic content on the web 
+    and has since become one of the core technologies of the World Wide Web, alongside HTML and CSS.
+    <br>
+    An interpreted programming language does not need a compiler to transform the code into machine language before execution.
+    However, it does require a runtime environment to know how to read, interpret, and execute the script.
+    <p class="p">
+    An example of a server-side ( codes meant for backend development) script might change the web page's content by pulling content from a database to display currently available products. <br>
+    An example of a client-side (that codes meant to develop the frontend of a web page) script might include a user filling out a form with personal information to be later uploaded to the site. <br>
+    In both cases, the content and display of the web page the user sees are different based on the script being run in real-time. Any time a web page is more than static, unchanging content, scripting language is likely involved, and JavaScript is one of the most common.
+    </p>
+  </p>
+  <br>
+  <h4>History of JavaScript</h4>
+   <div class="card">
+        <div class="bgcard"></div>
+    <img src="pro7.gif" alt="pro7.gif" class="html" style="width: 50%">
+    
+      <div class="bas">
+       <fieldset>
+        <legend><h3 style="font-size: 105%; color: red;">Birth Of JavaScript Programming Language</h3>
+        </legend>  
+          <p class="p">
+            In the early days of the internet, web pages were static and lifeless.
+            They were like books that could be read but not interacted with.  <br>
+            However, one man saw the potential for something more, something dynamic, something that would transform the web into a living, breathing platform.
+            <p class="p">
+              His name was Brendan Eich, and he worked for Netscape Communications Corporation(now Mozilla Firefox).
+              In 1995, Netscape was developing a web browser called Netscape Navigator, which was one of the first web browsers available to the public. <br>
+              Eich was tasked with creating a scripting language that would allow developers to add functionality to web pages. <br>
+              But he had a problem. He only had ten days to complete the task. Undaunted, Eich rolled up his sleeves and got to work. <br>
+              He based the language on a simpler version of another programming language called Scheme, and in just ten days, he created a new language that would change the web forever.
+            </p>
+            <p class="p">
+              The original name for the language was Mocha, but it was later changed to LiveScript.
+              However, Netscape was in talks with Sun Microsystems at the time, and the latter had just released a new programming language called Java.
+              Netscape saw an opportunity to capitalize on the popularity of Java, so they renamed LiveScript to JavaScript.
+            </p>
+            <p class="p">
+
+"It was a marketing ploy," Eich later said. "It was all about the buzzwords at the time. Java was hot, and we wanted to piggyback on its success."
+<br>
+Despite the name change, JavaScript was not related to Java in any way. 
+In fact, the only similarity between the two languages was the word "Java" in their names. 
+JavaScript was designed to be a lightweight scripting language that could run on any web page without the need for additional software or plugins.
+<br>
+JavaScript was included in Netscape Navigator 2.0, which was released in December 1995. 
+The language quickly gained popularity among developers, who used it to add interactivity and dynamic content to their web pages.
+<br>
+"JavaScript was a game-changer," said Dave Methvin, the president of the jQuery Foundation.
+"It allowed us to create web pages that were more than just static documents.
+We could create animations, we could create interactive forms, we could create all kinds of things that were impossible before."
+<br>
+However, JavaScript was not without its challenges. 
+Different browsers implemented the language in different ways, which meant that code that worked on one browser might not work on another. 
+This led to frustration among developers and created a need for a standardized version of the language.
+            </p>
+          </p>
+        
+        </fieldset>
+      </div>
+        <div class="bas">
+          <fieldset>
+            <legend><span>Standardization Of JavaScript ( JavaScript Version History )</span></legend>
+            <p class="p">
+               In 1997, Netscape submitted JavaScript to Ecma International, a standards organization for information and communication systems.<br> 
+               This led to the creation of the first version of the ECMAScript standard, which defined the syntax and semantics of the language. <br>
+               This standardization allowed developers to write JavaScript code that would work across different browsers and platforms.
+               <p class="p">
+                 The first version of ECMAScript was released in 1997, and since then, several versions have been released, each adding new features and capabilities to the language. <br>
+                 The most significant updates to ECMAScript were ECMAScript 5 (released in 2009) and ECMAScript 6 (released in 2015). <br>
+                 ECMAScript 5 introduced several new features such as strict mode, which allows developers to write more secure and efficient code, 
+                 and JSON (JavaScript Object Notation) support, which simplifies the process of exchanging data between different systems. <br>
+                 ECMAScript 6, also known as ES6 or ES2015, added significant improvements such as arrow functions, template literals, and classes, making JavaScript more powerful and expressive.
+               </p>
+               <p class="p">
+                 But it wasn't until the release of Mozilla Firefox in 2004 that JavaScript truly came into its own.
+                 Firefox, with its open-source ethos and commitment to web standards, helped to establish JavaScript as the lingua franca of the web. <br>
+                 And at the heart of Firefox was SpiderMonkey, the first-ever JavaScript engine, which made it possible for JavaScript to run blazingly fast on the web.
+               </p>
+               <p class="p">
+                 The evolution of JavaScript has continued over the years, with new versions of the ECMAScript standard being released to add new features and capabilities to the language. <br> 
+                 Today, JavaScript is one of the most widely used programming languages in the world, and it has become an essential tool for web developers.
+               </p>
+               
+            </p>
+          </fieldset>
+        </div>
+          <div class="bas">
+            <fieldset>
+              <legend>Growth and Evolution of JavaScript ( "JavaScript Libraries/Framework")</legend>
+              <p class="p">
+              The development of libraries and frameworks has also contributed significantly to the growth and evolution of JavaScript.  <br>
+              Libraries such as jQuery, Dojo, and Prototype.js provide developers with pre-written code that they can use to perform common tasks such as DOM manipulation, event handling, and Ajax requests.
+              These libraries simplify the development process and save developers time and effort.
+              <p class="p">
+                Frameworks such as React, Angular, and Vue.js take this a step further by providing developers with a
+                complete set of tools and guidelines for building complex web applications. <br>
+                These frameworks make it easier to develop large-scale applications and help ensure consistency and maintainability. 
+                <br>
+                They also provide features such as data binding, component
+                -based architecture, and state management, which further enhance JavaScript's capabilities.
+              </p>
+              <p class="p">
+                <b>Introduction of Node.js :::::</b>
+                Another significant development in the growth of JavaScript was the introduction of Node.js. Node.js 
+                is a server-side JavaScript runtime environment that allows developers to use JavaScript for back-end development. <br>
+                Node.js was developed by Ryan Dahl in 2009 and was quickly adopted by the development community due to its simplicity and scalability.
+              </p>
+              </p>
+              <br>
+              <br>
+              <br>
+            </fieldset>
+          
+         
+        
+    </div>
+    <br>
+    <h4>History Table Of JavaScript</h4>
+    <div class="bas">
+      <table border="8" style="border-radius: 10px">
+        <tr style="background: greenyellow; font-weight: bolder; font-size: 105%">
+          <td>Year</td>
+          <td>ECMAscript Version</td>
+          <td>Feature Released</td>
+        </tr>
+        <tr>
+          <td>1995</td>
+          <td></td>
+          <td>Brendan Eich has developed JavaScript.</td>
+        </tr>
+        <tr>
+          <td>1996</td>
+          <td></td>
+          <td>JavaScript 1.0 was released.</td>
+        </tr>
+        <tr>
+          <td>1997</td>
+          <td>ES1</td>
+          <td>Standardization of JavaScript occurred by ECMA, and the ES1 version was released.</td>
+        </tr>
+        <tr>
+          <td>1998	</td>
+          <td>ES2</td>
+          <td>ES2 version of JavaScript released.</td>
+        </tr>
+        <tr>
+          <td>1999</td>
+          <td>ES3</td>
+          <td>ES3 version of JavaScript released.</td>
+        </tr>
+        <tr>
+          <td>2006</td>
+          <td></td>
+          <td>The first library, JQuery developed to use JavaScript.</td>
+        </tr>
+        <tr>
+          <td>2008</td>
+          <td>ES4</td>
+          <td>ES4 version of JavaScript released.</td>
+        </tr>
+        <tr>
+          <td>2009</td>
+          <td></td>
+          <td>NodeJS was developed for the server-side programming language.</td>
+        </tr>
+        <tr>
+          <td>2009</td>
+          <td>ES5</td>
+          <td>ES5 version of JavaScript released.</td>
+        </tr>
+        <tr>
+          <td>2010</td>
+          <td></td>
+          <td>The first framework, Angular JS, was developed.</td>
+        </tr>
+        <tr>
+          <td>2013</td>
+          <td></td>
+          <td>The most popular JavaScript framework, ReactJS developed.</td>
+        </tr>
+        <tr>
+          <td>2015</td>
+          <td>ES6</td>
+          <td>ES6 version of JavaScript released.</td>
+        </tr>
+        <tr>
+          <td>2016</td>
+          <td>ES7</td>
+          <td>ES7 version of JavaScript released.</td>
+        </tr>
+        <tr>
+          <td>2017</td>
+          <td>ES8</td>
+          <td>ES8 version of JavaScript released.</td>
+        </tr>
+        <tr>
+          <td>2018</td>
+          <td>ES9</td>
+          <td>ES9 version of JavaScript released.</td>
+        </tr>
+        <tr>
+          <td>2019</td>
+          <td>ES10</td>
+          <td>ES10 version of JavaScript released.</td>
+        </tr>
+        <tr>
+          <td>2020</td>
+          <td>ES11</td>
+          <td>ES11 version of JavaScript released.</td>
+        </tr>
+        <tr>
+          <td>2021</td>
+          <td>ES12</td>
+          <td>ES12 version of JavaScript released.</td>
+        </tr>
+        <tr>
+          <td>2022</td>
+          <td>ES13</td>
+          <td>ES13 version of JavaScript released.</td>
+        </tr>
+        
+        
+      </table>
+      <br>
+      <br>
+    </div>
+       </div> <br>
+       <h4>Key Features of JavaScript ::::::</h4>
+        <div class="card">
+        <div class="bgcard"></div>
+    <img src="pro7.gif" alt="pro7.gif" class="html" style="width: 50%">
+    
+      <div class="bas">
+       <fieldset>
+        <legend><h3 style="font-size: 105%; color: red;"></h3>
+        </legend>  
+        <ul class="ulstyle">
+         <li><b class="phase">Client-Side Scripting ::::::</b> Refers to scripts that are executed on the user's browser rather than on the server. <br>
+         JavaScript allows developers to create interactive web pages that respond instantly to user actions, such as mouse clicks, keyboard input, and form submissions. <br>
+          Handling of operations like form validation and dynamic content updates on the client side, JavaScript reduces the number of requests sent to the server, thereby decreasing server load and improving performance.
+         <br>
+         JavaScript enhances user experience by enabling features like dropdown menus, animations, and real-time updates without refreshing the page. <br>
+         Modern JavaScript frameworks and libraries help ensure that scripts work consistently across different browsers.
+         </li>
+         <li><b class="phase">Event-Driven :::::</b> JavaScript is designed around events and allows developers to create applications that respond to user actions. <br>
+         JavaScript uses event listeners to execute code in response to specific actions, such as clicks, mouse movements, key presses, and more.<br>
+         Events can be handled asynchronously, allowing other code to run while waiting for an event to occur.
+         <br>
+         This feature enables developers to create dynamic interfaces where elements can change in response to user actions without requiring a page reload. <br>
+         <b class="eg">Examples :::</b> Common events include click, mouseover, keydown, and custom events defined by developers.
+         </li>
+         <li>
+           <b class="phase">Object-Oriented :::::</b> JavaScript supports object-oriented programming (OOP) principles, allowing developers to create reusable code through objects and classes. <br>
+           JavaScript uses a prototype-based inheritance model. Objects can inherit properties and methods from other objects. <br>
+           Developers can create objects that encapsulate data and functionality, promoting modularity and reusability. <br>
+            With ES6 (ECMAScript 2015), JavaScript introduced a class syntax that simplifies the creation of objects and inheritance, making it easier for developers familiar with classical OOP languages. <br>
+            JavaScript allows for dynamic object manipulation, enabling properties and methods to be added or modified at runtime.
+         </li>
+         <li>
+           <b class="phase">Versatile ::::::</b> JavaScript can be used for a wide range of applications beyond just web development. <br>
+            JavaScript is primarily used for front-end development but also increasingly popular for back-end development (e.g., Node.js). <br>
+            Frameworks like React Native allow developers to build cross-platform mobile applications using JavaScript. <br>
+            Libraries such as Phaser enable the creation of browser-based games. <br>
+            Technologies like Electron allow developers to create cross-platform desktop applications using web technologies. <br>
+            JavaScript can be used in Internet of Things (IoT) applications and robotics through platforms like Johnny-Five.
+         </li>
+         <li>
+           <b class="phase">Asynchronous Programming ::::::</b> It allows JavaScript to handle operations without blocking the execution of code. <br>
+          JavaScript functions can be passed as arguments to handle tasks that take time (like API calls), which allows other code to run while waiting for the task to complete. <br>
+          Introduced in ES6, promises represent a value that may be available now or in the future, providing a cleaner way to handle asynchronous operations than callbacks. <br>
+          Async/Await syntax which was introduced in ES8 (ECMAScript 2017), allows developers to write asynchronous code that looks synchronous, making it easier to read and maintain. <br>
+          JavaScript uses an event loop to manage asynchronous operations, allowing it to perform non-blocking I/O operations efficiently.
+         </li>
+         <li>
+           <b class="eg">Rich Ecosystem::::::</b> JavaScript has a vast ecosystem of libraries, frameworks, tools, and resources that enhance its capabilities. <br>
+           Popular frameworks like React, Angular, and Vue.js simplify front-end development. Libraries like jQuery provide convenient utilities for DOM manipulation. <br>
+           Tools like npm (Node Package Manager) allow developers to easily manage dependencies and share packages. <br>
+           There are numerous tools available for debugging (like Chrome DevTools), testing (like Jest), and building (like Webpack). <br>
+           A large developer community contributes to a wealth of tutorials, documentation, and forums for support. <br>
+           
+         </li>
+        </ul>
+        <br>
+        <br>
+        <br>
+        </fieldset>
+        </div>
+       </div>
+       <br>
+       <h4>What is JavaScript used for?</h4>
+       <div class="card">
+        <div class="bgcard"></div>
+    <img src="pro7.gif" alt="pro7.gif" class="html" style="width: 50%">
+    <div class="bas">
+       <fieldset>
+        <legend><h3 style="font-size: 105%; color: red;">Uses Of JavaScript</h3>
+        </legend> 
+        <p class="p">
+          JavaScript is among the world’s most used programming languages. 
+          Without it, we’d be looking at pages that do nothing other than display images and text. 
+          HTML may be the bones of a web page, and CSS adds style, but JavaScript programming is what gives it life.
+          <p class="p">
+            Without this amazing language, businesses would be at a loss. 
+            Companies depend on the JavaScript language to interact with their customers in today’s online world.
+          </p>
+        </p>
+        <div class="reply-container">
+
+	<div class="reply-text"> 	<div class="vertical-line"></div> Common uses of Javascript include:</div>
+</div>
+        <ul class="ulstyle">
+         <li><b class="phase">Creating interactive web pages :::::</b> As discussed above, JavaScript is responsible for almost any interactions you have with a website that result in a change on the page. Without it, the web would be incredibly limited. <br>
+         <b>Common interactive actions enabled by JavaScript are :::::</b> <br>
+         <ol>
+           <li>Adding items to a basket and making purchases online.</li>
+           <li>Expanding or collapsing content blocks at the click of a mouse.</li>
+           <li>Playing video or audio files on site.</li>
+           <li>Displaying animations.</li>
+           <li>Using drop-down menus.</li>
+         </ol>
+         </li>
+         <li><b class="phase">Front end development :::::</b> There are a number of popular front-end JavaScript frameworks that help websites build great applications for their users.
+         These frameworks include Angular, React and Vue. Some famous applications built using JavaScript are Netflix, PayPal, YouTube and Facebook.</li>
+         <li><b class="phase">Back end development :::::</b> Although JavaScript made a name for itself as a front-end language, being applied to HTML and CSS, it also has impressive qualities as a back-end development language.
+         Frameworks such as Node.js mean that JavaScript can be used to build server-side code. </li>
+         <li><b class="phase">Gaming :::::</b> JavaScript programming isn’t just useful to standard websites.
+         JavaScript is also responsible for most in-browser games, great for killing a bit of time or for honing your skills if you are just starting off in development. </li>
+         <li><b class="phase">Artificial intelligence :::::</b> A relatively recent development in the use of JavasScript is in AI. 
+         Javascript libraries such as TensorFlow have allowed developers to use JavaScript for machine learning, creating models that can predict future events based on the categorisation of past data. </li>
+        </ul>
+        <p class="p">
+          The many and varied uses of JavaScript mean that being able to code in it is an in-demand skill around the world. <br>
+          <b class="eg">For example ::::</b> A simple search on Indeed in the UK shows 13,500 vacant roles at the time of writing, so it’s a useful thing to learn if you are thinking of a career in web development. 
+        </p>
+        <br>
+        <br>
+        <br>
+        </fieldset>
+    </div>
+       </div>
+       <br>
+       <h4>How To Run JavaScript.</h4>
+        <div class="card">
+        <div class="bgcard"></div>
+    <img src="pro7.gif" alt="pro7.gif" class="html" style="width: 50%">
+    <div class="bas">
+       <fieldset>
+        <legend><h3 style="font-size: 105%; color: red;">How To Use Javascript</h3>
+        </legend> 
+        <p class="p">
+          Web browsers are built to understand HTML and CSS and convert those languages into a visual display on the screen.
+          To do this, the browser uses what’s called a layout or rendering engine. This is the part of the web browser that understands HTML and CSS.
+          <p class="p">
+            A browser also contains what’s called a JavaScript interpreter. This is the part of the browser that understands JavaScript and can execute the steps of a JavaScript program. <br>
+            A web browser is usually expecting HTML. But we must specifically tell the browser when JavaScript is included.
+          </p>
+           </p>
+           <div class="reply-container">
+
+	<div class="reply-text"> 	<div class="vertical-line"></div> Alright, so how can we link JavaScript to HTML document before or after we add our JavaScript codes that will have effect over our HTML codes for attractive websites.<br>
+	<b>Adding JavaScript into an HTML Document ::::</b>
+	</div>
+	
+</div>
+<p class="p">
+  You can add JavaScript code in an HTML document by employing the dedicated HTML tag  <b class="code">&lt;script&gt;</b> that wraps around JavaScript code.
+  <br>
+  The  <b class="code">&lt;script&gt;</b> tag can be placed in the  <b class="code">&lt;head&gt;</b> section of your HTML or in the  <b class="code">&lt;body&gt;</b> section, depending on when you want the JavaScript to load. <br>
+  Generally, JavaScript code can go inside the document  <b class="code">&lt;head&gt;</b> section in order to keep it contained and out of the main content of your HTML document. <br>
+  However, if your script needs to run at a certain point within a page’s layout when using <b class="js">document.write()</b> to generate content, you should put it at the point where it should be called, usually within the  <b class="code">&lt;body&gt;</b> section. <br>
+  <b>Let’s consider the following blank HTML document with a browser title of Today's Date :::::</b>
+  <pre>
+    <b class="angle">&lt;</b><b class="code">!DOCTYPE html</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">html lang="en-US"</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">head</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">meta charset="UTF-8"</b><b class="angle">&gt;</b>
+    <b style="font-size: 80%"><b class="angle">&lt;</b><b class="code">meta name="viewport" 
+    content="width=device-width, 
+    initial-scale=1"</b><b class="angle">&gt;</b></b>
+    <b class="angle">&lt;</b><b class="code">title</b><b class="angle">&gt;</b> Today's Date <b class="angle">&lt;</b><b class="code">/title</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">/head</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">body</b><b class="angle">&gt;</b>
+    
+    
+    <b class="angle">&lt;</b><b class="code">/body</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">/html</b><b class="angle">&gt;</b>
+  </pre>
+  Right now, this file only contains HTML markup. Let’s say we would like to add the following JavaScript code to the document: <br>
+  <div style="background-image: linear-gradient(rgba(000, 000, 000, 0.8), rgba(000, 000, 000, 0.8)); color: white; border-radius: 34px; font-weight: bold; width: 80%;  padding-left: 20px; ">
+  <b class="variable">let</b> d &equals; <b class="variable">new</b> <b class="keyword">Date</b>(); <br>
+  <b class="keyword">alert</b>(<b class="userinfo">"Today's Date is "</b> &plus; d);
+  </div>
+  This will enable the webpage to display an alert with the current date regardless of when the user loads the site.
+  <p class="p">
+    In order to achieve this, we will add a  <b class="code">&lt;script&gt;</b>... <b class="code">&lt;/script&gt;</b>tag along with some JavaScript code into the HTML file.
+
+To begin with, we’ll add the JavaScript code between the  <b class="code">&lt;head&gt;</b>...<b class="code">&lt;/head&gt;</b> tags, signalling the browser to run the JavaScript script before loading in the rest of the page. We can add the JavaScript below the  <b class="code">&lt;title&gt;</b>...<b class="code">&lt;/title&gt;</b> tags, for instance, as shown below:
+  <pre>
+    <b class="angle">&lt;</b><b class="code">!DOCTYPE html</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">html lang="en-US"</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">head</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">meta charset="UTF-8"</b><b class="angle">&gt;</b>
+    <b style="font-size: 80%"><b class="angle">&lt;</b><b class="code">meta name="viewport" 
+    content="width=device-width, 
+    initial-scale=1"</b><b class="angle">&gt;</b></b>
+    <b class="angle">&lt;</b><b class="code">title</b><b class="angle">&gt;</b> Today's Date <b class="angle">&lt;</b><b class="code">/title</b><b class="angle">&gt;</b>
+     <b class="code">&lt;script&gt;</b>
+      <b><b class="variable">let</b> d &equals; <b class="variable">new</b> <b class="keyword">Date</b>(); 
+      <b class="keyword">alert</b>(<b class="userinfo">"Today's Date is "</b> &plus; d);</b>
+     <b class="code">&lt;/script&gt;</b>
+    <b class="angle">&lt;</b><b class="code">/head</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">body</b><b class="angle">&gt;</b>
+    
+    
+    <b class="angle">&lt;</b><b class="code">/body</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">/html</b><b class="angle">&gt;</b>
+  </pre>
+  Once you load the page, you will receive an alert similar to this: <br>
+  <img src="JS4img.jpg" alt="JS4img.jpg" style="width: 100%; border-radius: 40px"> <br>
+  Scripts that are small or that run only on one page can work fine within an HTML file, but for larger scripts or scripts that will be used on many pages, 
+  it is not a very effective solution because including it can become unwieldy or difficult to read and understand. <br>
+  In the next section, we’ll go over how to handle a separate JavaScript file in your HTML document.
+  </p>
+</p>
+        <ul class="ulstyle">
+         
+        </ul>
+        
+        </fieldset>
+    </div>
+    <br>
+    <h4>Working With A Separate JavaScript File</h4>
+      <div class="bas">
+        <fieldset>
+          <legend><span>Including Your JavaScript Codes On An External Document</span></legend>
+          <p class="p">
+            In order to accommodate larger scripts or scripts that will be used across several pages or for different HTML documents,
+            JavaScript code generally lives in one or more js files that are referenced within HTML documents, similar to how external assets like CSS are referenced. <br>
+            <div class="reply-container">
+
+	<div class="reply-text"> 	<div class="vertical-line"></div> The benefits of using a separate JavaScript file:</div>
+	
+</div>
+    <ul class="ulstyle">
+      <li>Separating the HTML markup and JavaScript code to make both more straightforward.</li>
+      <li>Separate HTML, CSS and script codes separately make maintenance easier.</li>
+      <li>When JavaScript files are cached, pages load more quickly.</li>
+    </ul>
+    <p class="p">
+      To demonstrate how to connect a JavaScript document to an HTML document, let’s create a small web project. 
+      It will consist of <b class="cool">script.js</b> in the <b class="cool">js/</b> directory, <b class="cool">style.css</b> in the <b class="cool">css/</b> directory, and a main <b class="cool">index.html</b> in the root of the project.
+      <pre style="background: black; color: white; width: 50%; margin-left: 50px; border-radius: 15px; padding-left: 20px; padding-top: 5px; font-weight: bolder; margin-top: 5px">project/
+├── css/
+|   └── style.css
+├── js/
+|   └── script.js
+└── index.html
+      </pre>
+      <br>
+      We can start with our previous HTML template from the section above that we have started with from the beginning. <br>
+      Now, let’s move our JavaScript code that will show the date as an  <b class="code">&lt;h1&gt;</b> header to the <b class="cool">script.js</b> file: <br>
+       <div style="background-image: linear-gradient(rgba(000, 000, 000, 0.8), rgba(000, 000, 000, 0.8)); color: white; border-radius: 34px; font-weight: bold; width: 80%;  padding-left: 20px; margin-top: 5px; ">
+  <b class="variable">let</b> d &equals; <b class="variable">new</b> <b class="keyword">Date</b>(); <br>
+  document.body.innerHTML &equals; <b class="userinfo">"&lt;h1&gt;Today's Date is "</b> &plus; d &plus; <b class="userinfo">"&lt;/h1&gt;"</b>
+  </div>
+  <br>
+  We can add a reference to this script to the  <b class="code">&lt;body&gt;</b> section with the following line of code: <br>
+  <div style="background-image: linear-gradient(rgba(000, 000, 000, 0.8), rgba(000, 000, 000, 0.8)); color: white; border-radius: 34px; font-weight: bold; width: 80%;  padding-left: 20px; margin-top: 5px; ">
+   <b class="">&lt;script src="<b class="userinfo">js/script.js</b>"&gt;</b> <b class="">&lt;/script&gt;</b> 
+  </div>
+  The  <b class="code">&lt;script&gt;</b> tag is pointing to the <b class="cool">script.js</b> file in the <b class="cool">js/</b> directory of our web project.
+ <br>
+    <div style="background-image: linear-gradient(rgba(000, 000, 000, 0.4), rgba(000, 000, 000, 0.2)); color: white; border-radius: 34px; font-weight: bold; width: 85%;  padding-left: 20px; margin-top: 5px; ">
+      <b class="selector">body</b><b class="angle">{</b> <b class="code">background-color: #0080ff;</b>  <b class="angle">}</b> <br>
+      <b class="selector">h1</b><b class="angle">{</b> <b class="code">color:#fff;</b>
+              <b class="code">font-family: Arial, Helvetica, 
+              sans-serif;</b>
+      <b class="angle">}</b>
+    </div>
+  <br>
+  And also let's create an external Style Sheet and name it <b class="cool">style.css</b>.
+The link tag   <b class="angle">&lt;</b><b class="code">link href="insert you style sheet name here"</b><b class="angle">&gt;</b>
+  is what we are going to use to point to our external CSS codes to have effect on our HTML codes.
+<br>
+Let’s consider this line in the context of our HTML file, in this case, within the  <b class="code">&lt;body&gt;</b> section and also edit the <b class="cool">style.css</b> file by adding a background color and style to the  <b class="code">&lt;h1&gt;</b> header: <br>
+  <pre>
+    <b class="angle">&lt;</b><b class="code">!DOCTYPE html</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">html lang="en-US"</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">head</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">meta charset="UTF-8"</b><b class="angle">&gt;</b>
+    <b style="font-size: 80%"><b class="angle">&lt;</b><b class="code">meta name="viewport" 
+    content="width=device-width, 
+    initial-scale=1"</b><b class="angle">&gt;</b></b>
+    <b class="angle">&lt;</b><b class="code">title</b><b class="angle">&gt;</b> Today's Date <b class="angle">&lt;</b><b class="code">/title</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">link rel="stylesheet" href="style.css"</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">/head</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">body</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">script src="js/script.js"</b><b class="angle">&gt;</b>  <b class="angle">&lt;</b><b class="code">/script</b><b class="angle">&gt;</b>
+    
+    <b class="angle">&lt;</b><b class="code">/body</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">/html</b><b class="angle">&gt;</b>
+  </pre>
+  Now, with the external JavaScript and CSS  in place, we can load the index.html page into the web browser of our choice. Once you load the page, you will receive an alert similar to this::
+  <br>
+        <img src="JS4img1.jpg" alt="JS4img.jpg" style="width: 100%; border-radius: 40px">
+
+    </p>
+    <p class="p">
+      Alright, so here comes the end of the lesson on how to add JavaScript to an HTML document.
+    </p>
+          </p>
+          <br>
+          <br>
+          <br>
+        </fieldset>
+       
+        
+        <br>
+      </div>
+       </div>
+       <br>
+       <div class="reply-container">
+
+	<div class="reply-text"> 	<div class="vertical-line"></div> In our next lesson we're going to talk about Variables.
+	</div>
+</div>
+       <!--
+          <div class="card">
+        <div class="bgcard"></div>
+    <img src="pro7.gif" alt="pro7.gif" class="html" style="width: 50%">
+    <div>
+       <fieldset>
+        <legend><h3 style="font-size: 105%; color: red;"></h3>
+        </legend>  
+        <ul class="ulstyle">
+         
+        </ul>
+        
+        </fieldset>
+    </div>
+       </div>-->
+        <!--<div class="reply-container">
+
+	<div class="reply-text"> 	<div class="vertical-line"></div> Let's look at the difference between Low-level and High-level programming languages</div>
+</div>-->
+<br>
+<br>
+<br>
+<br>
+<br>
+  </div>
+          </div>
+       
+            <div class="button-container">
+	<a href="JS3.html" class="prev-button">Previous</a>
+	<a href="JSmis.html" class="next-button">Next</a>
+</div>
+          
+          </div>
+          </div>
+          
+</body>
+
+</html>
