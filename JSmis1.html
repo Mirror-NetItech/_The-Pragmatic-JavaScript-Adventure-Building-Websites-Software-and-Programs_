@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>"Mirror Network Itech" Join with us the world most favorite Web Development platforms.</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+   <link rel="stylesheet" href="CSS4code-editors.">
+
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+
+*{
+  
+  margin:0;
+  outline:none;
+  text-decoration:none;
+  list-style:none;
+  font-family: 'Mulish', sans-serif;
+  
+}
+
+body{
+  display:flex;
+  padding-top: 0;
+  justify-content:center;
+  background:#ecf1f5;
+  transform:scale(0.8) translateY(-50px);
+    width: 100vw;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+}
+
+.notification {
+  position: fixed;
+  width: 125%;
+  height: 50px;
+  background: #007bff;
+  padding: 0;
+  margin-top: 11px;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: top 0.3s ease;
+  z-index: 999; /* Ensure the notification appears above other content */
+  backdrop-filter: blur(15px);
+  border-radius: 10px 00px 200px 200px;
+  box-shadow: 5px 5px 10px rgba(202, 100, 25, 0.5);
+}
+.mirror{
+  width: 16%;
+  margin-right: 55%;
+  border-radius: 20px;
+  padding: 0;
+}
+#profile {
+ display: flex;
+ align-items: center;
+ margin-left: auto;
+ flex-shrink: 0;
+ }
+
+ .logoname {  
+   margin-top: 26px;
+   position: absolute;  
+   top: 0;
+   right: 28%;
+   line-height: 10px;
+   transform: translate(50%,-50%);  
+   text-transform: uppercase;  
+   font-family: verdana;  
+   font-size:128%;  
+   font-weight: bolder;  
+   color:#f5e4f5;  
+   text-shadow: 1px 1px 1px white,  
+     1px 2px 1px white,  
+     1px 3px 1px #919191, 
+     1px 4px 1px #919191,  
+     1px 5px 1px white,  
+     1px 6px 1px white,  
+   1px 7px 2px rgba(16,16,16,0.4),  
+   1px 8px 5px rgba(16,16,16,0.2),  
+   1px 9px 9px rgba(16,16,16,0.2),  
+   1px 10px 10px rgba(16,16,16,0.4); 
+   animation: blinking 1s infinite;
+   
+ }
+ @keyframes blinking {
+  0% {
+    color: #00ffff;
+  }
+  50% {
+    color: #ff00ff;
+  }
+  100% {
+    color: #ffff00;
+  }
+}
+/* Make each area overflow horizontally and*/
+/*have the ability to have other items*/
+/*scrolled into view*/
+.scrollerr {
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar; }
+/* container*/
+.containerrr{
+  position: relative;
+  top: 60px;
+  
+  padding: 0;
+  margin: 0;
+  z-index: 999;
+}
+/* Example two required styles --------------- */
+.example-two-header {
+  .logo {
+    width: 22%; 
+  height:20px;
+}
+  nav {
+    width: 75%;
+    
+    } }
+
+
+/* Shared styles --------------- */
+header {
+  background: #152637;
+}
+
+/*Examples*/
+.example-two-header {
+  border-radius: 3px; 
+  
+}
+
+
+
+/*Logo*/
+.logo {
+  text-align: center; /*only effective in example 2/3*/
+  font-weight: 700;
+  color: #727c87;
+  border-right: 1px solid rgba(#727c87, .4);
+  padding: 3px 24px 13px; }
+
+/*Nav items*/
+.navv-item {
+  padding: 2px 5px 6px;
+
+  &:not(:last-child) {
+    border-right: 1px solid rgba(#727c87, .2); } }
+
+/*Setup/misc styles --------------- */
+* { 
+  box-sizing: border-box; }
+
+
+/*Remove the inline-block extra space*/
+header,
+nav { 
+  font-size: 0; }
+
+/*Requires font size to be reset for these elements*/
+.logo,
+.navv-item {
+  font-size: 15px; 
+  font-weight: bolder;
+  color: white;
+}
+
+.logo,
+.navv-item,
+.vertical-align-middle {
+  display: inline-block;
+  vertical-align: middle;
+  
+}
+
+
+/* Demo purposes only, proceed with caution on Windows*/
+.scroll::-webkit-scrollbar {
+  display: none; }
+ 
+/* drop-down navigation bar*/
+   .dd {
+      position: relative;
+      display: inline-block;
+      z-index: 99999;
+      
+    }
+    .dd-btn {
+      padding:0;
+      margin-left: 30px;
+      text-align: center;
+      border: none;
+      width: 5px;
+      color: #f8f9f9;
+      text-decoration: none;
+    }
+    .dd-content {
+      position: absolute;
+      width: 300px;
+      margin-top: 60px;
+      margin-left: 5px;
+      box-shadow: 0 18px 36px rgba(0,0,0,0.30), 0 14px 11px rgba(0,0,0,0.22);
+      height: 0px;
+      transition: height 1s;
+      overflow: hidden;
+      border-radius: 25px;
+    }
+    .dd:hover > .dd-content {
+      height: 400px;
+    }
+    .dd-content > a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: white;
+      font-weight: bolder;
+      font-size: 108%;
+    }
+    h4{
+      font-size: 103%;
+      font-weight: bolder;
+      color: firebrick;
+      text-decoration: underline;
+      margin-top:2px;
+    }
+    b{
+      font-size: 100%;
+      font-weight: bold;
+      
+    }
+    .mainhead{
+      font-size: 108%; 
+      color: red; 
+      font-weight:bolder; 
+      padding: 0;
+    }
+    p{
+      font-size: 101%;
+      text-indent: 25px;
+    }
+    li{
+      font-size: 101%;
+    }
+    .eg{
+      font-size: 102%;
+      color: mediumblue;
+    }
+   
+       .cool{
+      background: darkgray;
+      font-size: 120%;
+      border-radius: 5px;
+      
+    }
+      .code{
+     font-size: 106%;
+     font-weight: bolder;
+     color: royalblue;
+     
+   }
+   .variable{
+     color: royalblue;
+     font-weight: bold;
+     font-size: 104%;
+   }
+   .keyword{
+     font-size: 104%;
+     font-weight: bolder;
+     color: sandybrown;
+   }
+   .assigned{
+     font-size: 106%;
+     font-weight: bolder;
+     color: lightblue;
+   }
+   .userinfo{
+     font-size: 104%;
+     font-weight: bold;
+     color: yellow;
+   }
+   .comment {
+     color:gray;
+     font-size: 75%;
+   }
+   .selector{
+     color: green;
+     font-weight: bolder;
+     font-size: 110%;
+   }
+   .output {
+     width: 100%;
+     border-radius: 45px;
+     background: cadetblue;
+     border: 10px solid blanchedalmond;
+   }
+   .angle{
+     font-size: 105%;
+     font-weight: bold;
+     color: mediumvioletred;
+   }
+   fieldset{
+     width: 95%;
+     display: block;
+      background: white;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: 10px;
+  padding-top: .4em;
+  padding-bottom: 0.25em;
+  padding-left: 0.1em;
+  padding-right: 0.1em;
+  border-radius: 5px 30px 80px 5px;
+  border: 1px groove (internal value);
+  
+}
+  .bas{
+  width: 99%;
+  
+  box-shadow: 2px 5px 2px 0 rgba(105, 120, 139, 0.6), 02px 6px 18px 0 rgba(100, 23, 20, 0.5);
+  justify-content: center;
+  justify-items: center;
+  padding-left: 0.5px;
+  border-radius: 20px 70px 60px 20px;
+  z-index: 10;
+  animation: zindex 5s infinite;
+}
+.codebase{
+  background-image: linear-gradient(rgba(000, 000, 000, 0.8), rgba(000, 000, 000, 0.8));
+  color: white;
+  border-radius: 34px;
+  font-weight: bold;
+  width: 98%;
+  padding-left: 20px;
+padding-top: 10px;
+padding-bottom: 20px;
+} 
+/*style for table*/
+table,tr,td{
+  border: 1px solid darkgray;
+}
+.head{
+  background-color: lightseagreen;
+  font-weight: bolder;
+}
+.col-1{
+  background: lightskyblue;
+} 
+/*Style for Live code editor*/
+.code-container {
+      width: 90%;
+      margin: auto;
+      box-shadow: 0 4px 10px rgba(080, 240, 130, 0.1);
+      background: #eff;
+      padding: 10px;
+      border-radius: 50px;
+    }
+
+    .Editor, .outPut {
+      border: 3px solid blue;
+      padding: 0;
+      box-shadow: 5px 2px 4px  gold;
+      height: 300px;
+      overflow: auto;
+      display: none; /* Initially hide both editor and output */
+    }
+
+    .Editor {
+      width: 100%;
+      border-radius: 20px;
+      display: block; /* Show editor initially */
+    }
+
+    .outPut {
+      width: 100%;
+      border-radius: 20px;
+      z-index: 99;
+    }
+
+    .run-btn, .editor-btn {
+      padding: 10px 20px;
+      border-radius: 100px 20px;
+      box-shadow: 2px 4px 8px black;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+
+ 
+    h3 {
+      margin-top: 5px;
+      margin-left: 20px;
+    }
+    
+    #codeArea2 {
+      width: 100%;
+      height: 100%;
+      font-family: monospace;
+      resize: none; /* Prevent resizing */
+    }
+    
+    iframe {
+      box-shadow: 2px 4px 5px solid blue;
+      border-radius: 15px;
+      border: none; /* Remove default iframe border */
+    }
+    
+    
+   /*Note container */
+  .bubble {
+  display: inline-block;
+  background: green;
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bolder;
+  font-family: var(--font-1);
+  max-width: 100%;
+  position: relative;
+  margin: 0px 15px;
+}
+
+.chat .me .bubble {
+  background: blue;
+  text-align: left;
+}
+
+.chat .other .bubble:before {
+  content: "";
+  top: 0px;
+  left: -25px;
+  position: absolute;
+  background: transparent;
+  height: 0px;
+  width: 0px;
+  border-left: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 20px solid green;
+}
+
+.chat .me .bubble:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: -25px;
+  background: transparent;
+  height: 0px;
+  width: 0px;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 20px solid green;
+}
+ 
+    
+       /*style for cover contents*/
+           #services {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 200px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #30257D;
+}
+
+.title {
+  text-transform: uppercase;
+  color: #1f67db;
+  letter-spacing: 1px;
+  font-size: 45px;
+  margin-top: 100px;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+  gap: 30px;
+}
+.card {
+  position: relative;
+  display: flex;
+  margin: 2px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #c7adab;
+  box-shadow: 5px 5px 10px #3D474B;
+  border-radius: 10px;
+  padding: 5px;
+  overflow-y: hidden;
+  height: 350px;
+}
+
+
+
+.bgcard {
+  height: 100%;
+  background-color: lightgray;
+  z-index: 5;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: .7;
+  position: absolute;
+  transition: 0.5s;
+}
+.card:hover {
+  transform: scale(1.0);
+  height: 450px;
+  border: 1px solid black;
+  z-index: 9999;
+  overflow-y: auto;
+}
+.html{
+  color: #ED6915;
+}
+.html{
+  transition-duration: 3s;
+    z-index: 10000000;
+    width:70%;
+    margin-top: 10px;
+}
+.card:hover .html {
+  position: static;
+  transform: scale(.75);
+  z-index: 999;
+}
+.card:hover .bgcard {
+  opacity: 0;
+} 
+    
+    /* style for the unordered list elements*/
+    .ulstyle{
+      padding-top: 5px;
+      padding-left: 12px;
+    }
+    li::before{
+      content: "€->";
+      color: dodgerblue;
+      font-size: 110%;
+      font-weight: bolder;
+      padding-right: 3px;
+    }
+    
+    /* vertical line*/
+    .reply-container {
+	position: relative;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	margin-top: 5px;
+	
+}
+
+.vertical-line {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 4px;
+	height: 100%;
+	background-color: blue;
+}
+
+.reply-text {
+  font-size: 103%;
+  font-weight: bold;
+	margin-left: 10px;
+	padding-top: 10px;
+	background: linear-gradient(to bottom right, rgba(25, 255, 255, 0.3), rgba(155, 105, 255, 0.3));
+  backdrop-filter: blur(0.5);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(225, 105, 25, 0.5);
+}
+
+.reply-text::before {
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: -10px;
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	
+}
+/* next and previous button*/
+.button-container {
+	position: relative;
+	display: flex;
+	width:60%;
+	margin-right: auto;
+	margin-left: auto;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 4;
+	background: linear-gradient(to bottom right, rgba(25, 255, 255, 0.3), rgba(155, 105, 255, 0.3));
+  backdrop-filter: blur(0.5);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(225, 105, 25, 0.5);
+}
+
+.prev-button, .next-button {
+  
+	position: relative;
+	display: inline-block;
+	padding: 5px 5px;
+	background-color: #333;
+	color: #fff;
+	font-weight: bolder;
+	font-size: 110%;
+	border-radius: 30px  120px;
+	box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+}
+
+.prev-button::before, .next-button::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to bottom, #333, #555);
+	transform: scaleY(0);
+	transform-origin: center;
+	transition: transform 0.3s ease-in-out;
+}
+
+.prev-button:hover::before, .next-button:hover::before {
+	transform: scaleY(1);
+}
+
+.prev-button::after, .next-button::after {
+	content: "";
+	position: absolute;
+	font-weight: bolder;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.prev-button::after {
+	content: "‹";
+}
+
+.next-button::after {
+	content: "›";
+}
+
+.prev-button {
+	margin-right: 50px;
+}
+
+.next-button {
+	margin-left: 20px;
+}
+.cardTop{
+  
+  width:100%;
+  height:280px;
+  background: #FAC24F;
+  border-radius: 50px;
+  display:flex;
+  overflow:hidden;
+  align-items:flex-end;
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+.timeline{
+  
+  width:122%;
+  height:100vh;
+  background: #ECF1F524;
+  mix-blend-mode: normal;
+backdrop-filter: blur(15px);
+  
+  overflow:hidden;
+margin-left: 2px;
+
+position:absolute;
+  top:90px;
+ 
+box-shadow: 0px 20px 10px 3px rgba(95, 102, 173, 0.566816);
+border-radius: 10px;
+  padding: 0;
+  
+  .box{
+    
+    height:87.5%;
+    background:#fbfcfd;
+    width: 95%; /* Adjust as needed */
+  margin: 10px auto; /* Center the box horizontally */
+  margin-top:5px;
+  margin-bottom:4px;
+    overflow-y: auto;
+    box-shadow:0 2px 4px 2px;
+    z-index:20;
+    
+    .container{
+      
+      width:95%;
+     
+      
+      }
+
+    }
+  }
+}
+
+
+  </style>
+</head>
+
+<body>
+  
+<div class="main" style="width: 125%;">
+         <div class="notification" id="profile" >
+             <div class="dd">
+   <a href="javascript:void(0);" class="dd-btn"  style="color: white; font-weight: bolder; font-size: 150%">&#9776;</a>
+    <div class="dd-content" style="z-index:99">
+      <a href="JS.html" style="z-index: 80; background: linear-gradient(to bottom right, rgba(21, 55, 55, 1), rgba(21, 54, 55, 0.4)); border-radius: 8px; "> Overview</a>
+      
+      <a href="JS1.html" style="z-index: 90; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;">Introduction To Internet</a>
+      
+      <a href="JS2.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> Introduction To WWW</a>
+      <a href="JS3.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px; font-size: 85%"> Introduction To Why HTML And CSS Matters The Most When Programming In JavaScript</a>
+       <a href="JS4.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> Introduction To Javascript</a>
+      <a href="JSmis.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> Introduction To JavaScript Fundamentals</a>
+      <a href="JSmis1.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> How To Display Output In JavaScript </a>
+    <a href="JS5.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> Introduction To JavaScript Variables</a>
+    </div>
+  </div>
+       	<h1 class="logoname" id="logoname">M <sup> irro</sup><sub>R</sub>  <br>   N<sup>etwor</sup><sub>K</sub></h1><br>
+        	<sup><img src="logo.jpg" alt="mirror.jpg" class="mirror"></sup>
+</div> 
+
+<div class="containerrr example-two" >
+  <header class="example-two-header">
+    <span class="logo">Logo</span>
+    <nav class="vertical-align-middle scrollerr" style="
+  background: linear-gradient(to bottom right, rgba(25, 255, 255, 0.3), rgba(155, 105, 255, 0.3));
+  backdrop-filter: blur(0.5);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(225, 105, 25, 0.5);">
+<span class="navv-item"><a href="JS.html" style="color: white; font-weight: bolder">Overview</a></span>
+     
+      <span class="navv-item"><a href="JS1.html" style="color: white; font-weight: bolder">Prerequisite Fundamentals Of Programming</a></span>
+      <span class="navv-item"><a href="JS4.html" style="color: white; font-weight: bolder">JavaScript Programming Language</a></span>
+       <span class="navv-item"><a href="admin.html" style="color: white; font-weight: bolder">About The Admin/("CEO")</a></span>
+        
+      </a></span>
+    </nav>
+  </header>
+</div>
+
+
+  <div class="cardTop">
+    
+    <svg width="480px" height="219" viewBox="0 0 480px 219" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M-38.5 196C-38.5 196 34 91 133.5 91C233 91 427 159 532.5 30C638 -99 518 236 518 236L-49 246.5L-38.5 196Z" fill="#FF768E"/>
+</svg>
+    
+
+  </div>
+  
+  
+    <div class="timeline">
+      
+   <h1 style="font-size: 95%; font-weight: bolder; padding: 0; margin-bottom: 0; margin-top: 0px; margin-left: 60px; margin-right: 0; ">Introduction To Displaying/Printing Output In JavaScript ::::</h1>
+      
+      <div class="box">
+        
+        <div class="container" style="margin-left: 10px">
+          <br>
+          <h3 class="mainhead">
+            Overview
+          </h3>
+          
+          <p class="p">
+            Printing information in JavaScript is an essential skill for showcasing data on a webpage or debugging your applications effectively.<br>
+            <b class="eg">For Example ::::</b> <br>
+            If you want to see if your JavaScript statements or codes are working correctly you can out put data to check it out.
+            <br>
+            <b style="margin-left: 50px">Or</b>
+            <br>
+            You planned of welcoming visitors to your website with a Welcome message as soon as the website finishes loading a Pop up containing the welcome message should Pop up and disappear after 10 seconds.
+            <br>
+            Have it at the back of your mind that you cannot use only HTML and CSS to achieve this awesome feature you intend putting on your website so in addition you will be making use of JavaScript.
+            <br>
+            And without knowing how to display out with JavaScript you will not be able to achieve this. <br />
+            <div class="chat">
+<div class="ment other ">
+  
+	<div class=" bubble" > So in general with these features within JavaScript you can be able to display the some results of your JavaScript codes and also be able to debug your JavaScript source code. <br>
+	<p class="p">
+	  You can print information out in JavaScript using the innerHTML property and the <b class="cool">windows.alert()</b> and <b class="cool">document.write()</b> methods.  <br>
+	  You can also print data out to the browser’s console using the popular <b class="cool">console.log()</b> function or print out webpage content using JavaScript’s <b class="cool">window.print()</b> function.
+	  
+	</p>
+	<p class="p">
+	  Each method has its specific use cases, whether for debugging, user notifications, or dynamically updating web content. Here we will explore various JavaScript output methods, demonstrating how and when to use them effectively. <br>
+	  There are primarily multiple distinct methods for displaying output in JavaScript. Although there are other methods for output display, they are not advisable, so it is recommended to refrain from using alternative output approaches.
+	</p>
+	</div>
+	</div>
+</div>
+<b class="eg">Before We Continue Note The Following ::::</b> <br>
+<h4>Browser's Console ::::</h4>
+<div class="reply-container">
+
+	<div class="reply-text"> 	
+	
+	<div class="vertical-line"></div>
+	
+	The browser's console is a powerful tool available in modern web browsers that allows developers to interact with and debug their web applications.  <br>
+	It is part of the browser's Developer Tools (often referred to as DevTools) and provides a variety of functionalities for inspecting, debugging, and optimizing web pages. 
+	<p class="p">
+	  The browser's console is a built-in feature within web browsers like Google Chrome, Mozilla Firefox, Microsoft Edge, and Safari. 
+	  <br>
+	  It serves as an interface for executing JavaScript code, logging messages, and displaying errors or warnings that occur during the execution of web applications. <br>
+	  The console helps developers test code snippets in real-time and gain insights into the behavior of their applications.
+	</p> <br>
+	<b>Alright If you want to know the browser's console into details or how to use it use the link below ::::</b> <br>
+	<b style="text-decoration: underline; text-shadow: 3px 2px 3px lightcoral"><a href="#">Into Details Explanation On Browser's Console.</a></b>
+	</div>
+</div>
+<br>
+<h4>There are a few methods to output data to the browser console or webpage using JavaScript. :::</h4> <br>
+<b class="eg">They Are ::::</b> <br>
+<ul class="ulstyle">
+  <li>Using the <b class="cool">console.log()</b> function</li>
+  <li>Using the <b class="cool">windows.alert()</b> function</li>
+  <li>Using the <b class="cool">innerHTML</b> property</li>
+  <li>Using the <b class="cool">document.write()</b> function</li>
+  <li>Using the <b class="cool">window.print()</b> function</li>
+  <li>Using the <b class="cool">window.prompt()</b> function</li>
+</ul>
+    <br>
+    <b> Alright, let’s dive into them! :::</b> <br>
+          </p> 
+          <h3 class="mainhead">Using The console.log() Function ::::</h3>
+          
+                  <div class="card">
+        <div class="bgcard"></div>
+    <img src="pro7.gif" alt="pro7.gif" class="html" >
+    <div class="bas">
+       <fieldset>
+       <p class="p">
+        <b class="cool"> console.log()</b> is a built-in function in JavaScript that allows you to print output to the browser’s console.  <br>
+        JavaScript provides the <b class="cool">console.log()</b> method for debugging purposes, which allows you to print messages, variables, and object values to the browser’s console. <br>
+        It’s an excellent tool to track values and understand the flow of your application without interrupting its execution. <br>
+        It is used during development to output information about the state of the program. <br>
+        <b>However, the output of <b class="cool">console.log()</b> cannot be seen on mobile devices because the developer console is only available on desktop computers browsers such as Firefox, chrome, Microsoft edge.</b>
+       </p>
+       <p class="p">
+         To use the browser’s console, open a new tab and tap the F12 button on your keyboard to open the developer tools.
+<br>
+Once you’ve opened it, select the Console tab and enter the following command. 
+<div class="codebase">
+  <b style="color: lawngreen">console</b><b>.</b><b style="color: lightyellow">log</b><b>&lpar;</b><b class="userinfo">"Hello World!"</b><b>&rpar;</b>;
+</div> <br>
+<img src="JSmis1img.png" alt="" style="width: 270px; height: 150px; border-radius: 10px 10px">
+       </p>
+       
+     <p class="p">
+       We can see the message written inside the function clearly displayed in the browser console tab. <br>
+       <b>Next, let’s look at a practical method in HTML script ::::</b> <br>
+       <pre class="codebase" style="font-size: 65%">
+         
+    <b class="angle">&lt;</b><b class="code">!DOCTYPE html</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">html</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">head</b><b class="angle">&gt;</b> 
+      <b class="angle">&lt;</b><b class="code">title</b><b class="angle">&gt;</b> Practical <b class="angle">&lt;</b><b class="code">/title</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">/head</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">body</b><b class="angle">&gt;</b>
+      <b class="angle">&lt;</b><b class="code">h1</b><b class="angle">&gt;</b> Hello am here <b class="angle">&lt;</b><b class="code">/h1</b><b class="angle">&gt;</b>
+          <b class="angle">&lt;</b><b class="code">button</b> <b class="assigned">onclick</b><b>&equals;</b><b class="userinfo">"console.log('The button was clicked');"</b><b class="angle">&gt;</b> 
+            Click Me 
+          <b class="angle">&lt;</b><b class="code">/button</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">/body</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">/html</b><b class="angle">&gt;</b>
+    
+       </pre>
+       <br>
+       <img src="JSmis1Img2.png" alt="" style="width: 290px; height: 180px; border-radius: 10px 10px"> 
+       
+     </p>  
+       <p class="p">
+         In the example above, anytime the user clicks the HTML button element, it logs a message to the console.
+       </p>
+        <br>
+        </fieldset> 
+        <br>
+        <br>
+    </div>
+       </div>
+       <br>
+       <h3 class="mainhead">Using The windows.alert() Function ::::</h3>
+       <div class="card">
+        <div class="bgcard"></div>
+    <img src="pro7.gif" alt="pro7.gif" class="html" >
+    <div class="bas">
+       <fieldset>
+         <p class="p">
+           In JavaScript, the <b class="cool">window.alert()</b> function allows you to display a message to the user in a popup dialog box.
+           <br>
+           It’s a valuable way to provide essential information or a simple confirmation when required.
+           <br>
+           <b>Copy and use the following in your HTML code ::::</b> <br>
+            <pre class="codebase" style="font-size: 70%">
+         
+    <b class="angle">&lt;</b><b class="code">!DOCTYPE html</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">html</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">head</b><b class="angle">&gt;</b> 
+      <b class="angle">&lt;</b><b class="code">title</b><b class="angle">&gt;</b> Practical <b class="angle">&lt;</b><b class="code">/title</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">/head</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">body</b><b class="angle">&gt;</b>
+      <b class="angle">&lt;</b><b class="code">h1</b><b class="angle">&gt;</b> Am new here <b class="angle">&lt;</b><b class="code">/h1</b><b class="angle">&gt;</b>
+          <b class="angle">&lt;</b><b class="code">script</b><b class="angle">&gt;</b> 
+            <b style="color: lawngreen">window</b><b>.</b><b style="color: lightyellow">alert</b><b>&lpar;</b><b class="userinfo">"Hey, I have some news for you!"</b><b>&rpar;</b>; 
+          <b class="angle">&lt;</b><b class="code">/script</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">/body</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">/html</b><b class="angle">&gt;</b>
+    
+       </pre>
+       
+         </p>
+      <p class="p">
+       However, this is not an ideal method for printing as it can be intrusive to users and cannot be customized easily. <br>
+       Also, remember that the <b class="cool">alert()</b> function will pause the execution of your code until the user closes the dialog box. <br>
+       So, use it sparingly and avoid it for large-scale applications. <br>
+       <b class="eg">Note ::::</b> <br>
+       The <b class="cool">window</b> Keyword is optional. You can also write it as <b class="cool">alert(“Message”)</b>.
+      </p>
+        </fieldset>
+    </div>
+       </div>
+       <br>
+       <h3 class="mainhead">Using The innerHTML Property</h3>
+        <div class="card">
+        <div class="bgcard"></div>
+    <img src="pro7.gif" alt="pro7.gif" class="html" >
+    <div class="bas">
+       <fieldset>
+        <p class="p">
+          The <b class="cool">innerHTML</b> property is used to access and modify the HTML content of an element in your HTML document. <br>
+          You can use this property to create printable content on your web page by manipulating the content within an HTML element. <br>
+          <pre class="codebase" style="font-size: 70%">
+         
+    <b class="angle">&lt;</b><b class="code">!DOCTYPE html</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">html</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">head</b><b class="angle">&gt;</b> 
+      <b class="angle">&lt;</b><b class="code">title</b><b class="angle">&gt;</b> Practical <b class="angle">&lt;</b><b class="code">/title</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">/head</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">body</b><b class="angle">&gt;</b>
+      <b class="angle">&lt;</b><b class="code">h4</b><b class="angle">&gt;</b>
+       I guess am the only Html element here.
+       In case you see any other contents one the page apart 
+       from us made with "h4" then as the
+       developer where from those because i don't have any idea.
+      <b class="angle">&lt;</b><b class="code">/h4</b><b class="angle">&gt;</b>
+      <b class="angle">&lt;</b><b class="code">div</b> <b class="assigned">class</b><b>&equals;</b><b class="userinfo">"custom-div"</b><b class="angle">&gt;</b>
+      <b class="angle">&lt;</b><b class="code">/div</b><b class="angle">&gt;</b>
+       <b class="angle">&lt;</b><b class="code">script</b><b class="angle">&gt;</b> 
+          <b style="color: lawngreen">window</b><b>.</b><b style="color: lightyellow">getElementById</b><b>&lpar;</b><b class="userinfo">"custom-div"</b><b>&rpar;</b><b>.</b><b class="assigned">innerHTML</b><b>&equals;</b> 
+          <b class="userinfo">"<b class="angle">&lt;</b><b class="code">h1</b><b class="angle">&gt;</b>Hey, what do you intend to say am new here<b class="angle">&lt;</b><b class="code">/h1</b><b class="angle">&gt;</b>"</b>;
+       <b class="angle">&lt;</b><b class="code">/script</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">/body</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">/html</b><b class="angle">&gt;</b>
+    
+       </pre>
+       <br>
+       <b>Alright, so when you study the above code well you will realize we have created a <b class="cool">div</b> element and give it a class <b class="cool">custom-div</b> 
+       but we didn't includeed anything into it so for you to know exactly what am saying remove the JavaScript codes from the codes and run it after that replace the JavaScript source <br>
+       and re-run the code and you will realize that another  content has been added and this was done with the JavaScript innerHTML Property</b>
+        </p>
+        <p class="p">
+          The above code snippet modifies the HTML content of a div element with the ID attribute custom-div, replacing it with a new <b class="angle">&lt;</b><b class="code">h1</b><b class="angle">&gt;</b> header with custom content.<br>
+          By modifying an HTML element’s innerHTML property like this, you can print information like the current date and time directly on a web page. <br>
+          Keep in mind that you should always verify the desired HTML element exists before modifying its content.
+          
+        </p>
+        </fieldset>
+    </div>
+       </div>
+       <br>
+       <h3 class="mainhead">Using The document.write() Method</h3>
+        <div class="card">
+        <div class="bgcard"></div>
+    <img src="pro7.gif" alt="pro7.gif" class="html" >
+    <div class="bas">
+       <fieldset>
+         <p>
+           The <b class="cool">document.write()</b> method is another way to create printable content in an HTML browser using JavaScript. <br>
+           This method writes HTML content directly to your document, effectively replacing your existing content with the new content. 
+           
+         </p>
+         <p class="p">
+           To use this method, simply call <b class="cool">document.write(“yourContent”);</b> with the desired content as a string argument.
+           <b class="eg">Write the below codes into your text editor ::::</b> <br>
+            <pre class="codebase" style="font-size: 70%">
+         
+    <b class="angle">&lt;</b><b class="code">!DOCTYPE html</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">html</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">head</b><b class="angle">&gt;</b> 
+      <b class="angle">&lt;</b><b class="code">title</b><b class="angle">&gt;</b> Practical <b class="angle">&lt;</b><b class="code">/title</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">/head</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">body</b><b class="angle">&gt;</b>
+          <b class="angle">&lt;</b><b class="code">script</b><b class="angle">&gt;</b> 
+            <b style="color: lawngreen">document</b><b>.</b><b style="color: lightyellow">write</b><b>&lpar;</b><b class="userinfo">"Your Custom Content"</b><b>&rpar;</b>; 
+          <b class="angle">&lt;</b><b class="code">/script</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">/body</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">/html</b><b class="angle">&gt;</b>
+    
+       </pre>
+       
+         </p>
+         <p class="p">
+           Keep in mind that using <b class="cool">document.write()</b> can completely overwrite your HTML document’s content, so use this method cautiously. <br>
+           If it is called after the page is done loading, it will overwrite everything on your webpage. <br>
+           Using <b class="cool">document.write()</b> is generally considered an outdated method. Consider modern alternatives such as <b class="cool">innerHTML</b> for most cases.
+         </p>
+        <br>
+        
+        </fieldset>
+        <br>
+        <br>
+    </div>
+       </div>
+       <br>
+       <h3 class="mainhead">Using window.prompt() Method</h3>
+       <div class="card">
+        <div class="bgcard"></div>
+    <img src="pro7.gif" alt="pro7.gif" class="html" >
+    <div class="bas">
+       <fieldset>
+       <p class="cool">
+         
+         The <b class="cool">window.prompt()</b> method is used to display a dialog box that prompts the user input. It returns the text entered by the user as a string. It doesn’t display output directly but captures user input.
+         <b class="eg">Note ::::</b> <br>
+         <div class="chat">
+<div class="ment other ">
+  
+	<div class=" bubble" > 	
+	This method is not used for output, it only use to take input from user. 
+	</div>
+	</div>
+</div>
+         <br>
+         <b class="eg">Let's Check It Out Below ::::</b> <br>
+         <pre class="codebase" style="font-size: 70%">
+         
+    <b class="angle">&lt;</b><b class="code">!DOCTYPE html</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">html</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">head</b><b class="angle">&gt;</b> 
+      <b class="angle">&lt;</b><b class="code">title</b><b class="angle">&gt;</b> Practical <b class="angle">&lt;</b><b class="code">/title</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">/head</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">body</b><b class="angle">&gt;</b>
+          <b class="angle">&lt;</b><b class="code">script</b><b class="angle">&gt;</b> 
+            <b style="color: lawngreen">document</b><b>.</b><b style="color: lightyellow">prompt</b><b>&lpar;</b><b class="userinfo">"Enter Your Name ::"</b><b>&rpar;</b>; 
+          <b class="angle">&lt;</b><b class="code">/script</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">/body</b><b class="angle">&gt;</b>
+    <b class="angle">&lt;</b><b class="code">/html</b><b class="angle">&gt;</b>
+    
+       </pre>
+       </p>
+        <br>
+        <br>
+        </fieldset>
+        <br><br>
+    </div>
+       </div>
+       <br>
+       <div class="chat">
+<div class="ment other ">
+  
+	<div class=" bubble" >
+	 <p class="p"> 
+	  JavaScript output methods is crucial for interactive and dynamic web applications. <br>
+	  By using <b class="cool">console.log()</b> for debugging, <b class="copl">alert()</b> for alerts, <b class="cool">document.write()</b> for writing directly to the document, and manipulating HTML elements, you can control and present data efficiently. </p>
+	  <p class="p">
+	  Understanding these methods enhances your ability to create responsive and user-friendly web applications. <br>
+	  Start experimenting with these techniques to improve your JavaScript skills and enhance your web development projects.
+	  </p>
+	</div>
+	</div>
+</div>
+        <!--<div class="reply-container">
+
+	<div class="reply-text"> 	<div class="vertical-line"></div> Let's look at the difference between Low-level and High-level programming languages</div>
+</div>     
+       
+       
+      <!-- 
+      <div class="chat">
+<div class="ment other ">
+  
+	<div class=" bubble" > 	 Let's look at the difference between Low-level and High-level programming languages</div>
+	</div>
+</div>
+ --> 
+       
+       
+        <!--<div class="reply-container">
+
+	<div class="reply-text"> 	<div class="vertical-line"></div> Let's look at the difference between Low-level and High-level programming languages</div>
+</div>
+                <!--
+          <div class="card">
+        <div class="bgcard"></div>
+    <img src="pro7.gif" alt="pro7.gif" class="html" >
+    <div class="bas">
+       <fieldset>
+        <legend><h3 style="font-size: 105%; color: red;"></h3>
+        </legend>  
+        <ul class="ulstyle">
+         
+        </ul>
+        
+        </fieldset>
+    </div>
+       </div>-->
+        <!--<div class="reply-container">
+
+	<div class="reply-text"> 	<div class="vertical-line"></div> Let's look at the difference between Low-level and High-level programming languages</div>
+</div>-->
+
+<!--
+<div class="code-container">
+   
+  <button class="run-btn" onclick="runCode(this)" id="runCode2">Run Code</button>
+  <button class="editor-btn" onclick="showEditor(this)" id="textEditor2" style="display:none;">Text Editor</button>
+  <div class="Editor">
+    <h3>Code</h3>
+    <textarea id="codeArea2" placeholder="Enter your HTML, CSS, and JavaScript code here...">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Document</title>
+    </head>
+    <body>
+      
+      <script>
+            // Example JavaScript code
+            let message = 'Hello!';
+                message ='World!';
+            alert (message);
+          </script>
+    </body>
+    </html>
+    
+    </textarea>
+  </div>
+  <div class="outPut">
+    <h3>Output</h3>
+    <iframe id="outputFrame2" width="100%" height="100%"></iframe>
+  </div>
+</div>
+
+-->
+<br>
+<br>
+<br>
+  </div>
+          </div>
+       
+            <div class="button-container">
+	<a href="JSmis.html" class="prev-button">Previous</a>
+	<a href="JS5.html" class="next-button">Next</a>
+</div>
+          
+          </div>
+          </div>
+
+<!-- Script for code live editor-->
+<script >
+let generatedCode = '';
+
+function runCode(button) {
+  const codeContainer = button.closest('.code-container');
+  const code = codeContainer.querySelector('textarea').value;
+  generatedCode = code;
+  const outputFrame = codeContainer.querySelector('iframe');
+  const editor = codeContainer.querySelector('.Editor');
+  const output = codeContainer.querySelector('.outPut');
+  editor.style.display = 'none';
+  output.style.display = 'block';
+  outputFrame.srcdoc = generatedCode;
+  button.style.display = 'none';
+  codeContainer.querySelector('.editor-btn').style.display = 'block';
+}
+
+function showEditor(button) {
+  const codeContainer = button.closest('.code-container');
+  const editor = codeContainer.querySelector('.Editor');
+  const output = codeContainer.querySelector('.outPut');
+  const runButton = codeContainer.querySelector('.run-btn');
+  const textEditorButton = button;
+  editor.style.display = 'block';
+  output.style.display = 'none';
+  const textarea = editor.querySelector('textarea');
+  textarea.value = generatedCode;
+  runButton.style.display = 'block';
+  textEditorButton.style.display = 'none';
+}
+
+document.querySelectorAll('.run-btn').forEach(button => {
+  button.addEventListener('click', runCode);
+});
+
+document.querySelectorAll('.editor-btn').forEach(button => {
+  button.addEventListener('click', showEditor);
+});
+</script>
+
+</body>
+
+</html>

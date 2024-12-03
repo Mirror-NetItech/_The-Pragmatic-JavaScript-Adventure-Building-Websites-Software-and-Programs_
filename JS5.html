@@ -1,0 +1,2179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>"Mirror Network Itech" Join with us the world most favorite Web Development platforms.</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+   <link rel="stylesheet" href="CSS4code-editors.css">
+
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+
+*{
+  
+  margin:0;
+  outline:none;
+  text-decoration:none;
+  list-style:none;
+  font-family: 'Mulish', sans-serif;
+  
+}
+
+body{
+  display:flex;
+  padding-top: 0;
+  justify-content:center;
+  background:#ecf1f5;
+  transform:scale(0.8) translateY(-50px);
+    width: 100vw;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+}
+
+.notification {
+  position: fixed;
+  width: 125%;
+  height: 50px;
+  background: #007bff;
+  padding: 0;
+  margin-top: 11px;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: top 0.3s ease;
+  z-index: 999; /* Ensure the notification appears above other content */
+  backdrop-filter: blur(15px);
+  border-radius: 10px 00px 200px 200px;
+  box-shadow: 5px 5px 10px rgba(202, 100, 25, 0.5);
+}
+.mirror{
+  width: 16%;
+  margin-right: 55%;
+  border-radius: 20px;
+  padding: 0;
+}
+#profile {
+ display: flex;
+ align-items: center;
+ margin-left: auto;
+ flex-shrink: 0;
+ }
+
+ .logoname {  
+   margin-top: 26px;
+   position: absolute;  
+   top: 0;
+   right: 28%;
+   line-height: 10px;
+   transform: translate(50%,-50%);  
+   text-transform: uppercase;  
+   font-family: verdana;  
+   font-size:128%;  
+   font-weight: bolder;  
+   color:#f5e4f5;  
+   text-shadow: 1px 1px 1px white,  
+     1px 2px 1px white,  
+     1px 3px 1px #919191, 
+     1px 4px 1px #919191,  
+     1px 5px 1px white,  
+     1px 6px 1px white,  
+   1px 7px 2px rgba(16,16,16,0.4),  
+   1px 8px 5px rgba(16,16,16,0.2),  
+   1px 9px 9px rgba(16,16,16,0.2),  
+   1px 10px 10px rgba(16,16,16,0.4); 
+   animation: blinking 1s infinite;
+   
+ }
+ @keyframes blinking {
+  0% {
+    color: #00ffff;
+  }
+  50% {
+    color: #ff00ff;
+  }
+  100% {
+    color: #ffff00;
+  }
+}
+/* Make each area overflow horizontally and*/
+/*have the ability to have other items*/
+/*scrolled into view*/
+.scrollerr {
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar; }
+/* container*/
+.containerrr{
+  position: relative;
+  top: 60px;
+  
+  padding: 0;
+  margin: 0;
+  z-index: 999;
+}
+/* Example two required styles --------------- */
+.example-two-header {
+  .logo {
+    width: 22%; 
+  height:20px;
+}
+  nav {
+    width: 75%;
+    
+    } }
+
+
+/* Shared styles --------------- */
+header {
+  background: #152637;
+}
+
+/*Examples*/
+.example-two-header {
+  border-radius: 3px; 
+  
+}
+
+
+
+/*Logo*/
+.logo {
+  text-align: center; /*only effective in example 2/3*/
+  font-weight: 700;
+  color: #727c87;
+  border-right: 1px solid rgba(#727c87, .4);
+  padding: 3px 24px 13px; }
+
+/*Nav items*/
+.navv-item {
+  padding: 2px 5px 6px;
+
+  &:not(:last-child) {
+    border-right: 1px solid rgba(#727c87, .2); } }
+
+/*Setup/misc styles --------------- */
+* { 
+  box-sizing: border-box; }
+
+
+/*Remove the inline-block extra space*/
+header,
+nav { 
+  font-size: 0; }
+
+/*Requires font size to be reset for these elements*/
+.logo,
+.navv-item {
+  font-size: 15px; 
+  font-weight: bolder;
+  color: white;
+}
+
+.logo,
+.navv-item,
+.vertical-align-middle {
+  display: inline-block;
+  vertical-align: middle;
+  
+}
+
+
+/* Demo purposes only, proceed with caution on Windows*/
+.scroll::-webkit-scrollbar {
+  display: none; }
+ 
+/* drop-down navigation bar*/
+   .dd {
+      position: relative;
+      display: inline-block;
+      z-index: 99999;
+      
+    }
+    .dd-btn {
+      padding:0;
+      margin-left: 30px;
+      text-align: center;
+      border: none;
+      width: 5px;
+      color: #f8f9f9;
+      text-decoration: none;
+    }
+    .dd-content {
+      position: absolute;
+      width: 300px;
+      margin-top: 50px;
+      margin-left: 5px;
+      box-shadow: 0 18px 36px rgba(0,0,0,0.30), 0 14px 11px rgba(0,0,0,0.22);
+      height: 0px;
+      transition: height 1s;
+      overflow: hidden;
+      border-radius: 25px;
+    }
+    .dd:hover > .dd-content {
+      height: 400px;
+    }
+    .dd-content > a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: white;
+      font-weight: bolder;
+      font-size: 108%;
+    }
+    h4{
+      font-size: 103%;
+      font-weight: bolder;
+      color: firebrick;
+      text-decoration: underline;
+      margin-top:2px;
+    }
+    b{
+      font-size: 100%;
+      font-weight: bold;
+      
+    }
+    .mainhead{
+      font-size: 108%; 
+      color: red; 
+      font-weight:bolder; 
+      padding: 0;
+    }
+    p{
+      font-size: 101%;
+      text-indent: 25px;
+    }
+    li{
+      font-size: 101%;
+    }
+    .eg{
+      font-size: 102%;
+      color: mediumblue;
+    }
+   
+       .cool{
+      background: darkgray;
+      font-size: 120%;
+      border-radius: 5px;
+      
+    }
+      .code{
+     font-size: 106%;
+     font-weight: bolder;
+     color: royalblue;
+     
+   }
+   .variable{
+     color: royalblue;
+     font-weight: bold;
+     font-size: 104%;
+   }
+   .keyword{
+     font-size: 104%;
+     font-weight: bolder;
+     color: sandybrown;
+   }
+   .assigned{
+     font-size: 106%;
+     font-weight: bolder;
+     color: lightblue;
+   }
+   .userinfo{
+     font-size: 104%;
+     font-weight: bold;
+     color: yellow;
+   }
+   .comment {
+     color:gray;
+     font-size: 75%;
+   }
+   .selector{
+     color: green;
+     font-weight: bolder;
+     font-size: 110%;
+   }
+   .output {
+     width: 100%;
+     border-radius: 45px;
+     background: cadetblue;
+     border: 10px solid blanchedalmond;
+   }
+   .angle{
+     font-size: 105%;
+     font-weight: bold;
+     color: mediumvioletred;
+   }
+   fieldset{
+     width: 95%;
+     display: block;
+      background: white;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: 10px;
+  padding-top: .4em;
+  padding-bottom: 0.25em;
+  padding-left: 0.1em;
+  padding-right: 0.1em;
+  border-radius: 5px 30px 80px 5px;
+  border: 1px groove (internal value);
+  
+}
+  .bas{
+  width: 99%;
+  
+  box-shadow: 2px 5px 2px 0 rgba(105, 120, 139, 0.6), 02px 6px 18px 0 rgba(100, 23, 20, 0.5);
+  justify-content: center;
+  justify-items: center;
+  padding-left: 0.5px;
+  border-radius: 20px 70px 60px 20px;
+  z-index: 10;
+  animation: zindex 5s infinite;
+}
+.codebase{
+  background-image: linear-gradient(rgba(000, 000, 000, 0.8), rgba(000, 000, 000, 0.8));
+  color: white;
+  border-radius: 34px;
+  font-weight: bold;
+  width: 98%;
+  padding-left: 20px;
+padding-top: 10px;
+padding-bottom: 20px;
+} 
+/*style for table*/
+table,tr,td{
+  border: 1px solid darkgray;
+}
+.head{
+  background-color: lightseagreen;
+  font-weight: bolder;
+}
+.col-1{
+  background: lightskyblue;
+} 
+/*Style for Live code editor*/
+.code-container {
+      width: 90%;
+      margin: auto;
+      box-shadow: 0 4px 10px rgba(080, 240, 130, 0.1);
+      background: #eff;
+      padding: 10px;
+      border-radius: 50px;
+    }
+
+    .Editor, .outPut {
+      border: 3px solid blue;
+      padding: 0;
+      box-shadow: 5px 2px 4px  gold;
+      height: 300px;
+      overflow: auto;
+      display: none; /* Initially hide both editor and output */
+    }
+
+    .Editor {
+      width: 100%;
+      border-radius: 20px;
+      display: block; /* Show editor initially */
+    }
+
+    .outPut {
+      width: 100%;
+      border-radius: 20px;
+      z-index: 99;
+    }
+
+    .run-btn, .editor-btn {
+      padding: 10px 20px;
+      border-radius: 100px 20px;
+      box-shadow: 2px 4px 8px black;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+
+ 
+    h3 {
+      margin-top: 5px;
+      margin-left: 20px;
+    }
+    
+    #codeArea2 {
+      width: 100%;
+      height: 100%;
+      font-family: monospace;
+      resize: none; /* Prevent resizing */
+    }
+    
+    iframe {
+      box-shadow: 2px 4px 5px solid blue;
+      border-radius: 15px;
+      border: none; /* Remove default iframe border */
+    }
+    
+    /*Note container */
+  .bubble {
+  display: inline-block;
+  background: green;
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: white;
+  font-family: var(--font-1);
+  max-width: 100%;
+  position: relative;
+  margin: 0px 15px;
+}
+
+.chat .me .bubble {
+  background: blue;
+  text-align: left;
+}
+
+.chat .other .bubble:before {
+  content: "";
+  top: 0px;
+  left: -25px;
+  position: absolute;
+  background: transparent;
+  height: 0px;
+  width: 0px;
+  border-left: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 20px solid green;
+}
+
+.chat .me .bubble:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: -25px;
+  background: transparent;
+  height: 0px;
+  width: 0px;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 20px solid green;
+}
+    
+
+    
+       /*style for cover contents*/
+           #services {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 200px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #30257D;
+}
+
+.title {
+  text-transform: uppercase;
+  color: #1f67db;
+  letter-spacing: 1px;
+  font-size: 45px;
+  margin-top: 100px;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+  gap: 30px;
+}
+.card {
+  position: relative;
+  display: flex;
+  margin: 2px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #c7adab;
+  box-shadow: 5px 5px 10px #3D474B;
+  border-radius: 10px;
+  padding: 5px;
+  overflow-y: hidden;
+  height: 350px;
+}
+
+
+
+.bgcard {
+  height: 100%;
+  background-color: lightgray;
+  z-index: 5;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: .7;
+  position: absolute;
+  transition: 0.5s;
+}
+.card:hover {
+  transform: scale(1.0);
+  height: 450px;
+  border: 1px solid black;
+  z-index: 9999;
+  overflow-y: auto;
+}
+.html{
+  color: #ED6915;
+}
+.html{
+  transition-duration: 3s;
+    z-index: 10000000;
+    width:70%;
+    margin-top: 10px;
+}
+.card:hover .html {
+  position: static;
+  transform: scale(.75);
+  z-index: 999;
+}
+.card:hover .bgcard {
+  opacity: 0;
+} 
+    
+    /* style for the unordered list elements*/
+    .ulstyle{
+      padding-top: 5px;
+      padding-left: 12px;
+    }
+    li::before{
+      content: "€->";
+      color: dodgerblue;
+      font-size: 110%;
+      font-weight: bolder;
+      padding-right: 3px;
+    }
+    
+    /* vertical line*/
+    .reply-container {
+	position: relative;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	margin-top: 5px;
+	
+}
+
+.vertical-line {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 4px;
+	height: 100%;
+	background-color: blue;
+}
+
+.reply-text {
+  font-size: 103%;
+  font-weight: bold;
+	margin-left: 10px;
+	padding-top: 10px;
+	background: linear-gradient(to bottom right, rgba(25, 255, 255, 0.3), rgba(155, 105, 255, 0.3));
+  backdrop-filter: blur(0.5);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(225, 105, 25, 0.5);
+}
+
+.reply-text::before {
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: -10px;
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	
+}
+/* next and previous button*/
+.button-container {
+	position: relative;
+	display: flex;
+	width:60%;
+	margin-right: auto;
+	margin-left: auto;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 4;
+	background: linear-gradient(to bottom right, rgba(25, 255, 255, 0.3), rgba(155, 105, 255, 0.3));
+  backdrop-filter: blur(0.5);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(225, 105, 25, 0.5);
+}
+
+.prev-button, .next-button {
+  
+	position: relative;
+	display: inline-block;
+	padding: 5px 5px;
+	background-color: #333;
+	color: #fff;
+	font-weight: bolder;
+	font-size: 110%;
+	border-radius: 30px  120px;
+	box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+}
+
+.prev-button::before, .next-button::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to bottom, #333, #555);
+	transform: scaleY(0);
+	transform-origin: center;
+	transition: transform 0.3s ease-in-out;
+}
+
+.prev-button:hover::before, .next-button:hover::before {
+	transform: scaleY(1);
+}
+
+.prev-button::after, .next-button::after {
+	content: "";
+	position: absolute;
+	font-weight: bolder;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.prev-button::after {
+	content: "‹";
+}
+
+.next-button::after {
+	content: "›";
+}
+
+.prev-button {
+	margin-right: 50px;
+}
+
+.next-button {
+	margin-left: 20px;
+}
+.cardTop{
+  
+  width:100%;
+  height:280px;
+  background: #FAC24F;
+  border-radius: 50px;
+  display:flex;
+  overflow:hidden;
+  align-items:flex-end;
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+.timeline{
+  
+  width:122%;
+  height:100vh;
+  background: #ECF1F524;
+  mix-blend-mode: normal;
+backdrop-filter: blur(15px);
+  
+  overflow:hidden;
+margin-left: 2px;
+
+position:absolute;
+  top:90px;
+ 
+box-shadow: 0px 20px 10px 3px rgba(95, 102, 173, 0.566816);
+border-radius: 10px;
+  padding: 0;
+  
+  .box{
+    
+    height:87.5%;
+    background:#fbfcfd;
+    width: 95%; /* Adjust as needed */
+  margin: 10px auto; /* Center the box horizontally */
+  margin-top:5px;
+  margin-bottom:4px;
+    overflow-y: auto;
+    box-shadow:0 2px 4px 2px;
+    z-index:20;
+    
+    .container{
+      
+      width:95%;
+     
+      
+      }
+
+    }
+  }
+}
+
+
+  </style>
+</head>
+
+<body>
+  
+<div class="main" style="width: 125%;">
+         <div class="notification" id="profile" >
+             <div class="dd">
+   <a href="javascript:void(0);" class="dd-btn"  style="color: white; font-weight: bolder; font-size: 150%">&#9776;</a>
+    <div class="dd-content" style="z-index:99">
+      <a href="JS.html" style="z-index: 80; background: linear-gradient(to bottom right, rgba(21, 55, 55, 1), rgba(21, 54, 55, 0.4)); border-radius: 8px; "> Overview</a>
+      
+      <a href="JS1.html" style="z-index: 90; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;">Introduction To Internet</a>
+      
+      <a href="JS2.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> Introduction To WWW</a>
+      <a href="JS3.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px; font-size: 85%"> Introduction To Why HTML And CSS Matters The Most When Programming In JavaScript</a>
+       <a href="JS4.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> Introduction To Javascript</a>
+      <a href="JSmis.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> Introduction To JavaScript Fundamentals</a>
+      <a href="JSmis1.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> How To Display Output In JavaScript </a>
+      <a href="JS5.html" style="z-index: 100; background: linear-gradient(to bottom right, rgba(21, 55, 55, .5), rgba(21, 54, 55, 1)); border-radius: 8px;"> Introduction To JavaScript Variables </a>
+
+    </div>
+  </div>
+       	<h1 class="logoname" id="logoname">M <sup> irro</sup><sub>R</sub>  <br>   N<sup>etwor</sup><sub>K</sub></h1><br>
+        	<sup><img src="logo.jpg" alt="mirror.jpg" class="mirror"></sup>
+</div> 
+
+<div class="containerrr example-two" >
+  <header class="example-two-header">
+    <span class="logo">Logo</span>
+    <nav class="vertical-align-middle scrollerr" style="
+  background: linear-gradient(to bottom right, rgba(25, 255, 255, 0.3), rgba(155, 105, 255, 0.3));
+  backdrop-filter: blur(0.5);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(225, 105, 25, 0.5);">
+<span class="navv-item"><a href="JS.html" style="color: white; font-weight: bolder">Overview</a></span>
+     
+      <span class="navv-item"><a href="JS1.html" style="color: white; font-weight: bolder">Prerequisite Fundamentals Of Programming</a></span>
+      <span class="navv-item"><a href="JS4.html" style="color: white; font-weight: bolder">JavaScript Programming Language</a></span>
+       <span class="navv-item"><a href="admin.html" style="color: white; font-weight: bolder">About The Admin/("CEO")</a></span>
+        
+      </a></span>
+    </nav>
+  </header>
+</div>
+
+
+  <div class="cardTop">
+    
+    <svg width="480px" height="219" viewBox="0 0 480px 219" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M-38.5 196C-38.5 196 34 91 133.5 91C233 91 427 159 532.5 30C638 -99 518 236 518 236L-49 246.5L-38.5 196Z" fill="#FF768E"/>
+</svg>
+    
+
+  </div>
+  
+  
+    <div class="timeline">
+      
+   <h1 style="font-size: 105%; font-weight: bolder; padding: 0; margin-bottom: 0; margin-top: 0px; margin-left: 88px; margin-right: 0; ">Introduction To JavaScript Variables.</h1>
+      
+      <div class="box">
+        
+        <div class="container" style="margin-left: 10px">
+          
+  <br>
+  <p class="p">
+    Most of the time, a JavaScript application needs to work with information. <br>
+    To store and represent this information in the JavaScript codebase ( codebase is a collection of source code used to build a particular software system, application, or software component. ), we use variables. A variable is a container for a value.
+    <p class="p">
+      Most of the time, a JavaScript application needs to work with information. Here are two examples: <br>
+      <ul class="ulstyle">
+        <li><b class="phase">An online shop :::::</b> The information might include goods being sold and a shopping cart.</li>
+        <li><b class="phase">A chat application :::::</b> The information might include users, messages, and much more.</li>
+      </ul>
+      <div class="reply-container">
+
+	<div class="reply-text"> 	<div class="vertical-line"></div>Variables are used to store this information.</div>
+</div>
+    </p>
+  </p>
+  <h3 class="mainhead">What is Variable</h3>
+ <div class="card">
+        <div class="bgcard"></div>
+    <img src="pro7.gif" alt="pro7.gif" class="html" >
+    <div class="bas">
+       <fieldset>
+        <legend><h3 style="font-size: 105%; color: red;">Variable</h3>
+        </legend>  
+        <p class="p">
+          Variable is a "named storage container" for storing a data. <br>
+          Variables allow you to store data that can be referenced and manipulated throughout your program. <br>
+          They can hold different types of data, such as numbers, strings, objects, arrays, and more. <br>
+          We can use variables to store goodies, visitors, and other data. <br>
+          <h4>Declaring a variable</h4>
+          <p class="p">To use a variable in JavaScript, you need to first of all create it more accurately, we call this declaring the variable.  <br>
+          Alright so, before you can declare a variable, you need to pick any of the three keywords which includes : <br>
+          <b>Keywords for declaring variable ::::</b> <br>
+          <ul class="ulstyle">
+            <li><b class="phase">var ::::</b> This is the keyword for declaring a variable traditional way. It has function scope and can be re-declared and updated.
+            <br>
+            Back when JavaScript was first created, this was the only way to declare variables. The design of <b class="variable">var</b> is confusing and error-prone. <br>
+            Due to this a new keyword was introduced to correct the problems encountered with the <b class="variable">var</b>. <br>
+            So nowadays majority of programmers working with JavaScript does not make use of the <b class="variable">var</b> to declare variables but is still in use by some and can be found in all source codes.
+            </li>
+            <li><b class="phase">let ::::</b>This is a JavaScript keyword introduced in ES6 (ECMAScript 2015), 
+            it allows you to declare block-scoped variables and this was developed to replace the <b class="variable">var</b> keyword and to function more perfect than the <b class="variable">var</b>. <br>
+            It can be updated but not re-declared in the same scope.</li>
+            <li><b class="phase">const ::::</b> This keyword was also introduced in ES6, it is used to declare block-scoped constant variable. <br>
+            Once assigned, their values cannot be changed (though the contents of objects or arrays can be modified).</li>
+          </ul>
+          <b class="eg">Note ::::</b> <br>
+          Since the <b class="variable">var</b> keyword is no more in use, in view of that in this our lesson we're only going to make use of the <b class="variable">let</b> and <b class="variable">const</b> keywords.
+          </p>
+          <h4>Steps To Declare A Variable Using <b class="variable">let</b> keyword</h4>
+          <p class="p">
+            To use a variable, you need create it more accurately first, we call this declaring the variable. To do this, we type the keyword <b class="variable"></b> followed by the name you want to call your variable:
+            <br>
+             <b>The statement below creates (in other words: declares) a variable with the name “message”:</b>
+             
+          <div class="codebase">
+            <b class="variable" style="margin-right: 5px">let</b>
+            <b class="assigned">message</b>;
+            
+            
+
+         </div>
+         <br>
+         <b class="eg">Note ::::</b> In JavaScript, all code instructions should end with a semicolon (;) your code may work correctly for single lines, but probably won't when you are writing multiple lines of code together. Try to get into the habit of including it.
+          </p>
+         
+        <h4>Initializing A Variable</h4>
+        <p class="p">
+          Once you've declared a variable, you can initialize it with a value. You do this by typing the variable name, followed by an equals sign  <b class="cool">&equals;</b> , followed by the value you want to give it
+        </p>
+          <div class="codebase">
+<pre>
+ <b class="angle">&lt;</b><b class="code">script</b><b class="angle">&gt;</b>
+    <b class="variable" style="margin-right: 5px">let</b> <b class="assigned">message</b>;   
+    <b class="assigned">message</b> <b>&equals;</b> <b class="userinfo">' Hello '</b>; 
+   <b class="comment" style="color: gray">// store the string 'Hello' in the variable named message</b>
+<b class="angle">&lt;</b><b class="code">script</b><b class="angle">&gt;</b>
+ </pre>
+ </div>
+ <p class="p">
+   You can declare and initialize a variable at the same time,this is probably what you'll do most of the time, as it is quicker than doing the two actions on two separate lines. <br>
+   <b>Let's Check It Out Below ::::</b>
+   <div class="codebase">
+<pre>
+ <b class="angle">&lt;</b><b class="code">script</b><b class="angle">&gt;</b>
+    <b class="variable" style="margin-right: 5px">let</b> <b class="assigned">message</b> <b>&equals;</b> <b class="userinfo">' Hello '</b>; 
+   <b class="comment" style="color: gray">// store the string 'Hello' in the variable named message</b>
+<b class="angle">&lt;</b><b class="code">script</b><b class="angle">&gt;</b>
+ </pre>
+   </div>
+ </p>
+   
+           The string is now saved into the memory area associated with the variable. <br>
+           <b>We can access it using the variable name, so let's check it out below:</b>
+           <div class="codebase">
+             <pre>
+ <b class="angle">&lt;</b><b class="code">script</b><b class="angle">&gt;</b>
+    <b class="variable" style="margin-right: 5px">let</b> <b class="assigned">message</b>;
+    <b class="comment">//below store the string 'Hello' in the variable named message</b>
+    <b class="assigned">message</b><b>&equals;</b> <b class="userinfo">' Hello '</b>; 
+    <b class="comment">//The below displays the variable content</b>
+   <b class="variable">alert</b>( <b class="assigned">message</b> );
+<b class="angle">&lt;</b><b class="code">script</b><b class="angle">&gt;</b>
+ </pre>
+           </div>
+           To be concise, we can combine the variable declaration and assignment into a single line as a good practice. <br>
+           <b>Let's check it out below</b>
+           <div class="codebase">
+             <pre><b class="angle">&lt;</b><b class="code">script</b><b class="angle">&gt;</b>
+   <b class="comment">// define the variable and assign the value</b>
+   <b class="variable">let</b> <b class="assigned">message</b> <b>&equals;</b> <b class="userinfo">' Hello '</b>;
+   <b class="comment">//Displays the Hello message</b>
+   <b class="variable">alert</b>( <b class="assigned">message</b> );
+<b class="angle">&lt;</b><b class="code">/script</b><b class="angle">&gt;</b>
+             </pre>
+           </div>
+     <div class="reply-container">
+
+	<div class="reply-text"> 	<div class="vertical-line"></div> Alright, so as you continue with your journey on this field and you tries to look into other people's projects you will probably come across old projects with old source codes and you will find an old variable keyword named
+	<b>var</b> instead of <b>let</b> keyword which you will find in today's JavaScript source codes. <br>
+	<p class="p">
+The var keyword is almost the same as let. It also declares a variable but in a slightly different, “old-school” way.
+	</p>
+	So let's see why the <b>var</b> is no more in use in today's JavaScript source codes instead the <b>let</b> is being used for declaring variables</div>
+</div>
+<h4>Differences Between The Old <b style="color: black">var</b> And The New <b style="color: black">let</b> Javascript Keywords Used For The Declaration Of Variables :::::</h4>
+<table>
+  <tr class="head">
+    <td>Meaning Of Key-Points</td>
+    <td>var</td>
+    <td>let</td>
+  </tr>
+  <tr>
+    <td class="col-1"><b>Scope ::::</b> refers to the accessibility or visibility of variables in certain parts of your code. <br>
+    And we have three types ("Global scope, Function scope and Block scope.").
+    </td>
+    <td>Has function scope. If declared inside a function, it is only accessible within that function. If declared outside any function, it has global scope.</td>
+    <td>Has block scope. It is only accessible within the nearest enclosing block (e.g., within {} braces).</td>
+  </tr>
+  <tr>
+    <td class="col-1"><b>Hoisting ::::</b> is a JavaScript mechanism where variables and function declarations are moved to the top of their containing scope during the compilation phase.</td>
+    <td>Variables declared with var are hoisted to the top of their containing function or global context. This means they can be referenced before their declaration, but will be undefined.</td>
+    <td>Variables declared with let are also hoisted, but they cannot be accessed until the line of code where they are declared is reached. This creates a "temporal dead zone" from the start of the block until the declaration.</td>
+  </tr>
+  <tr>
+    <td class="col-1"><b>Re-declaration ::::</b> refers to declaring a variable with the same name in the same scope.</td>
+    <td>Allows re-declaration of the same variable within the same scope without throwing an error.</td>
+    <td>Does not allow re-declaration of the same variable in the same scope. Attempting to do so will result in a SyntaxError.</td>
+  </tr>
+  <tr>
+    <td class="col-1"><b>Global object ::::</b> is a special object that serves as the top-level scope for all JavaScript code running in a particular environment (like a browser or Node.js).</td>
+    <td>When declared globally, it becomes a property of the global object (e.g., window in browsers).</td>
+    <td>When declared globally, it does not create a property on the global object.</td>
+  </tr>
+</table>
+
+        </p>
+        <br>
+        <h4>Reasons For Using let Over var</h4>
+        <ul class="ulstyle">
+          <li><b class="phase">Block Scope :::</b> The block-scoping nature of let allows for better management of variable visibility and lifecycle, reducing potential errors caused by variables leaking outside their intended scope.</li>
+          <li><b class="phase">Avoiding Hoisting Issues :::</b> The temporal dead zone associated with let helps prevent issues that arise from hoisting, making code easier to understand and maintain.</li>
+          <li><b class="phase">Preventing Re-declarations :::</b> By disallowing re-declarations in the same scope, let reduces the risk of accidental overwrites and bugs in larger codebases.</li>
+          <li><b class="phase">Modern JavaScript Practices :::</b> As JavaScript has evolved, let (and const, which is also block-scoped) has become the preferred way to declare variables due to its clearer semantics and reduced risk of errors.</li>
+        </ul>
+        <br>
+        <br>
+        <br>
+        </fieldset>
+    </div>
+       </div>
+<br>
+      <h3 class="mainhead">Let's Look At An Example Of  Website With And  Without A Variable :::::</h3>
+       <div class="card">
+        <div class="bgcard" ></div>
+    <img src="pro7.gif" alt="pro7.gif" class="html" >
+    <div class="bas">
+       <fieldset>
+         <legend><span><h4>Let's Look At An Example With A Variable</h4></span></legend>
+         <p class="p">
+          In this example pressing the button runs some code. First, it changes the text on the button itself. <br>
+          Second, it shows a message of the number of times the button has been pressed. <br> 
+          The number is stored in a variable. Each time the user presses the button, the number in the variable will increment by one. 
+         </p>
+         <b class="eg">Example 1 ::::</b>
+         <br>
+      <div class="code-container">
+   
+  <button class="run-btn" onclick="runCode(this)" id="runCode2">Run Code</button>
+  <button class="editor-btn" onclick="showEditor(this)" id="textEditor2" style="display:none;">Text Editor</button>
+  <div class="Editor">
+    <h3>Code</h3>
+    <textarea id="codeArea2" placeholder="Enter your HTML, CSS, and JavaScript code here...">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Document</title>
+    </head>
+    <body>
+       <button id="button_A">Press me</button>
+<h3 id="heading_A"></h3>
+<script>
+  const buttonA = document.querySelector("#button_A");
+const headingA = document.querySelector("#heading_A");
+
+let count = 1;
+
+buttonA.onclick = () => {
+  buttonA.textContent = "Try again!";
+  headingA.textContent = `${count} clicks so far`;
+  count += 1;
+};
+</script>
+
+    </body>
+    </html>
+    
+    </textarea>
+  </div>
+  <div class="outPut">
+    <h3>Output</h3>
+    <iframe id="outputFrame2" width="100%" height="100%"></iframe>
+  </div>
+</div>
+ <br>
+
+    
+       </fieldset>
+       
+   </div>
+   <br>
+   <h4>Let's See Another Example Without a variable</h4>
+   <div class="bas">
+     <fieldset>
+       <legend><span><h4></h4></span></legend>
+       <br>
+       <p class="p">
+         To understand why variable is so useful, let's think about how we will write the above example without using a variable to store the count. It would end up looking something like this below:
+       </p>
+       <b>Example 2 ::::</b> <br>
+        <div class="code-container">
+   
+  <button class="run-btn" onclick="runCode(this)" id="runCode2">Run Code</button>
+  <button class="editor-btn" onclick="showEditor(this)" id="textEditor2" style="display:none;">Text Editor</button>
+  <div class="Editor">
+    <h3>Code</h3>
+    <textarea id="codeArea2" placeholder="Enter your HTML, CSS, and JavaScript code here...">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Document</title>
+    </head>
+    <body>
+      <button id="button_B">Press me</button>
+<h3 id="heading_B"></h3>
+<script>
+  const buttonB = document.querySelector("#button_B");
+const headingB = document.querySelector("#heading_B");
+
+buttonB.onclick = () => {
+  buttonB.textContent = "Try again!";
+  headingB.textContent = "1 click so far";
+};
+</script>
+
+    </body>
+    </html>
+    
+    </textarea>
+  </div>
+  <div class="outPut">
+    <h3>Output</h3>
+    <iframe id="outputFrame2" width="100%" height="100%"></iframe>
+  </div>
+  <p class="p">
+    Alright so with this example where we did not include variable in the code, when we run the code and we click on the <b>press button</b> instead of the text telling us  <br>
+    the number of times we have click on the press button it is only displaying the default value which is 1,  <br>
+    and you can realize that with the previous example when we press the button it tells us the number of times we have clicked on the button. 
+    <p class="p">
+      In our previous examples, we created two codes that displayed a button. When clicked, one button showed the total number of clicks, while the other button always showed "1", regardless of how many times it was clicked.
+    </p>
+    </p>
+    
+    <b>So what difference can you say about the two examples?</b>
+    
+  <p class="p">  Alright, the difference here is that due to how we have included variable in the first example the system was able to store and retrieve the number of times we click on the press button. 
+  </p>
+  <b style="text-indent: 50px">while</b>
+  <p class="p">
+  With the second example we have omitted variable from the code, due to that the system was not able to store the number of times we have click on the press button, that is why was only displaying the default value one. <br>
+  <b class="eg">In Summary ::::</b> <br>
+    Using variables in JavaScript allows us to store datas, Update datas and Retrieve updated datas 
+    <br>
+    And also without variables, we cannot track changes or store updated informations.
+  </p>
+     </fieldset>
+     
+   </div>
+   </div>
+       <h4 style="margin-top: 10px">Let's Use A real-life analogy To Understand What A Variable Is In JavaScript Programming :::::</h4>
+        <div class="card">
+        <div class="bgcard"></div>
+    <img src="pro7.gif" alt="pro7.gif" class="html" >
+    <div class="bas">
+       <fieldset>
+       <p class="p">
+         We can easily grasp the concept of a <b>“Javascript Variable”</b> if we imagine it as a <b>“box”</b> for data, with a uniquely-named sticker on it. <br>
+         <b class="eg">For instance :::</b> The variable <b class="variable">message</b> can be imagined as a box labelled <b class="variable">"message"</b> with the value <b class="userinfo" style="background: black">"Hello!"</b> in it: <br>
+         <img src="JS5img.jpg" alt="" style="width: 80%; margin-left: 30px; border-radius: 80px 100px 100px 80px;">
+         <br>
+         We can put any value in the box.
+<br>
+We can also change it as many times as we want.
+<br>
+<b>Let's check out the below examples in the live code editor just click on the Run Code button and you will see the results of the source code and also you can modify it by changing part of the codes:::::</b> <br>
+  <div class="code-container">
+   
+  <button class="run-btn" onclick="runCode(this)" id="runCode2">Run Code</button>
+  <button class="editor-btn" onclick="showEditor(this)" id="textEditor2" style="display:none;">Text Editor</button>
+  <div class="Editor">
+    <h3>Code</h3>
+    <textarea id="codeArea2" placeholder="Enter your HTML, CSS, and JavaScript code here...">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Document</title>
+    </head>
+    <body>
+      
+      <script>
+            // Example JavaScript code
+            let message = 'Hello!';
+                message ='World!';
+            alert (message);
+          </script>
+    </body>
+    </html>
+    
+    </textarea>
+  </div>
+  <div class="outPut">
+    <h3>Output</h3>
+    <iframe id="outputFrame2" width="100%" height="100%"></iframe>
+  </div>
+</div>
+
+
+
+  <div class="reply-container">
+
+	<div class="reply-text"> 	<div class="vertical-line"></div>
+As you can see we have stored two words <br> (" <b class="userinfo" style="background: black">Hello</b> and <b class="userinfo" style="background: black">World</b>") in the same container that we named message and when we run the code it only displays <b class="userinfo" style="background: black">World!</b> Why this is so, meanwhile we want to display <b class="userinfo" style="background: black">Hello World!</b> let's check it out blow by breaking down the codes.
+</div>
+</div>
+<h4>Code break Down </h4>
+   <div style="background-image: linear-gradient(rgba(000, 000, 000, 0.9), rgba(000, 000, 000, 0.9)); color: white; border-radius: 34px; font-weight: bold; width: 85%;  padding-left: 20px; margin-top: 5px; padding-top: 5px">
+      <b class="comment">// Step 1: Declare a variable named 'message'</b> <br>
+     <b class="variable">let</b> <b class="assigned">message</b>; <br>
+     <b class="comment">// Step 2: Assign the string 'Hello!' to 'message'</b> <br>
+     <b class="assigned">message</b> &equals; <b class="userinfo">'Hello!'</b>; <br>
+     <b class="comment">// Step 3: Change the value of 'message' to 'World!'</b> <br>
+     <b class="assigned">message</b> &equals; <b class="userinfo">'World!'</b>; <br> 
+     <b class="comment">// Step 4: Display the current value of 'message' in an alert</b><br>
+     <b class="variable">alert</b>(<b class="assigned">message</b>)
+     
+   </div> <br>
+   <b>Alright Let's Now Understand Things Into Details ::::</b> <br>
+   <ul class="ulstyle">
+     <li>We declared a variable named <b class="assigned" style="background: rgba(0,0,0,0.85)">message</b>. 
+      <br>
+      At this point, <b class="assigned" style="background: rgba(0,0,0,0.85)">message</b> is declared but not initialized with any value (it is undefined).
+     </li>
+     <li>Now we firt of all assigns the string <b class="userinfo" style="background: black">'Hello!'</b> to the variable <b class="assigned" style="background: rgba(0,0,0,0.85)">message</b>. <br> 
+     Now, <b class="assigned" style="background: rgba(0,0,0,0.85)">message</b> holds the value <b class="userinfo" style="background: black">'Hello!'</b>.</li>
+     <li>And again we now realized that we don't want to make use of <b class="userinfo" style="background: black">'Hello!'</b> and now decided to store another string inside the same variable named <b class="assigned" style="background: rgba(0,0,0,0.85)">message</b>. <br>
+     So we now changes the value of message from <b class="userinfo" style="background: black">'Hello!'</b> to <b class="userinfo" style="background: black">'World!'</b> 
+     without we deleting (either  we forgot or anything) the previous code <br> <b style="background: black"><b class="comment">// Step 2: Assign the string 'Hello!' to 'message'</b> <br>
+     <b class="assigned">message</b> &equals; <b class="userinfo">'Hello!'</b>;</b>.  <br>
+    <b class="eg"> This is an important point:</b> in JavaScript, when you assign a new value to a variable without you cleaning or deleting the previous code, it overwrites the previous value. So at this point, <b class="assigned" style="background: rgba(0,0,0,0.85)">message</b> no longer holds <b class="userinfo" style="background: black">'Hello!'</b>, but rather <b class="userinfo" style="background: black">'World!'</b>.
+     </li>
+     <li>We now continue to display by triggering an alert dialog that displays the current value of message. Since the last assignment changed message to 'World!', that's what gets displayed.</li>
+   </ul> <br>
+   <b>When the value is changed, the old data is removed from the variable, is just like the below:
+</b>
+<img src="JS5img2.jpg" alt="" style="width: 80%; margin-left: 30px; border-radius: 80px 50px 100px 80px;">
+<br>
+<b>So as you can see from the above image by default the first data we stored in the variable will be deleted but not the code in our source code then display the current data.</b> <br>
+<b class="eg">Note ::::</b> <br>
+<p>
+  We say variables contain values. This is an important distinction to make. Variables aren't the values themselves; they are containers for values.  <br>
+  You can think of them being like little cardboard boxes that you can store things in.
+</p>
+<h4>Declaring The Same Variable Twice <br>
+        Triggers An Error</h4>
+<p class="p">
+           A variable should be declared only once. 
+           A repeated declaration of the same variable is an error. <br>
+           So, we should declare a variable once and then refer to it without <b class="variable">let</b>. 
+           <div style="background-image: linear-gradient(rgba(000, 000, 000, 0.9), rgba(000, 000, 000, 0.9)); color: white; border-radius: 34px; font-weight: bold; width: 85%;  padding-left: 20px; margin-top: 5px; padding-top: 5px">
+             <b class="comment">// repeated 'let' leads to an error</b> <br>
+             <b class="variable">let</b> <b class="assigned" style="background: rgba(0,0,0,0.85)">name</b> &equals; <b class="userinfo">"Zola"</b>; <br>
+             <b class="comment">// SyntaxError: 'message' has already been declared</b> <br>
+             <b class="variable">let</b> <b class="assigned" style="background: rgba(0,0,0,0.85)">name</b> &equals; <b class="userinfo">"Kofi"</b>; 
+           </div>
+       </p>
+        
+        </fieldset>
+        <h4>Variable Naming In JavaScript</h4>
+        
+        <h4>Rules For Naming  JavaScript Variable ::::</h4>
+        
+        <div class="bas">
+        <fieldset>
+          <p class="p">
+           Variable naming refers to the conventions and rules you should follow when creating variable names in programming. <br>
+           Proper naming is crucial for code readability, maintainability, and clarity. <br>
+          <b> There are limitations on variable names in JavaScript and these include ::::</b> <br>
+          <ul class="ulstyle">
+            <li>The name must contain only letters ( <b>a-z or A-Z</b>), digits ( <b>0-9</b> ), or the symbols dollar signs ( <b class="cool">&dollar;</b> ) and underscores ( <b class="cool">&lowbar;</b> ) .</li>
+            <li>The first character must not be a digit.</li>
+            <li>Don't use underscores at the start of variable names  this is used in certain JavaScript constructs to mean specific things, so may get confusing.</li>
+           <li>Don't use numbers at the start of variables. This isn't allowed and causes an error.</li>
+           <li>A safe convention to stick to is lower camel case, where you stick together multiple words, using lower case for the whole first word and then capitalize subsequent words. We've been using this for our variable names in the article so far. <br>
+           That is: words go one after another, each word except first starting with a capital letter: <b class="assigned">myVeryLongName</b>.
+           </li>
+           <li>Make variable names intuitive, so they describe the data they contain. Don't just use single letters/numbers, or big long phrases.</li>
+           <li>Variables are case sensitive — so myage is a different variable from myAge.</li>
+           <li>One last point: you also need to avoid using JavaScript reserved words as your variable names by this, we mean the words that make up the actual syntax of JavaScript! <br>
+           So, you can't use words like var, function, let, and for as variable names.
+           Browsers recognize them as different code items, and so you'll get errors.</li>
+          </ul>
+          <br>
+          <h4>Below Are Some Examples Of How To Name A Variable ::::</h4>
+          <div style="background-image: linear-gradient(rgba(000, 000, 000, 0.9), rgba(000, 000, 000, 0.9)); color: white; border-radius: 34px; font-weight: bold; width: 85%;  padding-left: 20px; margin-top: 5px; padding-top: 5px">
+            <b class="variable">let</b> <b class="assigned">age</b> <br>
+             <b class="variable">let</b> <b class="assigned">myAge</b> <br>
+             <b class="variable">let</b> <b class="assigned">initialColor</b> <br>
+             <b class="variable">let</b> <b class="assigned">finalOutputValue</b>  <br>
+             <b class="variable">let</b> <b class="assigned">audio1</b>  <br>
+             <b class="variable">let</b> <b class="assigned">sum_of_numbers</b> <br>
+             <b class="variable">let</b> <b class="assigned">data123</b> <br>
+             <b class="variable">let</b> <b class="assigned">no1</b>  <br>
+            </div>
+          </p>
+        </fieldset>
+        </div>
+    </div>
+       </div>
+       <br>
+        <h3 class="mainhead">Types Of Variables ::::</h3>
+         <div class="card">
+        <div class="bgcard"></div>
+    <img src="pro7.gif" alt="pro7.gif" class="html" >
+    <div class="bas">
+       <fieldset>
+        <legend><h3 style="font-size: 105%; color: red;">Variable Types</h3>
+        </legend> 
+        <p class="p">
+          There are a few different types of data we can store in variables.  <br>
+          In this section we'll describe these in brief, then in future articles, you'll learn about them in more detail.
+        </p>
+        <ul class="ulstyle">
+         <li><b class="phase">Numbers :::</b> You can store numbers in variables, either whole numbers like <b>20</b> (also called integers) or decimal numbers like <b>1.3034</b> (also called floats or floating point numbers). <br>
+         You don't need to declare variable types in JavaScript, unlike some other programming languages where you need to tell the computer the exact type of variable you're declaring either number or string.  <br>
+         When you give a variable, a number value, you don't include quotes.
+         <br>
+         <b class="eg">Let's see an example ::::</b> <br>
+         <div class="codebase">
+           <b class="comment">//Variable for Storing my age as a whole number</b> <br>
+           <b class="variable">let</b> <b class="keyword">myAge</b> &equals; <b class="assigned">19</b>; <br>
+           <b class="comment">//Variable for Storing my height as a decimal number. </b> <br>
+            <b class="variable">let</b> <b class="keyword">myHeight</b> &equals; <b class="assigned">2.5</b>;
+         </div>
+         </li>
+         <li><b class="phase">Strings ::::</b> Strings are pieces of text. <br>
+         When you give a variable a string value, you need to wrap it in single or double quote marks; otherwise, JavaScript tries to interpret it as another variable name. <br>
+         <b class="eg">Let's see an example ::::</b>
+         <div class="codebase">
+           <b class="comment">//Variable for Storing a group of word or sentences.</b> <br>
+            <b class="variable">let</b> <b class="keyword">dolphinGoodbye</b> &equals; <b class="assigned">"So long and thanks for all the fish"</b>;
+         </div>
+         </li>
+         <li><b class="phase">Booleans ::::</b> Booleans are true/false values use creating <b class="cool">true</b> or <b class="cool">false</b> statements. <br>
+         These are generally used to test a condition, after which code is run as appropriate. <br> 
+         <b class="eg">Let's check an example below ::::</b> <br>
+         <div class="codebase">
+            <b class="comment">//Variable for Storing a conditional statement.</b> <br>
+            <b class="variable">let</b> <b class="keyword">iAmAlive</b> &equals; <b class="assigned">true</b>;
+         </div> 
+         Whereas in reality it would be used more like this: <br>
+         <b class="eg">Let's see an example ::::</b> <br>
+         <div class="codebase">
+            <b class="variable">let</b> <b class="keyword">test</b> &equals; <b class="assigned">8</b> &lt; <b class="assigned">4</b>;
+         </div>
+         <p class="p">
+           In the above example we are telling the computer by using the "less than" operator (<b>&lt;</b>) to test whether 6 is less than 3.<br>
+           As you might expect, the computer returns false, because 6 is not less than 3! <br>
+           You will learn a lot more about such operators later on in the course.
+         </p>
+         </li>
+         <li><b class="phase">Array ::::</b> An array is a data structure that contains a group of elements of the same data type and stores them together in contiguous memory locations.  <br>
+         Computer programmers use arrays in their programs to organize sets of data in a way that can be easily sorted and searched. <br>
+         They are more efficient at storing data than separate variables and can help a program run faster. <br>
+         Alright, so instead of as creating separate different variables for storing different data types like string and integer, with the help of array you can create just one array variable and store the different types of data in it each on a separate variable. <br>
+         Before you can create such variables in JavaScript you must follow this format, an array should made up a single object that contains multiple values enclosed in square brackets and separated by commas.
+         <b class="eg">Let's check an example below ::::</b> <br />
+         <div class="codebase">
+           <b class="variable">let</b> <b class="keyword">myNameArray</b> <b>&equals;</b> <b>&lbrack;</b> <b class="assigned">"Zola"</b>, <b class="assigned">"Kofi"</b>, <b class="assigned">"Ama"</b> <b>&rbrack;</b>; <br>
+            <b class="variable">let</b> <b class="keyword">myNumberArray</b> <b>&equals;</b> <b>&lbrack;</b> <b class="assigned">42</b>, <b class="assigned">18</b>, <b class="assigned">90</b> <b>&rbrack;</b>;
+           
+         </div>
+         <p class="p">
+           Once these arrays are defined, you can access each value by their location within the array.<br>
+           <b class="eg">Let's the following examples ::::</b> <br>
+           <div class="codebase">
+             <b class="comment">// should return 90</b> <br>
+             <b class="keyword">myNumberArray</b> <b>&equals;</b> <b>&lbrack;</b> <b class="assigned">0</b> <b>&rbrack;</b>; <br>
+             <b class="comment">// should return 'Ama'</b> <br>
+             <b class="keyword">myNameArray</b> <b>&equals;</b> <b>&lbrack;</b> <b class="assigned">2</b> <b>&rbrack;</b>;
+           </div>
+           <p class="p">
+             The square brackets specify an index value corresponding to the position of the value you want returned. You might have noticed that arrays in JavaScript are zero-indexed: the first element is at index 0.
+           </p>
+         </p>
+         </li>
+         <li><b class="phase">Objects ::::</b> In programming, an object is a structure of code that models a real-life object. <br>
+         You can have a simple object that represents a box and contains information about its width, length, and height, <br>
+         or you could have an object that represents a person, and contains data about their name, height, weight, what language they speak, how to say hello to them, and more.<br>
+         <div class="codebase">
+           <b class="variable">let</b> <b class="keyword">dog</b> <b>&equals;</b> <b>&lcub;</b> <b style="color: deeppink">name</b><b>:</b> <b class="assigned">"Spot"</b>, <b style="color: deeppink">breed</b><b>:</b> <b class="assigned">"Dalmatian"</b> <b>&rcub;</b>; <br>
+           <b class="comment">// To retrieve the information stored in the object, you can use the following syntax.</b> <br>
+           <b class="keyword">dog</b>.<b style="color: deeppink">name</b>;
+         </div>
+         
+         </li>
+        </ul>
+        
+        </fieldset>
+    </div>
+       </div> <br>
+       <h3 class="mainhead">Dynamic Typing</h3>
+      <div class="card">
+        <div class="bgcard"></div>
+    <img src="pro7.gif" alt="pro7.gif" class="html" >
+    <div class="bas">
+       <fieldset>
+        <legend><h3 style="font-size: 105%; color: red;"></h3>
+        </legend> 
+        <p class="p">
+          In JavaScript, dynamic typing refers to the ability to assign a value of any data type to a variable at runtime, without declaring its type beforehand. <br>
+          And since JavaScript is a "dynamically typed language", which means that, unlike some other languages, you don't need to specify what data type a variable will contain (numbers, strings, arrays, etc.). 
+          
+        </p>
+        <br>
+        <b class="eg">For example ::::</b> <br>
+        <p class="p">
+          If you declare a variable and give it a value enclosed in quotes, the browser treats the variable as a string.
+          <br>
+          <b class="eg">Let's check the example below ::::</b> <br>
+          <div class="codebase">
+            <b class="variable">let</b> <b class="keyword">myString</b> <b>&equals;</b> <b class="assigned">"Hello"</b>; <br> 
+            <b class="comment">// Even if the value enclosed in quotes is just digits, it is still a string not a number so be careful, so check it below:::</b> <br>
+             <b class="variable">let</b> <b class="keyword">myNumber</b> <b>&equals;</b> <b class="assigned">"35"</b>; <b>// oops, this is still a string</b> <br>
+             <b class="variable">typeof</b> <b class="keyword">myNumber</b>; <br>
+               <b class="keyword">myNo</b> <b>&equals;</b> <b class="assigned">35</b> <b class="comment">// much better now this is a number</b> <br>
+               <b class="variable">typeof</b> <b class="keyword">myNo</b>;
+          </div>
+          
+        </p>
+        <b>Alright, let's run the above code and see the output ::::</b> <br>
+        <div class="code-container">
+   
+  <button class="run-btn" onclick="runCode(this)" id="runCode2">Run Code</button>
+  <button class="editor-btn" onclick="showEditor(this)" id="textEditor2" style="display:none;">Text Editor</button>
+  <div class="Editor">
+    <h3>Code</h3>
+    <textarea id="codeArea2" placeholder="Enter your HTML, CSS, and JavaScript code here...">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Document</title>
+    </head>
+    <body>
+      
+      <script>
+          let myNumber = "500"; // oops, this is still a string
+         document.write(typeof myNumber + " is first variable named myNumber" + "<br> <br>");
+              myNo = 500; // much better — now this is a number
+          document.write(typeof myNo + " is the second variable named my myNo");
+          </script>
+    </body>
+    </html>
+    
+    </textarea>
+  </div>
+  <div class="outPut">
+    <h3>Output</h3>
+    <iframe id="outputFrame2" width="100%" height="100%"></iframe>
+  </div>
+</div>
+<br>
+<p class="p">
+  You'll notice that we are using a special operator called typeof this returns the data type of the variable you type after it.  <br>
+  The first time it is called, it should return string, as at that point the myNumber variable contains a string, '500'. Have a look and see what it returns the second time you call it.
+</p>
+        <ul class="ulstyle">
+         
+        </ul>
+        
+        </fieldset>
+    </div>
+       </div>
+       <br>
+       <h3 class="mainhead">Constants in JavaScript</h3>
+       <div class="card">
+        <div class="bgcard"></div>
+    <img src="pro7.gif" alt="pro7.gif" class="html" >
+    <div class="bas">
+       <fieldset>
+        <legend><h3 style="font-size: 105%; color: red;"></h3>
+        </legend>  
+            <p class="p">
+             Constant is a variable that cannot be changed or reassigned once it's declared. <br>
+             An attempt to do so would cause an error. <br>
+             When a programmer is sure that a variable will never change, they can declare it with constant to guarantee and communicate that fact to everyone. <br>
+             Though constant are like variables except that you must initialize them when you declare them and also you can't assign them a new value after you've initialized them. <br>
+             <b class="eg">For Example ::::</b> <br>
+             <div class="codebase">
+               <b class="comment">// using let you can declare a variable without initializing it:</b> <br>
+               <b class="variable">let</b> <b class="keyword">count</b>; <br>
+               <b class="comment">// If you try to do this using const you will see an error:</b> <br>
+               <b class="variable">const</b> <b class="keyword">count</b>;
+             </div>
+             
+            </p>
+            <p class="p">
+              Similarly, with let you can initialize a variable, and then assign it a new value (this is also called reassigning the variable): <br>
+              <b class="eg">For Example ::::</b> <br>
+              <div class="codebase">
+                 <b class="variable">let</b> <b class="keyword">count</b> <b>&equals;</b> <b class="assigned">1</b>; <br>
+                   <b class="keyword">count</b> <b>&equals;</b> <b class="assigned">2</b>
+                   <br>
+                   <b class="comment">// If you try to do this using const you will see an error:</b>
+                   <br>
+                    <b class="variable">const</b> <b class="keyword">count</b> <b>&equals;</b> <b class="assigned">1</b> <br>
+                    <b class="keyword">count</b> <b>&equals;</b> <b class="assigned">2</b> <b class="comment">// this code will produce an error.</b>
+              </div>
+            </p>
+          <b class="eg">Note ::::</b>  <br>
+          <p class="p">
+           Although a constant in JavaScript must always name the same value, you can change the content of the value that it names. <br>
+           This isn't a useful distinction for simple types like numbers or booleans, but consider an object. <br>
+           <b class="eg">For Example ::::</b> <br>
+           <div class="codebase">
+              <b class="variable">const</b> <b class="keyword">bird</b> <b>&equals;</b> <b>&lcub;</b> <b style="color: deeppink">species</b>: <b class="assigned">"Kestrel"</b> <b>&rcub;</b>; <br>
+              <b style="color: lawngreen">document</b>.<b style="color: lightyellow">write</b><b>&lpar;</b><b class="keyword">bird</b>.<b style="color: deeppink">species</b><b>&rpar;</b>;
+           </div>
+          </p>
+                 <div>
+         <h4>When to use <b class="cool">const</b> and when to use <b class="cool">let</b> during  coding ::::</h4>
+         <p class="p">
+           If you can't do as much with <b class="variable">const</b> as you can with <b class="variable">let</b>, why would you prefer to use it rather than <b class="variable">let</b>? <br>
+           In fact <b class="variable">const</b> is very useful. <br>
+           If you use <b class="variable">const</b> to name a value, it tells anyone looking at your code that this name will never be assigned to a different value. 
+           Any time they see this name, they will know what it refers to. <br>
+           <b>In this course, we adopt the following principle about when to use <b class="variable">let</b> and when to use <b class="variable">const</b> ::::</b>
+           <p>
+             Use <b class="variable">const</b> when you can, and use <b class="variable">let</b> when you have to. <br>
+             This means that if you can initialize a variable when you declare it, and don't need to reassign it later, make it a constant.
+           </p>
+           </div>
+        </fieldset>
+    </div>
+       </div>
+       <br>
+       <h3 class="mainhead">JavaScript Hoisting ::::</h3>
+        <div class="card">
+        <div class="bgcard"></div>
+    <img src="pro7.gif" alt="pro7.gif" class="html" >
+    <div class="bas">
+       <fieldset>
+        <legend><h3 style="font-size: 105%; color: red;"></h3>
+        </legend> 
+        <p class="p">
+          Hoisting is a fundamental concept in JavaScript that refers to the way variable, classes and function declarations are processed by the interpreter during the compilation phase of the code execution. <br>
+          It essentially means that JavaScript "hoists" or lifts declarations to the top of their containing scope before the code is executed, allowing you to use variables and functions before they are actually declared in the code.
+        </p> <br>
+        <b>In colloquial terms, any of the following behaviors may be regarded as hoisting :::</b>
+        <ul class="ulstyle">
+         <li><b class="phase">Variable Hoisting :::</b> When you declare a variable using var, the declaration is hoisted to the top of its enclosing function or global scope. However, only the declaration is hoisted, not the initialization. <br>
+         <b class="eg">For Example ::::</b> <br>
+         <div class="codebase">
+            <b class="comment">//This code outputs undefined</b><br>
+           <b style="color: lawngreen">document</b>.<b style="color: lightyellow">write</b><b>&lpar;</b><b class="assigned">x</b><b>&rpar;</b>;<br>
+
+            <b class="variable">let</b> <b class="keyword">x</b> <b>&equals;</b> <b class="assigned">5</b>;
+            <br>
+        <b class="comment">//This code outputs 5</b>
+            <br>
+             <b style="color: lawngreen">document</b>.<b style="color: lightyellow">write</b><b>&lpar;</b><b class="assigned">x</b><b>&rpar;</b>;
+
+         </div>
+         <p>
+           In this case, the first <b class="cool">document.write</b> outputs undefined result because the declaration 
+           <b class="cool">let x;</b> is hoisted to the top, but the assignment <b class="cool">x = 5;</b> happens later.
+         </p>
+         </li>
+         <li><b class="phase">Function Hoisting ::::</b> Function declarations are also hoisted. This means you can call a function before it appears to be defined in the code. <br>
+         <b class="eg">For Example ::::</b> <br>
+  <pre class="codebase"> <b class="comment">// The below code outputs "Hello!"</b>
+                <b style="color: lightyellow">greet</b><b>&lpar;</b> <b>&rpar;</b>;
+<b class="variable">function</b> <b style="color: lightyellow">greet</b><b>&lpar;</b> <b>&rpar;</b> <b>&lcub;</b> 
+  <b style="color: lawngreen">document</b>.<b style="color: lightyellow">write</b><b>&lpar;</b><b class="userinfo">"Hello!"</b><b >&rpar;</b>; 
+       <b>&rcub;</b>
+         </pre>
+         <p class="p">
+           Here, the function greet can be called before its declaration because the entire function definition is hoisted. <br>
+           And can also be called after too.
+         </p>
+         </li>
+         <li><b class="phase">Let and Const ::::</b> Variables declared with <b class="variable">let</b> and <b class="variable">const</b> are also hoisted, but they are not initialized. Accessing them before their declaration results in a ReferenceError. This is known as the "temporal dead zone."<br>
+         <b class="eg">For Example ::::</b> <br>
+         <div class="codebase">
+           <b class="comment">// ReferenceError: The code below cannot access 'y' before initialization</b> <br>
+         <b style="color: lawngreen">document</b>.<b style="color: lightyellow">write</b><b>&lpar;</b> y <b>&rpar;</b>; <br>
+         <b class="variable">let</b> <b class="keyword">y</b> <b>&equals;</b> <b class="assigned">30</b>;
+         </div>
+         </li>
+         <li><b class="phase">Function Expressions ::::</b>  If a function is defined as a function expression (<b class="eg">e.g.</b>, assigned to a variable), it is not hoisted in the same way as function declarations. <br>
+         <b class="eg">For Example ::::</b> <br>
+         <div class="codebase">
+           <b class="comment">// TypeError: greet is not a function</b> <br>
+            <b class="variable">let</b> <b class="keyword">greetings</b> <b>&equals;</b> <b class="variable">function</b> <b>&lpar;</b> <b>&rpar;</b> <b>&lcub;</b> 
+  <b style="color: lawngreen">document</b>.<b style="color: lightyellow">write</b><b>&lpar;</b><b class="userinfo">"Hello!"</b><b >&rpar;</b>; 
+       <b>&rcub;</b>
+         </div>
+         <p class="p">
+            In this case, greet is hoisted as a variable declaration but not initialized as a function until the line where it's defined.
+         </p>
+         </li>
+        </ul>
+        
+        </fieldset>
+    </div>
+       </div>
+       <br>
+       <h3 class="mainhead">Introduction To Scope In JavaScript</h3>
+        <div class="card">
+        <div class="bgcard"></div>
+    <img src="pro7.gif" alt="pro7.gif" class="html" >
+    <div class="bas">
+       <fieldset>
+        <legend><h3 style="font-size: 105%; color: red;"></h3>
+        </legend>
+        <p class="p">
+          In JavaScript, variable scope refers to the accessibility or visibility of variables within different parts of your code. That is the various  places you have put you variable codes in your entire codebase.<br>
+          Understanding variable scope is crucial for managing how data is accessed and modified throughout your application.
+        </p>
+        <h4>Types Of Scopes In JavaScript ::::</h4>
+        <ul class="ulstyle">
+         <li><b class="phase">Global Scope ::::</b> Variables declared outside any function or block are in the global scope.
+         <br>
+    These variables can be accessed from anywhere in the code, including inside functions. 
+    <p class="p">
+      In JavaScript, global scope is the widest scope available. Variables declared in global scope are accessible from anywhere in your code, whether it's inside functions, conditional statements, loops, or other blocks of code. 
+    </p>
+    
+   <p class="p">
+     You can think of global scope as the "public square" of your program, where everyone can see and access what's going on. 
+   </p>
+   <b class="eg">To illustrate let's consider an analogy ::::</b> <br>
+   <p class="p">
+ Imagine your JavaScript program as a small town, and the global scope as the town's central square.  <br>
+ Everything you declare in global scope is like putting up a billboard in the square for everyone to see.  <br>
+ Any function or code block within your program can read and modify these global variables.
+   </p>
+<h4>Variables Declared in Global Scope ::::</h4> 
+<p class="p">
+  Variables declared in global scope are typically defined outside of any functions or code blocks. 
+  <br>
+  <pre class="codebase">
+<b class="variable">let</b> <b class="keyword">globalVariable</b> <b>&equals;</b> <b class="assigned">"I'm in global scope"</b>;
+<b class="variable">function</b> <b style="color: lightyellow">myFunction</b><b>&lpar;&rpar;</b> <b>&lcub;</b>
+<b class="comment">/" This function can access globalVariable */</b>
+<b style="color: lawngreen">document</b><b>.</b><b style="color: lightyellow">write</b><b>&lpar;</b><b class="keyword">globalVariable</b><b>&rpar;</b>;
+<b>&rcub;</b>
+<b style="color: lightyellow">myFunction</b><b>&lpar;&rpar;</b>;
+  </pre>
+Here, <b class="cool">globalVariable</b> is declared in global scope, and <b class="cool">myFunction</b> can access and use it directly.
+</p>
+<p class="p">
+ Accessing global variables is straightforward. You can use them within functions or any part of your code without any special effort. <br>
+ It's like having a public notice board in the town square where everyone can read and post messages. 
+</p>
+<h4>Potential Issues With Global Scope ::::</h4>
+<p class="p">
+  While global scope can be quite convenient, it comes with potential downsides.
+<br>
+Since global variables are accessible from anywhere, they are susceptible to unintended changes and conflicts.
+</p>
+<p class="p">
+  For instance, if multiple parts of your code modify the same global variable, it can lead to unexpected behaviors and bugs that are hard to track down.
+<br>
+Moreover, global variables can make your code less modular and organized. 
+If everything is in the town square, it becomes challenging to manage and isolate different aspects of your program.
+</p>
+    </li>
+    
+      <li><b class="phase">Function/Local Scope ::::</b> Variables declared within a function using var, let and constant are scoped to that function. 
+      <p class="p">
+        Local scope in JavaScript is like a private room within a building  it's an enclosed space where variables are only accessible from within that specific room.
+<br>
+When you declare a variable in local scope, it is limited in visibility to the block of code, function, or conditional statement in which it is defined.
+<br>
+Variables in local scope are protected from interference or modification by code outside their scope, providing a level of isolation.
+      </p>
+      <p class="p">
+        Variables in local scope are typically declared within functions, conditional statements, loops, or other code blocks. <br>
+        These variables are, in essence, "local" to that block of code, and they cannot be directly accessed from outside it. 
+      </p>
+      <b class="eg">Consider the following analogy ::::</b> <br>
+      <p class="p">
+        If a local scope is like a private room, a variable declared within that scope is akin to an object or piece of furniture placed inside that room.
+<br>
+Others can't directly interact with it from outside – they would need permission, like a key, to enter the room and access the variable.
+      </p>
+      Variables defined inside a function are not accessible from outside the function and variables declared with var, let and const are quite similar when declared inside a function. <br>
+      <b class="eg">For Examples ::::</b>
+      <pre class="codebase">
+       <b class="variable">function</b> <b style="color: lightyellow">myFunctionScope</b><b>&lpar;</b><b>&rpar;</b> <b>&lcub;</b> 
+       <b class="variable">let</b> <b class="keyword">firstName</b> <b>&equals;</b> <b class="assigned">Kwami</b>;
+       <b>&rcub;</b>
+      </pre>
+    <b>But this will happen when you didn't use the function scope well.</b>
+    <p class="p">
+      A function creates a scope, so that (for example) a variable defined exclusively within the function cannot be accessed from outside the function or within other functions.
+    </p>
+    <b class="eg">For instance, the following is invalid ::::</b>
+<br>
+<div class="code-container">
+   
+  <button class="run-btn" onclick="runCode(this)" id="runCode2">Run Code</button>
+  <button class="editor-btn" onclick="showEditor(this)" id="textEditor2" style="display:none;">Text Editor</button>
+  <div class="Editor">
+    <h3>Code</h3>
+    <textarea id="codeArea2" placeholder="Enter your HTML, CSS, and JavaScript code here...">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Document</title>
+    </head>
+    <body>
+      
+    <script>
+      function exampleFunction() {
+  const x = "declared inside function"; 
+  /* x can only be used in exampleFunction*/
+  document.write("Inside function");
+  document.write(x);
+}
+
+document.write(x); /* Causes error */
+exampleFunction();
+    </script>
+    </body>
+    </html>
+    
+    </textarea>
+  </div>
+  <div class="outPut">
+    <h3>Output</h3>
+    <iframe id="outputFrame2" width="100%" height="100%"></iframe>
+  </div>
+</div>
+<br>
+<p class="p">
+ However, the following code is valid due to the variable being declared outside the function, making it global. 
+</p>
+
+   <div class="code-container">
+   
+  <button class="run-btn" onclick="runCode(this)" id="runCode2">Run Code</button>
+  <button class="editor-btn" onclick="showEditor(this)" id="textEditor2" style="display:none;">Text Editor</button>
+  <div class="Editor">
+    <h3>Code</h3>
+    <textarea id="codeArea2" placeholder="Enter your HTML, CSS, and JavaScript code here...">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Document</title>
+    </head>
+    <body>
+      
+     <script>
+      const x = "declared outside function";
+
+exampleFunction();
+
+function exampleFunction() {
+  document.write("Inside function" + "<br>");
+  document.write(x + "<br>");
+}
+
+document.write("Outside function" +"<br>" + x);
+    </script>
+    </body>
+    </html>
+    
+    </textarea>
+  </div>
+  <div class="outPut">
+    <h3>Output</h3>
+    <iframe id="outputFrame2" width="100%" height="100%"></iframe>
+  </div>
+</div>
+ <br>
+  <div class="chat">
+<div class="ment other ">
+  
+	<div class=" bubble" > Yeah things may seem confusing a little bit but don't worry let's take another examples and explain them better.</div>
+	</div>
+</div>
+<b>Alright, let's understand the following. <br>
+Your main focus must be on the codes inside the editor the output when you run it.
+</b> 
+<div class="code-container">
+   
+  <button class="run-btn" onclick="runCode(this)" id="runCode2">Run Code</button>
+  <button class="editor-btn" onclick="showEditor(this)" id="textEditor2" style="display:none;">Text Editor</button>
+  <div class="Editor">
+    <h3>Code</h3>
+    <textarea id="codeArea2" placeholder="Enter your HTML, CSS, and JavaScript code here...">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Document</title>
+    </head>
+    <body>
+      
+     <script>
+      const age = 100;
+function displayUserInfo() {
+  const name = 'Ama';
+}
+document.write(name + "<br>");
+document.write(age);
+
+displayUserInfo(); // Call the function
+     </script>
+    </body>
+    </html>
+    
+    </textarea>
+  </div>
+  <div class="outPut">
+    <h3>Output</h3>
+    <iframe id="outputFrame2" width="100%" height="100%"></iframe>
+  </div>
+</div>
+<p class="p">
+  With the above code we want to display or output the values of the variables <b class="cool">age</b> and <b class="cool">name</b> by using the JavaScript keyword <b class="cool">document.write( )</b>.
+  But when we run the code you will realize that's not what happened, we only see the value of only the variable <b class="cool">age</b> even though in our code we have stated clearly to the system to output the values of the the variables <b class="cool">age</b> and <b class="cool">name</b>.
+  <br>
+  <b>So what do you think maybe be the problem preventing the system from displaying the outputs of the two variable?</b>
+  <b class="eg">So let's check it out ::::</b>  
+</p>
+<p class="p">
+Alright, since we're talking about how to scope data in the function way and we were told that when variables are created inside of a function, those variables are only ever available inside of that function, so meaning when we want to access the variable by using let's say with <b class="cool">document.write( )</b> you must make sure that you access the contents inside the function scope the variable was declared.
+<br>
+So in view of rules for representing funtion scope let's  remodify the previous code making sure all the variables are declared in one function scope and access it in the same function and see whether we can  achieve what we intended to achieve.
+</p>
+
+<div class="code-container">
+   
+  <button class="run-btn" onclick="runCode(this)" id="runCode2">Run Code</button>
+  <button class="editor-btn" onclick="showEditor(this)" id="textEditor2" style="display:none;">Text Editor</button>
+  <div class="Editor">
+    <h3>Code</h3>
+    <textarea id="codeArea2" placeholder="Enter your HTML, CSS, and JavaScript code here...">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Document</title>
+    </head>
+    <body>
+      
+      <script>
+       // Example JavaScript code
+        
+function displayUserInfo() {
+  const name = 'Ama';
+  const age = 100;
+  document.write(name + "<br>");
+  document.write(age);
+}
+displayUserInfo(); // Call the function
+     </script>
+    </body>
+    </html>
+    
+    </textarea>
+  </div>
+  <div class="outPut">
+    <h3>Output</h3>
+    <iframe id="outputFrame2" width="100%" height="100%"></iframe>
+  </div>
+</div>
+ <p class="p">
+   Let's think of the curly brackets in functions as gates.
+
+They keep the variables in and do not allow them to leak out. </p>
+<fieldset>
+     <legend><h3 style="font-size: 105%; color: red;">The Concept Of Variable Shadowing ::::</h3>
+        </legend> 
+        <p class="p">
+          Variable shadowing occurs when you declare a variable with the same name inside a local scope, effectively "hiding" the variable with the same name in a higher scope.
+<br>
+This is similar to placing an object with the same name in multiple rooms, and the one in the inner room takes precedence when you try to access it.
+        </p>
+        <b class="eg">Consider This Example :::</b> <br>
+      <div class="code-container">
+   
+  <button class="run-btn" onclick="runCode(this)" id="runCode2">Run Code</button>
+  <button class="editor-btn" onclick="showEditor(this)" id="textEditor2" style="display:none;">Text Editor</button>
+  <div class="Editor">
+    <h3>Code</h3>
+    <textarea id="codeArea2" placeholder="Enter your HTML, CSS, and JavaScript code here...">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Document</title>
+    </head>
+    <body>
+      
+   <script>
+     function outerFunction() {
+    let message = "Hello from outerFunction!"; // Outer variable
+
+    function innerFunction() {
+        let message = "Hello from innerFunction!"; // Inner variable shadows outer variable
+        document.write(message); // This will log the inner variable
+    }
+
+    innerFunction(); // Call the inner function
+    document.write( "<br>" + message); // This will log the outer variable
+}
+
+outerFunction();
+
+   </script>
+    </body>
+    </html>
+    
+    </textarea>
+  </div>
+  <div class="outPut">
+    <h3>Output</h3>
+    <iframe id="outputFrame2" width="100%" height="100%"></iframe>
+  </div>
+</div>  
+    <br>
+    <b class="eg">Explanation :::</b> <br>
+    <p class="p">
+      We define an <b class="cool">outerFunction</b> that declares a variable message with the value <b class="cool">"Hello from outerFunction!"</b>. <br>
+      Inside <b class="cool">outerFunction</b>, we define another function called <b class="cool">innerFunction</b>. This function also declares a variable named <b class="cool">message</b>, but with a different value: <b class="cool">"Hello from innerFunction!"</b>. <br>
+      When we call <b class="cool">innerFunction</b>, it logs the value of its own message variable, which is <b class="cool">"Hello from innerFunction!"</b>. This is an example of variable shadowing, where the inner variable takes precedence over the outer variable within its scope.
+    </p>
+    <p class="p">
+     After calling <b class="cool">innerFunction</b>, we log the message variable from <b class="cool">outerFunction</b>, which outputs <b class="cool">"Hello from outerFunction!"</b>. Here, the outer variable is accessible and not affected by the inner function's variable. 
+    </p>
+  </fieldset>
+ 
+</li>
+
+<li>
+  <b class="phase">Block Scope ::::</b> Block scope in JavaScript is like a series of nested boxes within a larger container, each with its own set of variables. <br>
+  <p class="p">
+    Unlike global and local scopes, which are defined by functions or global context, block scope is created within specific code blocks, such as <b>conditional statements (if, else, switch)</b> and <b>loops (for, while)</b>.
+    <br>Variables declared in block scope are confined to that block, offering a high degree of isolation.
+  </p>
+  <p class="p">
+
+    To illustrate this concept, imagine a set of concentric circles.  <br>
+    The largest circle represents the global scope, while each smaller circle within it represents a block scope. 
+    <img src="JS5conImg.jpg" alt="" style="width: 50%; padding: 0; margin: 0; float: right; border-radius: 50%"> <br />
+Just as a point inside a smaller circle cannot extend beyond its boundaries to reach the larger circle, variables defined within a block scope cannot escape to the outer scopes. <br>
+Each smaller circle is contained within the larger one, emphasizing that the inner variables are confined and cannot affect or access the outer variables.
+  </p>
+  
+  <h4>Let Look At Variables Declared In Block Scope ::::</h4> <br>
+  <p class="p">
+    Variables declared in block scope are only accessible within the block in which they are defined. These variables are like hidden treasures inside each nested circle, known and accessible only within their respective compartments.
+  </p>
+  <b class="eg">Let's Look At An Example Using A Block Scope Within An <b class="cool">if</b> Statement:</b> <br>
+  <div class="codebase">
+    <b style="color: darkviolet">if</b> <b>&lpar;</b><b style="color: darkviolet">true</b><b>&rpar;</b> <b>&lcub;</b> <br>
+    <b class="variable">let</b> <b class="keyword">blockVariable</b> <b>&equals;</b> <b class="userinfo">"I'm in block scope"</b>; <br>
+    <b class="comment">/* let's access the blockVariable using it's rule*/</b> <br>
+    <b style="color: lawngreen">document</b><b>.</b><b style="color: lightyellow">write</b><b>&lpar;</b><b class="keyword">blockVariable</b><b>&rpar;</b>; <br>
+    <b>&rcub;</b>
+    <br>
+   <b class="comment"> /* Accessing blockVariable here would result in an error, so meaning since we're making use of block scope here so we can not access the contents outside it. */ </b> <br>
+   
+  </div>
+  <h4> Let's See How We Can Use Block Scope With let And const ::::</h4> <br>
+  <p class="p">
+    The introduction of the <b class="cool">let</b> and <b class="cool">const</b> keywords in JavaScript significantly enhanced block scope.
+<br>
+These keywords allow you to declare variables with block scope, making it easier to control variable visibility and lifespan.
+<br>
+<b class="eg">Let's Check An Example Out:::</b> <br>
+<div class="code-container">
+   
+  <button class="run-btn" onclick="runCode(this)" id="runCode2">Run Code</button>
+  <button class="editor-btn" onclick="showEditor(this)" id="textEditor2" style="display:none;">Text Editor</button>
+  <div class="Editor">
+    <h3>Code</h3>
+    <textarea id="codeArea2" placeholder="Enter your HTML, CSS, and JavaScript code here...">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Document</title>
+    </head>
+    <body>
+      
+       <script>
+     function exampleBlockScope() {
+  if (true) {
+    let blockVariable = "I'm block-scoped with 'let'";
+    const constantBlockVar = "I'm block-scoped with 'const'";
+  }
+  document.write(blockVariable); /* Error: blockVariable is not defined
+  We will get an error because we're trying to access the blockVariable outside where it was declared 
+  */
+  document.write(constantBlockVar); /* Error: constantBlockVar is not defined
+  the same result here */
+}
+   </script>
+    </body>
+    </html>
+    
+    </textarea>
+  </div>
+  <div class="outPut">
+    <h3>Output</h3>
+    <iframe id="outputFrame2" width="100%" height="100%"></iframe>
+  </div>
+</div>
+<br>
+Alright, so with the above source codes inside the live text shows that we wanted to display the contents of the <b class="cool">blockVariable</b> and <b class="cool">constantBlockVar</b> using the display JavaScript keyword <b class="cool">document.write()</b> but when we run the code nothing shows. <br>
+Why are we're not achieving what we wanted?
+<br>
+Alright, the reason why we're not being able to achieve this is because the scope that's block scope we're using here states that when we declare a variable in it we can only access the variable inside it not out side it. <br>
+But you can see clearly for your self that we did not follow the rules that's in our code we are accessing the contents in the block scope outside it. <br>
+<b>So try and modify it yourself and see whether when you run the code you be able to achieve what we wanted</b>
+  </p>
+  <h4>Let's See How We Can Use Block Scope With Conditional Statements And Loops ::::</h4>
+  <p class="p">
+    Block scope is often used in conditional statements and loops to control the scope of variables.<br>
+    <b class="eg">Let's Check Out An Example Out ::::</b> <br>
+    <div class="code-container">
+   
+  <button class="run-btn" onclick="runCode(this)" id="runCode2">Run Code</button>
+  <button class="editor-btn" onclick="showEditor(this)" id="textEditor2" style="display:none;">Text Editor</button>
+  <div class="Editor">
+    <h3>Code</h3>
+    <textarea id="codeArea2" placeholder="Enter your HTML, CSS, and JavaScript code here...">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Document</title>
+    </head>
+    <body>
+    <script>
+      function check(){
+        let result = "Before Condition";
+        if (true) {
+          let result = "Inside Condition";
+        }
+        document.write(result); // "Before condition" from the outer scope
+      }
+      check();
+    </script>
+    </body>
+    </html>
+    
+    </textarea>
+  </div>
+  <div class="outPut">
+    <h3>Output</h3>
+    <iframe id="outputFrame2" width="100%" height="100%"></iframe>
+  </div>
+</div>
+<br> 
+<b class="eg">Let's understand what happened in the above codes ::::</b> <br>
+<p class="p">
+  So what we intend demonstrating here is that a function check() is defined. This function contains some logic that demonstrates block variable scoping. <br>
+  We then declared a variable using the <b class="cool">let</b> variable keyword named result and it is assigned the value <b class="cool">"Before Condition"</b>. <br>This variable is scoped to the function check(), meaning it is accessible anywhere within this function. <br>
+  We continue by declaring a new variable named result and we assigned the <b class="cool">Inside Condition</b>. 
+  This new declaration creates a block-scoped variable that only exists within the curly braces {} of the if statement. It shadows (or hides) the outer result variable declared earlier in the function.
+<br>
+Alright we now as the browser to display the contents of the variable <b class="cool">result</b> so meaning when we run the code we are expecting the browser to display to us two things those are <b class="cool">Before Condition</b> and <b class="cool">Inside Condition</b> on our page. <br>
+But you will realize that when we run the code the browser only displayed to us <b class="cool">Before Condition</b> instead of the browser displaying what we planned to achieve. <br>
+The reason why this happened is that since <b class="cool">document.write(result)</b> is outside the block of the if statement, it refers to the outer result, which contains the value "Before Condition". <br>
+
+</p>
+
+  </p>
+  <p class="p">
+    Block scope is a powerful tool for managing variable visibility and preventing unintended variable clashes within specific code blocks.
+<br>
+It enhances code modularity and helps you write more maintainable and predictable JavaScript code. Understanding block scope is essential for efficient and organized coding.
+  </p>
+  <br>
+</li>
+<br>
+ </div>
+ <br>
+ 
+ <div class="bas">
+   <fieldset>
+      <legend><h3 style="font-size: 105%; color: red;">When To Use Different Types Of Scope</h3>
+        </legend>  
+        <ul class="ulstyle">
+         <li><b class="phase">Global Scope ::::</b> Use global scope only for variables that genuinely need to be accessed throughout your application. <br> Global variables should be rare exceptions and carefully managed.</li>
+         <li><b class="phase">Local and Block Scope ::::</b> Embrace local and block scope to keep variables isolated and contained. <br>
+         Use local scope within functions and block scope for variables within specific code blocks like loops and conditional statements.</li>
+        </ul>
+   </fieldset>
+ </div>
+ </div>  
+
+
+        <!--
+         <div class="chat">
+<div class="ment other ">
+  
+	<div class=" bubble" > 	 Let's look at the difference between Low-level and High-level programming languages</div>
+	</div>
+</div>
+                <!--
+          <div class="card">
+        <div class="bgcard"></div>
+    <img src="pro7.gif" alt="pro7.gif" class="html" >
+    <div class="bas">
+       <fieldset>
+        <legend><h3 style="font-size: 105%; color: red;"></h3>
+        </legend>  
+        <ul class="ulstyle">
+         
+        </ul>
+        
+        </fieldset>
+    </div>
+       </div>-->
+        <!--<div class="reply-container">
+
+	<div class="reply-text"> 	<div class="vertical-line"></div> Let's look at the difference between Low-level and High-level programming languages</div>
+</div>-->
+
+<!--
+<div class="code-container">
+   
+  <button class="run-btn" onclick="runCode(this)" id="runCode2">Run Code</button>
+  <button class="editor-btn" onclick="showEditor(this)" id="textEditor2" style="display:none;">Text Editor</button>
+  <div class="Editor">
+    <h3>Code</h3>
+    <textarea id="codeArea2" placeholder="Enter your HTML, CSS, and JavaScript code here...">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Document</title>
+    </head>
+    <body>
+      
+      <script>
+            // Example JavaScript code
+            let message = 'Hello!';
+                message ='World!';
+            alert (message);
+          </script>
+    </body>
+    </html>
+    
+    </textarea>
+  </div>
+  <div class="outPut">
+    <h3>Output</h3>
+    <iframe id="outputFrame2" width="100%" height="100%"></iframe>
+  </div>
+</div>
+
+-->
+<br>
+<br>
+<br>
+  </div>
+          </div>
+       
+            <div class="button-container">
+	<a href="JSmis1.html" class="prev-button">Previous</a>
+	<a href="JSwait.html" class="next-button">Next</a>
+</div>
+          
+          </div>
+          </div>
+
+<!-- Script for code live editor-->
+<script >
+let generatedCode = '';
+
+function runCode(button) {
+  const codeContainer = button.closest('.code-container');
+  const code = codeContainer.querySelector('textarea').value;
+  generatedCode = code;
+  const outputFrame = codeContainer.querySelector('iframe');
+  const editor = codeContainer.querySelector('.Editor');
+  const output = codeContainer.querySelector('.outPut');
+  editor.style.display = 'none';
+  output.style.display = 'block';
+  outputFrame.srcdoc = generatedCode;
+  button.style.display = 'none';
+  codeContainer.querySelector('.editor-btn').style.display = 'block';
+}
+
+function showEditor(button) {
+  const codeContainer = button.closest('.code-container');
+  const editor = codeContainer.querySelector('.Editor');
+  const output = codeContainer.querySelector('.outPut');
+  const runButton = codeContainer.querySelector('.run-btn');
+  const textEditorButton = button;
+  editor.style.display = 'block';
+  output.style.display = 'none';
+  const textarea = editor.querySelector('textarea');
+  textarea.value = generatedCode;
+  runButton.style.display = 'block';
+  textEditorButton.style.display = 'none';
+}
+
+document.querySelectorAll('.run-btn').forEach(button => {
+  button.addEventListener('click', runCode);
+});
+
+document.querySelectorAll('.editor-btn').forEach(button => {
+  button.addEventListener('click', showEditor);
+});
+</script>
+
+</body>
+
+</html>
